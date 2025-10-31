@@ -1,0 +1,166 @@
+Mobility,Term,Estimate,Standard error,Statistic,P-value,Lower bound of confidence,Upper bound of confidence,Significance status
+Both,Ref. category,-12.166,0.745,-16.335,0,-13.625,-10.706,Yes
+Both,Talents,8.118,0.749,10.843,0,6.65,9.585,Yes
+Both,Male,6.651,0.825,8.065,0,5.034,8.267,Yes
+Both,Unknown,8.817,1.115,7.906,0,6.631,11.003,Yes
+Both,Americas,7.641,0.781,9.789,0,6.111,9.171,Yes
+Both,Asia,8.085,0.742,10.895,0,6.631,9.54,Yes
+Both,Brazil,7.576,0.851,8.899,0,5.908,9.245,Yes
+Both,China,7.591,0.746,10.175,0,6.129,9.054,Yes
+Both,Europe,7.505,0.732,10.25,0,6.07,8.94,Yes
+Both,Oceania,8.333,0.773,10.78,0,6.818,9.848,Yes
+Both,USA,8.173,0.736,11.098,0,6.729,9.616,Yes
+Both,South Africa,8.126,1.272,6.391,0,5.634,10.619,Yes
+Both,Academic age,0.144,0.009,16.044,0,0.126,0.161,Yes
+Both,Tal. x M.,-6.132,0.926,-6.625,0,-7.946,-4.318,Yes
+Both,Tal. x Unk.,-8.16,1.505,-5.422,0,-11.109,-5.21,Yes
+Both,Tal. x Americas,-8.231,0.887,-9.28,0,-9.97,-6.493,Yes
+Both,Tal. x Asia,-9.081,0.801,-11.343,0,-10.65,-7.512,Yes
+Both,Tal. x Brazil,-9.098,1.314,-6.924,0,-11.674,-6.523,Yes
+Both,Tal. x China,-8.661,0.799,-10.842,0,-10.226,-7.095,Yes
+Both,Tal. x Europe,-8.137,0.765,-10.638,0,-9.636,-6.638,Yes
+Both,Tal. x Oceania,-8.032,0.84,-9.561,0,-9.679,-6.386,Yes
+Both,Tal. x USA,-8.028,0.768,-10.454,0,-9.534,-6.523,Yes
+Both,Tal. x SouthAfrica,-8.686,1.647,-5.275,0,-11.913,-5.459,Yes
+Both,M. x Americas,-5.963,0.886,-6.727,0,-7.7,-4.225,Yes
+Both,Unk. x Americas,-8.043,1.255,-6.406,0,-10.504,-5.582,Yes
+Both,M. x Asia,-6.916,0.843,-8.208,0,-8.568,-5.265,Yes
+Both,Unk. x Asia,-9.242,1.142,-8.094,0,-11.48,-7.004,Yes
+Both,M. x Brazil,-6.958,1.003,-6.934,0,-8.925,-4.991,Yes
+Both,Unk. x Brazil,-34.36,0,-17634079262.635,0,-34.36,-34.36,Yes
+Both,M. x China,-6.512,0.848,-7.678,0,-8.174,-4.85,Yes
+Both,Unk. x China,-9.268,1.146,-8.09,0,-11.514,-7.023,Yes
+Both,M. x Europe,-6.568,0.833,-7.889,0,-8.2,-4.936,Yes
+Both,Unk. x Europe,-8.483,1.145,-7.409,0,-10.728,-6.239,Yes
+Both,M. x Oceania,-5.999,0.884,-6.787,0,-7.732,-4.267,Yes
+Both,Unk. x Oceania,-8.597,1.323,-6.5,0,-11.19,-6.005,Yes
+Both,M. x USA,-6.737,0.838,-8.044,0,-8.379,-5.096,Yes
+Both,Unk. x USA,-8.562,1.137,-7.53,0,-10.791,-6.333,Yes
+Both,M. x SouthAfrica,-5.818,1.441,-4.036,0,-8.643,-2.993,Yes
+Both,Unk. x SouthAfrica,-35.772,1.153,-31.029,0,-38.032,-33.513,Yes
+Both,Tal. x M. x Americas,6.692,1.064,6.288,0,4.606,8.777,Yes
+Both,Tal. x Unk. x Americas,8.605,1.698,5.067,0,5.277,11.934,Yes
+Both,Tal. x M. x Asia,7.295,0.975,7.483,0,5.384,9.205,Yes
+Both,Tal. x Unk. x Asia,8.966,1.557,5.76,0,5.915,12.017,Yes
+Both,Tal. x M. x Brazil,6.944,1.537,4.519,0,3.932,9.956,Yes
+Both,Tal. x Unk. x Brazil,-6.417,0,-32113792884240.727,0,-6.417,-6.417,Yes
+Both,Tal. x M. x China,6.539,0.977,6.695,0,4.625,8.454,Yes
+Both,Tal. x Unk. x China,9.294,1.551,5.992,0,6.254,12.334,Yes
+Both,Tal. x M. x Europe,6.614,0.943,7.017,0,4.766,8.461,Yes
+Both,Tal. x Unk. x Europe,8.116,1.544,5.257,0,5.09,11.142,Yes
+Both,Tal. x M. x Oceania,5.969,1.028,5.805,0,3.954,7.985,Yes
+Both,Tal. x Unk. x Oceania,9.086,1.766,5.146,0,5.625,12.547,Yes
+Both,Tal. x M. x USA,6.48,0.947,6.846,0,4.625,8.336,Yes
+Both,Tal. x Unk. x USA,8.121,1.535,5.291,0,5.113,11.13,Yes
+Both,Tal. x M. x SouthAfrica,6.77,1.879,3.602,0,3.086,10.453,Yes
+Both,Tal. x Unk. x SouthAfrica,36.336,1.153,31.518,0,34.077,38.596,Yes
+Internal,Ref. category,-1.901,0.688,-2.765,0.006,-3.249,-0.553,Yes
+Internal,Talents,-24.266,0.408,-59.5,0,-25.065,-23.466,Yes
+Internal,Male,-1.435,0.781,-1.836,0.066,-2.966,0.097,No
+Internal,Unknown,-15.27,0.589,-25.939,0,-16.424,-14.116,Yes
+Internal,Americas,-1.029,0.724,-1.422,0.155,-2.448,0.39,No
+Internal,Asia,-0.529,0.693,-0.764,0.445,-1.888,0.829,No
+Internal,Brazil,-0.642,0.747,-0.859,0.39,-2.106,0.823,No
+Internal,China,-1.007,0.695,-1.449,0.147,-2.37,0.355,No
+Internal,Europe,-0.869,0.684,-1.27,0.204,-2.21,0.472,No
+Internal,Oceania,-0.793,0.734,-1.08,0.28,-2.232,0.646,No
+Internal,USA,0.373,0.686,0.544,0.586,-0.971,1.717,No
+Internal,South Africa,-1.195,1.3,-0.919,0.358,-3.742,1.353,No
+Internal,Academic age,0.095,0.006,16.705,0,0.084,0.106,Yes
+Internal,Tal. x M.,24.831,0.496,50.105,0,23.86,25.803,Yes
+Internal,Tal. x Unk.,38.962,0.605,64.436,0,37.777,40.147,Yes
+Internal,Tal. x Americas,23.956,0.549,43.628,0,22.88,25.032,Yes
+Internal,Tal. x Asia,24.028,0.443,54.285,0,23.161,24.896,Yes
+Internal,Tal. x Brazil,23.779,0.663,35.862,0,22.479,25.078,Yes
+Internal,Tal. x China,24.001,0.448,53.584,0,23.123,24.879,Yes
+Internal,Tal. x Europe,23.875,0.423,56.454,0,23.046,24.704,Yes
+Internal,Tal. x Oceania,24.577,0.528,46.53,0,23.541,25.612,Yes
+Internal,Tal. x USA,24.302,0.421,57.679,0,23.477,25.128,Yes
+Internal,Tal. x SouthAfrica,-23.679,0.613,-38.655,0,-24.879,-22.478,Yes
+Internal,M. x Americas,1.581,0.833,1.898,0.058,-0.052,3.214,No
+Internal,Unk. x Americas,15.555,0.759,20.489,0,14.067,17.043,Yes
+Internal,M. x Asia,1.606,0.794,2.021,0.043,0.049,3.162,Yes
+Internal,Unk. x Asia,15.184,0.612,24.806,0,13.985,16.384,Yes
+Internal,M. x Brazil,1.789,0.861,2.079,0.038,0.102,3.475,Yes
+Internal,Unk. x Brazil,16.589,0.795,20.861,0,15.031,18.148,Yes
+Internal,M. x China,1.703,0.798,2.135,0.033,0.14,3.266,Yes
+Internal,Unk. x China,15.47,0.612,25.288,0,14.271,16.669,Yes
+Internal,M. x Europe,1.302,0.786,1.656,0.098,-0.239,2.844,No
+Internal,Unk. x Europe,15.294,0.616,24.845,0,14.088,16.501,Yes
+Internal,M. x Oceania,1.804,0.849,2.126,0.034,0.141,3.467,Yes
+Internal,Unk. x Oceania,15.792,0.814,19.41,0,14.197,17.386,Yes
+Internal,M. x USA,1.33,0.788,1.689,0.091,-0.214,2.874,No
+Internal,Unk. x USA,14.994,0.606,24.74,0,13.806,16.182,Yes
+Internal,M. x SouthAfrica,1.35,1.565,0.862,0.388,-1.718,4.417,No
+Internal,Unk. x SouthAfrica,-15.662,0,-236785767090183.9,0,-15.662,-15.662,Yes
+Internal,Tal. x M. x Americas,-24.198,0.653,-37.065,0,-25.478,-22.918,Yes
+Internal,Tal. x Unk. x Americas,-39.401,0.963,-40.92,0,-41.289,-37.514,Yes
+Internal,Tal. x M. x Asia,-24.536,0.53,-46.297,0,-25.574,-23.497,Yes
+Internal,Tal. x Unk. x Asia,-38.943,0.651,-59.834,0,-40.219,-37.667,Yes
+Internal,Tal. x M. x Brazil,-24.94,0.784,-31.802,0,-26.477,-23.403,Yes
+Internal,Tal. x Unk. x Brazil,-40.499,1.377,-29.417,0,-43.198,-37.801,Yes
+Internal,Tal. x M. x China,-24.891,0.539,-46.217,0,-25.946,-23.835,Yes
+Internal,Tal. x Unk. x China,-38.977,0.65,-59.971,0,-40.251,-37.703,Yes
+Internal,Tal. x M. x Europe,-24.369,0.512,-47.563,0,-25.373,-23.365,Yes
+Internal,Tal. x Unk. x Europe,-38.788,0.654,-59.339,0,-40.069,-37.507,Yes
+Internal,Tal. x M. x Oceania,-25.272,0.643,-39.275,0,-26.534,-24.011,Yes
+Internal,Tal. x Unk. x Oceania,-38.96,0.993,-39.247,0,-40.905,-37.014,Yes
+Internal,Tal. x M. x USA,-24.562,0.511,-48.109,0,-25.563,-23.562,Yes
+Internal,Tal. x Unk. x USA,-38.746,0.635,-61.02,0,-39.991,-37.502,Yes
+Internal,Tal. x M. x SouthAfrica,23.243,0.613,37.943,0,22.042,24.443,Yes
+Internal,Tal. x Unk. x SouthAfrica,-3.632,0,-156011702628651.56,0,-3.632,-3.632,Yes
+International,Ref. category,-0.515,0.483,-1.067,0.286,-1.462,0.431,No
+International,Talents,-2.05,0.537,-3.82,0,-3.101,-0.998,Yes
+International,Male,-1.153,0.52,-2.215,0.027,-2.173,-0.133,Yes
+International,Unknown,-0.228,0.98,-0.233,0.816,-2.148,1.692,No
+International,Americas,-1.138,0.51,-2.234,0.025,-2.137,-0.14,Yes
+International,Asia,-1.482,0.492,-3.012,0.003,-2.446,-0.518,Yes
+International,Brazil,-2.203,0.619,-3.561,0,-3.416,-0.991,Yes
+International,China,-2.277,0.501,-4.542,0,-3.26,-1.294,Yes
+International,Europe,-1.487,0.478,-3.112,0.002,-2.423,-0.55,Yes
+International,Oceania,-1.344,0.534,-2.518,0.012,-2.39,-0.298,Yes
+International,USA,-1.571,0.487,-3.225,0.001,-2.526,-0.616,Yes
+International,South Africa,-1.318,0.957,-1.378,0.168,-3.194,0.557,No
+International,Academic age,0.065,0.006,11.403,0,0.053,0.076,Yes
+International,Tal. x M.,2.866,0.554,5.174,0,1.78,3.952,Yes
+International,Tal. x Unk.,-15.458,0.244,-63.356,0,-15.936,-14.98,Yes
+International,Tal. x Americas,2.116,0.601,3.518,0,0.937,3.295,Yes
+International,Tal. x Asia,1.612,0.57,2.829,0.005,0.495,2.729,Yes
+International,Tal. x Brazil,2.501,0.779,3.209,0.001,0.974,4.028,Yes
+International,Tal. x China,2.05,0.578,3.547,0,0.917,3.183,Yes
+International,Tal. x Europe,2.241,0.545,4.114,0,1.174,3.309,Yes
+International,Tal. x Oceania,2.238,0.624,3.588,0,1.015,3.46,Yes
+International,Tal. x USA,1.769,0.559,3.164,0.002,0.673,2.865,Yes
+International,Tal. x SouthAfrica,1.942,1.13,1.719,0.086,-0.272,4.157,No
+International,M. x Americas,1.53,0.564,2.711,0.007,0.424,2.637,Yes
+International,Unk. x Americas,0.575,1.066,0.539,0.59,-1.515,2.665,No
+International,M. x Asia,1.244,0.54,2.303,0.021,0.185,2.303,Yes
+International,Unk. x Asia,0.161,0.998,0.162,0.872,-1.795,2.117,No
+International,M. x Brazil,1.777,0.689,2.578,0.01,0.426,3.127,Yes
+International,Unk. x Brazil,-0.021,1.505,-0.014,0.989,-2.971,2.93,No
+International,M. x China,1.625,0.552,2.946,0.003,0.544,2.706,Yes
+International,Unk. x China,0.191,1.005,0.19,0.849,-1.778,2.16,No
+International,M. x Europe,1.21,0.526,2.3,0.021,0.179,2.241,Yes
+International,Unk. x Europe,0.544,0.995,0.547,0.584,-1.406,2.494,No
+International,M. x Oceania,1.865,0.595,3.134,0.002,0.699,3.031,Yes
+International,Unk. x Oceania,0.816,1.134,0.719,0.472,-1.407,3.039,No
+International,M. x USA,1.039,0.537,1.934,0.053,-0.014,2.093,No
+International,Unk. x USA,0.003,1.005,0.003,0.997,-1.967,1.973,No
+International,M. x SouthAfrica,1.081,1.145,0.944,0.345,-1.163,3.325,No
+International,Unk. x SouthAfrica,-23.897,0.82,-29.15,0,-25.504,-22.29,Yes
+International,Tal. x M. x Americas,-2.585,0.637,-4.055,0,-3.834,-1.335,Yes
+International,Tal. x Unk. x Americas,15.135,0.578,26.169,0,14.002,16.269,Yes
+International,Tal. x M. x Asia,-2.512,0.592,-4.244,0,-3.672,-1.352,Yes
+International,Tal. x Unk. x Asia,15.736,0.354,44.45,0,15.042,16.43,Yes
+International,Tal. x M. x Brazil,-3.422,0.854,-4.006,0,-5.096,-1.748,Yes
+International,Tal. x Unk. x Brazil,16.423,1.306,12.57,0,13.862,18.984,Yes
+International,Tal. x M. x China,-2.96,0.603,-4.909,0,-4.142,-1.778,Yes
+International,Tal. x Unk. x China,15.701,0.369,42.531,0,14.978,16.425,Yes
+International,Tal. x M. x Europe,-2.648,0.564,-4.691,0,-3.754,-1.542,Yes
+International,Tal. x Unk. x Europe,15.475,0.314,49.272,0,14.859,16.091,Yes
+International,Tal. x M. x Oceania,-3.124,0.667,-4.683,0,-4.432,-1.817,Yes
+International,Tal. x Unk. x Oceania,15.64,0.749,20.885,0,14.172,17.108,Yes
+International,Tal. x M. x USA,-2.548,0.583,-4.373,0,-3.689,-1.406,Yes
+International,Tal. x Unk. x USA,15.988,0.365,43.838,0,15.274,16.703,Yes
+International,Tal. x M. x SouthAfrica,-1.541,1.315,-1.172,0.241,-4.118,1.036,No
+International,Tal. x Unk. x SouthAfrica,39.622,0.82,48.331,0,38.015,41.229,Yes

@@ -1,0 +1,92 @@
+running
+  'C:\PROGRA~1\R\R-45~1.1\bin\x64\Rterm.exe --no-echo --no-restore --no-save --no-restore --file=workflow/scripts/figure_read_statistical_model_full_gender_regions_w_controls_results_errorbar_fig.R --args --input G:/ali/talents/results/mdl_obj_second_continent_full_ctrls.RData --gender second --region2use continent --output G:/ali/talents/results/tables/TABLE_7_second_continent.csv G:/ali/talents/results/figures/Figure_5_second_continent.png'
+
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.2
+v ggplot2   4.0.0     v tibble    3.3.0
+v lubridate 1.9.4     v tidyr     1.3.1
+v purrr     1.1.0     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning message:
+In options(scipen = 99999) : invalid 'scipen' 99999, used 9999
+[1] "Running the script now at time: "
+[1] "2025-10-31 15:50:17 CET"
+[1] "R working directory: "
+[1] "G:/ali/talents"
+[1] "##################################################"
+[1] "Received these arguments from command line: "
+[[1]]
+[1] FALSE
+
+$help
+[1] FALSE
+
+$opts
+[1] NA
+
+$input
+[1] "G:/ali/talents/results/mdl_obj_second_continent_full_ctrls.RData"
+
+$gender
+[1] "second"
+
+$region2use
+[1] "continent"
+
+$output
+[1] "G:/ali/talents/results/tables/TABLE_7_second_continent.csv"  
+[2] "G:/ali/talents/results/figures/Figure_5_second_continent.png"
+
+[1] "Current R session Info: "
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows Server 2019 x64 (build 17763)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] argparser_0.7.2 broom_1.0.9     nnet_7.3-20     lubridate_1.9.4
+ [5] forcats_1.0.0   stringr_1.5.2   dplyr_1.1.4     purrr_1.1.0    
+ [9] readr_2.1.5     tidyr_1.3.1     tibble_3.3.0    ggplot2_4.0.0  
+[13] tidyverse_2.0.0
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.6       compiler_4.5.1     tidyselect_1.2.1   scales_1.4.0      
+ [5] R6_2.6.1           generics_0.1.4     backports_1.5.0    pillar_1.11.0     
+ [9] RColorBrewer_1.1-3 tzdb_0.5.0         rlang_1.1.6        stringi_1.8.7     
+[13] S7_0.2.0           timechange_0.3.0   cli_3.6.5          withr_3.0.2       
+[17] magrittr_2.0.4     grid_4.5.1         hms_1.1.3          lifecycle_1.0.4   
+[21] vctrs_0.6.5        glue_1.8.0         farver_2.1.2       tools_4.5.1       
+[25] pkgconfig_2.0.3   
+[1] "Model objects loaded from: "
+[1] "G:/ali/talents/results/mdl_obj_second_continent_full_ctrls.RData"
+[1] "Objects in session (ls()): "
+[1] "args"     "m0"       "m1"       "m2"       "m3"       "mprobit1" "p"       
+[8] "talents" 
+Warning messages:
+1: In sqrt(diag(vc)) : NaNs produced
+2: In sqrt(diag(vcov(object))) : NaNs produced
+[1] "Detailed table of statistical model results exported in: \n"
+[1] "G:/ali/talents/results/tables/TABLE_7_second_continent.csv"
+Warning message:
+`geom_errobarh()` was deprecated in ggplot2 4.0.0.
+i Please use the `orientation` argument of `geom_errorbar()` instead. 
+`height` was translated to `width`.
+[1] "Error bar figure of statistical model results exported in: \n"
+[1] "G:/ali/talents/results/figures/Figure_5_second_continent.png"

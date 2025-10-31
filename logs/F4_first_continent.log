@@ -1,0 +1,15 @@
+2025-10-31 15:50:16,950 - root - INFO - These items are in the environment: ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'gg', 'label_number', 'lg', 'pd', 'six_colors_colorblind']
+2025-10-31 15:50:16,955 - root - INFO - Arguments received from command line: 
+ Namespace(input=['G:/ali/talents/results/md_prd4_first_continent_f_ctrls.csv'], output=['G:/ali/talents/results/figures/Figure_4_first_continent.png'])
+2025-10-31 15:50:16,962 - root - INFO - Data read from 'G:/ali/talents/results/md_prd4_first_continent_f_ctrls.csv'
+2025-10-31 15:50:16,970 - root - INFO - A few rows: '           x  ...    facet
+211  Talents  ...      CHN
+212  Talents  ...   Europe
+213  Talents  ...  Oceania
+214  Talents  ...      USA
+215  Talents  ...      ZAF
+
+[5 rows x 5 columns]'
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:615: PlotnineWarning: Saving 7 x 8 in image.
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:616: PlotnineWarning: Filename: G:/ali/talents/results/figures/Figure_4_first_continent.png
+2025-10-31 15:50:20,821 - root - INFO - Figure exported in: 'G:/ali/talents/results/figures/Figure_4_first_continent.png'

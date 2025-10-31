@@ -1,0 +1,757 @@
+running
+  'C:\PROGRA~1\R\R-45~1.1\bin\x64\Rterm.exe --no-echo --no-restore --no-save --no-restore --file=workflow/scripts/read_data_run_statistical_model_full_gender_regions.R --args --input G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv --gender third --region2use WBregion --output G:/ali/talents/results/md_prd3_third_WBregion_full.csv G:/ali/talents/results/tables/TABLE_5_third_WBregion_full.html'
+
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.2
+v ggplot2   4.0.0     v tibble    3.3.0
+v lubridate 1.9.4     v tidyr     1.3.1
+v purrr     1.1.0     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+Version:  1.39.4
+Date:     2024-07-23
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+
+Attaching package: 'texreg'
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+[1] "R working directory: "
+[1] "G:/ali/talents"
+[1] "##################################################"
+[1] "Received these arguments from command line: "
+[[1]]
+[1] FALSE
+
+$help
+[1] FALSE
+
+$opts
+[1] NA
+
+$input
+[1] "G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv"
+
+$gender
+[1] "third"
+
+$region2use
+[1] "WBregion"
+
+$output
+[1] "G:/ali/talents/results/md_prd3_third_WBregion_full.csv"        
+[2] "G:/ali/talents/results/tables/TABLE_5_third_WBregion_full.html"
+
+[1] "Current R session Info: "
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows Server 2019 x64 (build 17763)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] argparser_0.7.2 ggeffects_2.3.1 GGally_2.4.0    nnet_7.3-20    
+ [5] texreg_1.39.4   stargazer_5.2.3 lubridate_1.9.4 forcats_1.0.0  
+ [9] stringr_1.5.2   dplyr_1.1.4     purrr_1.1.0     readr_2.1.5    
+[13] tidyr_1.3.1     tibble_3.3.0    ggplot2_4.0.0   tidyverse_2.0.0
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.6       compiler_4.5.1     tidyselect_1.2.1   ggstats_0.10.0    
+ [5] scales_1.4.0       R6_2.6.1           generics_0.1.4     insight_1.4.2     
+ [9] pillar_1.11.0      RColorBrewer_1.1-3 tzdb_0.5.0         rlang_1.1.6       
+[13] stringi_1.8.7      S7_0.2.0           timechange_0.3.0   cli_3.6.5         
+[17] withr_3.0.2        magrittr_2.0.4     grid_4.5.1         hms_1.1.3         
+[21] lifecycle_1.0.4    vctrs_0.6.5        glue_1.8.0         farver_2.1.2      
+[25] httr_1.4.7         tools_4.5.1        pkgconfig_2.0.3   
+Rows: 28406 Columns: 14
+-- Column specification --------------------------------------------------------
+Delimiter: ","
+chr (12): ctrl_obs_cat, ctrl_obs_2cat, first_gender, second_gender, third_ge...
+dbl  (2): fake_author_ID, acadmic_age
+
+i Use `spec()` to retrieve the full column specification for this data.
+i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+# weights:  272 (201 variable)
+initial  value 39379.077622 
+iter  10 value 35071.328455
+iter  20 value 34834.129239
+iter  30 value 34365.260970
+iter  40 value 34240.248261
+iter  50 value 34177.000086
+iter  60 value 34162.565475
+iter  70 value 34156.683737
+iter  80 value 34153.807545
+iter  90 value 34152.345491
+iter 100 value 34148.960648
+iter 110 value 34147.333524
+iter 120 value 34146.511313
+iter 130 value 34145.622938
+iter 140 value 34145.201833
+iter 150 value 34144.908318
+iter 160 value 34144.814293
+iter 170 value 34144.743349
+iter 180 value 34144.706682
+final  value 34144.701380 
+converged
+# A tibble: 6 x 5
+  x      predicted response.level group  facet                    
+  <fct>      <dbl> <chr>          <fct>  <fct>                    
+1 Others     0.157 Non mobile     Female Sub-Saharan Africa       
+2 Others     0.545 Non mobile     Female BRA                      
+3 Others     0.595 Non mobile     Female CHN                      
+4 Others     0.448 Non mobile     Female East Asia & Pacific      
+5 Others     0.510 Non mobile     Female Europe & Central Asia    
+6 Others     0.320 Non mobile     Female Latin America & Caribbean
+
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Both</td><td>Internal</td><td>International</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">ctrl_obs_2catTalents</td><td>11.280<sup>***</sup></td><td>-10.010<sup>***</sup></td><td>-2.738<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.588)</td><td>(0.600)</td><td>(0.853)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale</td><td>-6.609<sup>***</sup></td><td>-2.493<sup>***</sup></td><td>-18.400<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.719)</td><td>(0.347)</td><td>(0.586)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown</td><td>-8.118<sup>***</sup></td><td>-8.857<sup>***</sup></td><td>-1.501</td></tr>
+<tr><td style="text-align:left"></td><td>(0.231)</td><td>(0.204)</td><td>(0.998)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useBRA</td><td>10.733<sup>***</sup></td><td>-1.101</td><td>-2.891<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.732)</td><td>(0.702)</td><td>(0.703)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useCHN</td><td>10.748<sup>***</sup></td><td>-1.467<sup>**</sup></td><td>-2.962<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.613)</td><td>(0.652)</td><td>(0.606)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useEast Asia</td><td>Pacific</td><td>11.269<sup>***</sup></td><td>-0.945</td></tr>
+<tr><td style="text-align:left"></td><td>(0.607)</td><td>(0.650)</td><td>(0.599)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useEurope</td><td>Central Asia</td><td>10.677<sup>***</sup></td><td>-1.337<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.595)</td><td>(0.642)</td><td>(0.587)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useLatin America</td><td>Caribbean</td><td>10.889<sup>***</sup></td><td>-0.965</td></tr>
+<tr><td style="text-align:left"></td><td>(0.910)</td><td>(0.791)</td><td>(0.685)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useMiddle East</td><td>North Africa</td><td>11.391<sup>***</sup></td><td>-1.781<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.747)</td><td>(0.821)</td><td>(0.674)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useNorth America</td><td>10.769<sup>***</sup></td><td>-1.647<sup>**</sup></td><td>-2.120<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.672)</td><td>(0.694)</td><td>(0.625)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useSouth Asia</td><td>11.339<sup>***</sup></td><td>-1.037</td><td>-1.723<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.745)</td><td>(0.741)</td><td>(0.673)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useUSA</td><td>11.329<sup>***</sup></td><td>-0.087</td><td>-2.257<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.600)</td><td>(0.643)</td><td>(0.595)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useZAF</td><td>11.269<sup>***</sup></td><td>-1.665</td><td>-2.011<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.183)</td><td>(1.224)</td><td>(1.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">acadmic_age</td><td>0.143<sup>***</sup></td><td>0.094<sup>***</sup></td><td>0.066<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.009)</td><td>(0.006)</td><td>(0.006)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale</td><td>6.814<sup>***</sup></td><td>11.448<sup>***</sup></td><td>20.148<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.720)</td><td>(0.603)</td><td>(0.593)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown</td><td>-2.812<sup>***</sup></td><td>-2.520<sup>***</sup></td><td>-7.021<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.358)</td><td>(0.296)</td><td>(0.247)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useBRA</td><td>-12.263<sup>***</sup></td><td>9.524<sup>***</sup></td><td>3.191<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.224)</td><td>(0.805)</td><td>(1.037)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useCHN</td><td>-11.823<sup>***</sup></td><td>9.746<sup>***</sup></td><td>2.737<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.653)</td><td>(0.629)</td><td>(0.882)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useEast Asia</td><td>Pacific</td><td>-11.880<sup>***</sup></td><td>9.864<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.638)</td><td>(0.622)</td><td>(0.875)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useEurope</td><td>Central Asia</td><td>-11.317<sup>***</sup></td><td>9.626<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.609)</td><td>(0.610)</td><td>(0.859)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useLatin America</td><td>Caribbean</td><td>-10.390<sup>***</sup></td><td>9.844<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.481)</td><td>(1.328)</td><td>(1.326)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useMiddle East</td><td>North Africa</td><td>-11.254<sup>***</sup></td><td>9.844<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.977)</td><td>(1.048)</td><td>(1.009)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useNorth America</td><td>-11.469<sup>***</sup></td><td>9.812<sup>***</sup></td><td>3.082<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.791)</td><td>(0.728)</td><td>(0.909)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useSouth Asia</td><td>-12.001<sup>***</sup></td><td>8.689<sup>***</sup></td><td>2.844<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.258)</td><td>(1.183)</td><td>(1.050)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useUSA</td><td>-11.190<sup>***</sup></td><td>10.047<sup>***</sup></td><td>2.457<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.614)</td><td>(0.609)</td><td>(0.869)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useZAF</td><td>-11.829<sup>***</sup></td><td>-17.083<sup>***</sup></td><td>2.639<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.572)</td><td>(0.753)</td><td>(1.374)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useBRA</td><td>6.302<sup>***</sup></td><td>2.847<sup>***</sup></td><td>19.026<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.907)</td><td>(0.482)</td><td>(0.730)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useBRA</td><td>-18.056</td><td>10.176<sup>***</sup></td><td>1.260</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.583)</td><td>(1.481)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useCHN</td><td>6.748<sup>***</sup></td><td>2.761<sup>***</sup></td><td>18.872<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.747)</td><td>(0.377)</td><td>(0.612)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useCHN</td><td>7.666<sup>***</sup></td><td>9.057<sup>***</sup></td><td>1.463</td></tr>
+<tr><td style="text-align:left"></td><td>(0.341)</td><td>(0.264)</td><td>(1.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useEast Asia</td><td>Pacific</td><td>6.422<sup>***</sup></td><td>2.700<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.740)</td><td>(0.371)</td><td>(0.603)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useEast Asia</td><td>Pacific</td><td>7.692<sup>***</sup></td><td>8.885<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.336)</td><td>(0.267)</td><td>(1.017)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useEurope</td><td>Central Asia</td><td>6.676<sup>***</sup></td><td>2.385<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.728)</td><td>(0.356)</td><td>(0.591)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useEurope</td><td>Central Asia</td><td>8.415<sup>***</sup></td><td>8.898<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.330)</td><td>(0.272)</td><td>(1.011)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useLatin America</td><td>Caribbean</td><td>6.888<sup>***</sup></td><td>2.390<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.040)</td><td>(0.614)</td><td>(0.707)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useLatin America</td><td>Caribbean</td><td>8.284<sup>***</sup></td><td>7.932<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.209)</td><td>(1.104)</td><td>(1.239)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useMiddle East</td><td>North Africa</td><td>6.374<sup>***</sup></td><td>2.710<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.882)</td><td>(0.640)</td><td>(0.686)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useMiddle East</td><td>North Africa</td><td>8.011<sup>***</sup></td><td>7.887<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.768)</td><td>(1.079)</td><td>(1.147)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useNorth America</td><td>7.452<sup>***</sup></td><td>2.630<sup>***</sup></td><td>19.019<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.808)</td><td>(0.473)</td><td>(0.639)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useNorth America</td><td>9.101<sup>***</sup></td><td>9.516<sup>***</sup></td><td>2.175<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.657)</td><td>(0.594)</td><td>(1.112)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useSouth Asia</td><td>6.827<sup>***</sup></td><td>2.317<sup>***</sup></td><td>18.492<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.875)</td><td>(0.536)</td><td>(0.688)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useSouth Asia</td><td>7.843<sup>***</sup></td><td>8.009<sup>***</sup></td><td>0.887</td></tr>
+<tr><td style="text-align:left"></td><td>(0.671)</td><td>(0.607)</td><td>(1.113)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useUSA</td><td>6.523<sup>***</sup></td><td>2.388<sup>***</sup></td><td>18.287<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.734)</td><td>(0.359)</td><td>(0.600)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useUSA</td><td>8.373<sup>***</sup></td><td>8.581<sup>***</sup></td><td>1.277</td></tr>
+<tr><td style="text-align:left"></td><td>(0.312)</td><td>(0.252)</td><td>(1.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderMale:region2useZAF</td><td>7.458<sup>***</sup></td><td>2.422<sup>*</sup></td><td>18.337<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.357)</td><td>(1.286)</td><td>(1.135)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">genderUnknown:region2useZAF</td><td>-5.497<sup>***</sup></td><td>-9.408<sup>***</sup></td><td>-14.392<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.744)</td><td>(0.000)</td><td>(0.818)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useBRA</td><td>-5.998<sup>***</sup></td><td>-11.557<sup>***</sup></td><td>-20.707<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.410)</td><td>(0.863)</td><td>(0.893)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useBRA</td><td>-3.077</td><td>0.980</td><td>7.975<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(1.246)</td><td>(1.324)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useCHN</td><td>-6.406<sup>***</sup></td><td>-11.507<sup>***</sup></td><td>-20.242<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.787)</td><td>(0.639)</td><td>(0.641)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useCHN</td><td>3.947<sup>***</sup></td><td>2.504<sup>***</sup></td><td>7.265<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.502)</td><td>(0.383)</td><td>(0.374)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useEast Asia</td><td>Pacific</td><td>-6.023<sup>***</sup></td><td>-11.252<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.770)</td><td>(0.630)</td><td>(0.630)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useEast Asia</td><td>Pacific</td><td>3.501<sup>***</sup></td><td>2.298<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.499)</td><td>(0.384)</td><td>(0.362)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useEurope</td><td>Central Asia</td><td>-6.298<sup>***</sup></td><td>-10.993<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.742)</td><td>(0.617)</td><td>(0.604)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useEurope</td><td>Central Asia</td><td>2.813<sup>***</sup></td><td>2.744<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.473)</td><td>(0.381)</td><td>(0.315)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useLatin America</td><td>Caribbean</td><td>-6.761<sup>***</sup></td><td>-11.348<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.607)</td><td>(1.411)</td><td>(1.221)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useLatin America</td><td>Caribbean</td><td>4.034<sup>**</sup></td><td>-10.553<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(2.045)</td><td>(0.00000)</td><td>(0.000)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useMiddle East</td><td>North Africa</td><td>-6.432<sup>***</sup></td><td>-11.204<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.099)</td><td>(1.077)</td><td>(0.819)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useMiddle East</td><td>North Africa</td><td>2.663<sup>**</sup></td><td>3.938<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.140)</td><td>(1.380)</td><td>(0.836)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useNorth America</td><td>-6.345<sup>***</sup></td><td>-10.736<sup>***</sup></td><td>-20.065<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.926)</td><td>(0.770)</td><td>(0.695)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useNorth America</td><td>3.074<sup>***</sup></td><td>1.787<sup>**</sup></td><td>6.429<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.876)</td><td>(0.850)</td><td>(0.645)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useSouth Asia</td><td>-6.156<sup>***</sup></td><td>-10.215<sup>***</sup></td><td>-20.376<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.369)</td><td>(1.225)</td><td>(0.885)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useSouth Asia</td><td>-20.472<sup>***</sup></td><td>4.732<sup>***</sup></td><td>7.194<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.000)</td><td>(1.216)</td><td>(0.841)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useUSA</td><td>-6.466<sup>***</sup></td><td>-11.179<sup>***</sup></td><td>-19.830<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.748)</td><td>(0.615)</td><td>(0.621)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useUSA</td><td>2.773<sup>***</sup></td><td>2.736<sup>***</sup></td><td>7.550<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.454)</td><td>(0.354)</td><td>(0.370)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderMale:region2useZAF</td><td>-6.197<sup>***</sup></td><td>15.771<sup>***</sup></td><td>-18.833<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.770)</td><td>(0.753)</td><td>(1.366)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:genderUnknown:region2useZAF</td><td>17.645<sup>***</sup></td><td>-2.065<sup>***</sup></td><td>22.953<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.744)</td><td>(0.000)</td><td>(0.818)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-15.321<sup>***</sup></td><td>-1.416<sup>**</sup></td><td>0.137</td></tr>
+<tr><td style="text-align:left"></td><td>(0.608)</td><td>(0.646)</td><td>(0.592)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Akaike Inf. Crit.</td><td>68,691.400</td><td>68,691.400</td><td>68,691.400</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+[1] "Stat model results: \n"
+
+=====================================================================================================
+                                                                                        Model 1      
+-----------------------------------------------------------------------------------------------------
+Both: (Intercept)                                                                          -15.32 ***
+                                                                                            (0.61)   
+Both: ctrl_obs_2catTalents                                                                  11.28 ***
+                                                                                            (0.59)   
+Both: genderMale                                                                            -6.61 ***
+                                                                                            (0.72)   
+Both: genderUnknown                                                                         -8.12 ***
+                                                                                            (0.23)   
+Both: region2useBRA                                                                         10.73 ***
+                                                                                            (0.73)   
+Both: region2useCHN                                                                         10.75 ***
+                                                                                            (0.61)   
+Both: region2useEast Asia & Pacific                                                         11.27 ***
+                                                                                            (0.61)   
+Both: region2useEurope & Central Asia                                                       10.68 ***
+                                                                                            (0.59)   
+Both: region2useLatin America & Caribbean                                                   10.89 ***
+                                                                                            (0.91)   
+Both: region2useMiddle East & North Africa                                                  11.39 ***
+                                                                                            (0.75)   
+Both: region2useNorth America                                                               10.77 ***
+                                                                                            (0.67)   
+Both: region2useSouth Asia                                                                  11.34 ***
+                                                                                            (0.74)   
+Both: region2useUSA                                                                         11.33 ***
+                                                                                            (0.60)   
+Both: region2useZAF                                                                         11.27 ***
+                                                                                            (1.18)   
+Both: acadmic_age                                                                            0.14 ***
+                                                                                            (0.01)   
+Both: ctrl_obs_2catTalents:genderMale                                                        6.81 ***
+                                                                                            (0.72)   
+Both: ctrl_obs_2catTalents:genderUnknown                                                    -2.81 ***
+                                                                                            (0.36)   
+Both: ctrl_obs_2catTalents:region2useBRA                                                   -12.26 ***
+                                                                                            (1.22)   
+Both: ctrl_obs_2catTalents:region2useCHN                                                   -11.82 ***
+                                                                                            (0.65)   
+Both: ctrl_obs_2catTalents:region2useEast Asia & Pacific                                   -11.88 ***
+                                                                                            (0.64)   
+Both: ctrl_obs_2catTalents:region2useEurope & Central Asia                                 -11.32 ***
+                                                                                            (0.61)   
+Both: ctrl_obs_2catTalents:region2useLatin America & Caribbean                             -10.39 ***
+                                                                                            (1.48)   
+Both: ctrl_obs_2catTalents:region2useMiddle East & North Africa                            -11.25 ***
+                                                                                            (0.98)   
+Both: ctrl_obs_2catTalents:region2useNorth America                                         -11.47 ***
+                                                                                            (0.79)   
+Both: ctrl_obs_2catTalents:region2useSouth Asia                                            -12.00 ***
+                                                                                            (1.26)   
+Both: ctrl_obs_2catTalents:region2useUSA                                                   -11.19 ***
+                                                                                            (0.61)   
+Both: ctrl_obs_2catTalents:region2useZAF                                                   -11.83 ***
+                                                                                            (1.57)   
+Both: genderMale:region2useBRA                                                               6.30 ***
+                                                                                            (0.91)   
+Both: genderUnknown:region2useBRA                                                          -18.06    
+                                                                                                     
+Both: genderMale:region2useCHN                                                               6.75 ***
+                                                                                            (0.75)   
+Both: genderUnknown:region2useCHN                                                            7.67 ***
+                                                                                            (0.34)   
+Both: genderMale:region2useEast Asia & Pacific                                               6.42 ***
+                                                                                            (0.74)   
+Both: genderUnknown:region2useEast Asia & Pacific                                            7.69 ***
+                                                                                            (0.34)   
+Both: genderMale:region2useEurope & Central Asia                                             6.68 ***
+                                                                                            (0.73)   
+Both: genderUnknown:region2useEurope & Central Asia                                          8.41 ***
+                                                                                            (0.33)   
+Both: genderMale:region2useLatin America & Caribbean                                         6.89 ***
+                                                                                            (1.04)   
+Both: genderUnknown:region2useLatin America & Caribbean                                      8.28 ***
+                                                                                            (1.21)   
+Both: genderMale:region2useMiddle East & North Africa                                        6.37 ***
+                                                                                            (0.88)   
+Both: genderUnknown:region2useMiddle East & North Africa                                     8.01 ***
+                                                                                            (0.77)   
+Both: genderMale:region2useNorth America                                                     7.45 ***
+                                                                                            (0.81)   
+Both: genderUnknown:region2useNorth America                                                  9.10 ***
+                                                                                            (0.66)   
+Both: genderMale:region2useSouth Asia                                                        6.83 ***
+                                                                                            (0.88)   
+Both: genderUnknown:region2useSouth Asia                                                     7.84 ***
+                                                                                            (0.67)   
+Both: genderMale:region2useUSA                                                               6.52 ***
+                                                                                            (0.73)   
+Both: genderUnknown:region2useUSA                                                            8.37 ***
+                                                                                            (0.31)   
+Both: genderMale:region2useZAF                                                               7.46 ***
+                                                                                            (1.36)   
+Both: genderUnknown:region2useZAF                                                           -5.50 ***
+                                                                                            (0.74)   
+Both: ctrl_obs_2catTalents:genderMale:region2useBRA                                         -6.00 ***
+                                                                                            (1.41)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useBRA                                      -3.08    
+                                                                                                     
+Both: ctrl_obs_2catTalents:genderMale:region2useCHN                                         -6.41 ***
+                                                                                            (0.79)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useCHN                                       3.95 ***
+                                                                                            (0.50)   
+Both: ctrl_obs_2catTalents:genderMale:region2useEast Asia & Pacific                         -6.02 ***
+                                                                                            (0.77)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useEast Asia & Pacific                       3.50 ***
+                                                                                            (0.50)   
+Both: ctrl_obs_2catTalents:genderMale:region2useEurope & Central Asia                       -6.30 ***
+                                                                                            (0.74)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useEurope & Central Asia                     2.81 ***
+                                                                                            (0.47)   
+Both: ctrl_obs_2catTalents:genderMale:region2useLatin America & Caribbean                   -6.76 ***
+                                                                                            (1.61)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useLatin America & Caribbean                 4.03 *  
+                                                                                            (2.04)   
+Both: ctrl_obs_2catTalents:genderMale:region2useMiddle East & North Africa                  -6.43 ***
+                                                                                            (1.10)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useMiddle East & North Africa                2.66 *  
+                                                                                            (1.14)   
+Both: ctrl_obs_2catTalents:genderMale:region2useNorth America                               -6.35 ***
+                                                                                            (0.93)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useNorth America                             3.07 ***
+                                                                                            (0.88)   
+Both: ctrl_obs_2catTalents:genderMale:region2useSouth Asia                                  -6.16 ***
+                                                                                            (1.37)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useSouth Asia                              -20.47 ***
+                                                                                            (0.00)   
+Both: ctrl_obs_2catTalents:genderMale:region2useUSA                                         -6.47 ***
+                                                                                            (0.75)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useUSA                                       2.77 ***
+                                                                                            (0.45)   
+Both: ctrl_obs_2catTalents:genderMale:region2useZAF                                         -6.20 ***
+                                                                                            (1.77)   
+Both: ctrl_obs_2catTalents:genderUnknown:region2useZAF                                      17.64 ***
+                                                                                            (0.74)   
+Internal: (Intercept)                                                                       -1.42 *  
+                                                                                            (0.65)   
+Internal: ctrl_obs_2catTalents                                                             -10.01 ***
+                                                                                            (0.60)   
+Internal: genderMale                                                                        -2.49 ***
+                                                                                            (0.35)   
+Internal: genderUnknown                                                                     -8.86 ***
+                                                                                            (0.20)   
+Internal: region2useBRA                                                                     -1.10    
+                                                                                            (0.70)   
+Internal: region2useCHN                                                                     -1.47 *  
+                                                                                            (0.65)   
+Internal: region2useEast Asia & Pacific                                                     -0.94    
+                                                                                            (0.65)   
+Internal: region2useEurope & Central Asia                                                   -1.34 *  
+                                                                                            (0.64)   
+Internal: region2useLatin America & Caribbean                                               -0.96    
+                                                                                            (0.79)   
+Internal: region2useMiddle East & North Africa                                              -1.78 *  
+                                                                                            (0.82)   
+Internal: region2useNorth America                                                           -1.65 *  
+                                                                                            (0.69)   
+Internal: region2useSouth Asia                                                              -1.04    
+                                                                                            (0.74)   
+Internal: region2useUSA                                                                     -0.09    
+                                                                                            (0.64)   
+Internal: region2useZAF                                                                     -1.67    
+                                                                                            (1.22)   
+Internal: acadmic_age                                                                        0.09 ***
+                                                                                            (0.01)   
+Internal: ctrl_obs_2catTalents:genderMale                                                   11.45 ***
+                                                                                            (0.60)   
+Internal: ctrl_obs_2catTalents:genderUnknown                                                -2.52 ***
+                                                                                            (0.30)   
+Internal: ctrl_obs_2catTalents:region2useBRA                                                 9.52 ***
+                                                                                            (0.81)   
+Internal: ctrl_obs_2catTalents:region2useCHN                                                 9.75 ***
+                                                                                            (0.63)   
+Internal: ctrl_obs_2catTalents:region2useEast Asia & Pacific                                 9.86 ***
+                                                                                            (0.62)   
+Internal: ctrl_obs_2catTalents:region2useEurope & Central Asia                               9.63 ***
+                                                                                            (0.61)   
+Internal: ctrl_obs_2catTalents:region2useLatin America & Caribbean                           9.84 ***
+                                                                                            (1.33)   
+Internal: ctrl_obs_2catTalents:region2useMiddle East & North Africa                          9.84 ***
+                                                                                            (1.05)   
+Internal: ctrl_obs_2catTalents:region2useNorth America                                       9.81 ***
+                                                                                            (0.73)   
+Internal: ctrl_obs_2catTalents:region2useSouth Asia                                          8.69 ***
+                                                                                            (1.18)   
+Internal: ctrl_obs_2catTalents:region2useUSA                                                10.05 ***
+                                                                                            (0.61)   
+Internal: ctrl_obs_2catTalents:region2useZAF                                               -17.08 ***
+                                                                                            (0.75)   
+Internal: genderMale:region2useBRA                                                           2.85 ***
+                                                                                            (0.48)   
+Internal: genderUnknown:region2useBRA                                                       10.18 ***
+                                                                                            (0.58)   
+Internal: genderMale:region2useCHN                                                           2.76 ***
+                                                                                            (0.38)   
+Internal: genderUnknown:region2useCHN                                                        9.06 ***
+                                                                                            (0.26)   
+Internal: genderMale:region2useEast Asia & Pacific                                           2.70 ***
+                                                                                            (0.37)   
+Internal: genderUnknown:region2useEast Asia & Pacific                                        8.89 ***
+                                                                                            (0.27)   
+Internal: genderMale:region2useEurope & Central Asia                                         2.39 ***
+                                                                                            (0.36)   
+Internal: genderUnknown:region2useEurope & Central Asia                                      8.90 ***
+                                                                                            (0.27)   
+Internal: genderMale:region2useLatin America & Caribbean                                     2.39 ***
+                                                                                            (0.61)   
+Internal: genderUnknown:region2useLatin America & Caribbean                                  7.93 ***
+                                                                                            (1.10)   
+Internal: genderMale:region2useMiddle East & North Africa                                    2.71 ***
+                                                                                            (0.64)   
+Internal: genderUnknown:region2useMiddle East & North Africa                                 7.89 ***
+                                                                                            (1.08)   
+Internal: genderMale:region2useNorth America                                                 2.63 ***
+                                                                                            (0.47)   
+Internal: genderUnknown:region2useNorth America                                              9.52 ***
+                                                                                            (0.59)   
+Internal: genderMale:region2useSouth Asia                                                    2.32 ***
+                                                                                            (0.54)   
+Internal: genderUnknown:region2useSouth Asia                                                 8.01 ***
+                                                                                            (0.61)   
+Internal: genderMale:region2useUSA                                                           2.39 ***
+                                                                                            (0.36)   
+Internal: genderUnknown:region2useUSA                                                        8.58 ***
+                                                                                            (0.25)   
+Internal: genderMale:region2useZAF                                                           2.42    
+                                                                                            (1.29)   
+Internal: genderUnknown:region2useZAF                                                       -9.41 ***
+                                                                                            (0.00)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useBRA                                    -11.56 ***
+                                                                                            (0.86)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useBRA                                   0.98    
+                                                                                            (1.25)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useCHN                                    -11.51 ***
+                                                                                            (0.64)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useCHN                                   2.50 ***
+                                                                                            (0.38)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useEast Asia & Pacific                    -11.25 ***
+                                                                                            (0.63)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useEast Asia & Pacific                   2.30 ***
+                                                                                            (0.38)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useEurope & Central Asia                  -10.99 ***
+                                                                                            (0.62)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useEurope & Central Asia                 2.74 ***
+                                                                                            (0.38)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useLatin America & Caribbean              -11.35 ***
+                                                                                            (1.41)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useLatin America & Caribbean           -10.55 ***
+                                                                                            (0.00)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useMiddle East & North Africa             -11.20 ***
+                                                                                            (1.08)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useMiddle East & North Africa            3.94 ** 
+                                                                                            (1.38)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useNorth America                          -10.74 ***
+                                                                                            (0.77)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useNorth America                         1.79 *  
+                                                                                            (0.85)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useSouth Asia                             -10.22 ***
+                                                                                            (1.22)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useSouth Asia                            4.73 ***
+                                                                                            (1.22)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useUSA                                    -11.18 ***
+                                                                                            (0.62)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useUSA                                   2.74 ***
+                                                                                            (0.35)   
+Internal: ctrl_obs_2catTalents:genderMale:region2useZAF                                     15.77 ***
+                                                                                            (0.75)   
+Internal: ctrl_obs_2catTalents:genderUnknown:region2useZAF                                  -2.06 ***
+                                                                                            (0.00)   
+International: (Intercept)                                                                   0.14    
+                                                                                            (0.59)   
+International: ctrl_obs_2catTalents                                                         -2.74 ** 
+                                                                                            (0.85)   
+International: genderMale                                                                  -18.40 ***
+                                                                                            (0.59)   
+International: genderUnknown                                                                -1.50    
+                                                                                            (1.00)   
+International: region2useBRA                                                                -2.89 ***
+                                                                                            (0.70)   
+International: region2useCHN                                                                -2.96 ***
+                                                                                            (0.61)   
+International: region2useEast Asia & Pacific                                                -2.22 ***
+                                                                                            (0.60)   
+International: region2useEurope & Central Asia                                              -2.18 ***
+                                                                                            (0.59)   
+International: region2useLatin America & Caribbean                                          -1.03    
+                                                                                            (0.68)   
+International: region2useMiddle East & North Africa                                         -1.57 *  
+                                                                                            (0.67)   
+International: region2useNorth America                                                      -2.12 ***
+                                                                                            (0.63)   
+International: region2useSouth Asia                                                         -1.72 *  
+                                                                                            (0.67)   
+International: region2useUSA                                                                -2.26 ***
+                                                                                            (0.59)   
+International: region2useZAF                                                                -2.01 *  
+                                                                                            (1.02)   
+International: acadmic_age                                                                   0.07 ***
+                                                                                            (0.01)   
+International: ctrl_obs_2catTalents:genderMale                                              20.15 ***
+                                                                                            (0.59)   
+International: ctrl_obs_2catTalents:genderUnknown                                           -7.02 ***
+                                                                                            (0.25)   
+International: ctrl_obs_2catTalents:region2useBRA                                            3.19 ** 
+                                                                                            (1.04)   
+International: ctrl_obs_2catTalents:region2useCHN                                            2.74 ** 
+                                                                                            (0.88)   
+International: ctrl_obs_2catTalents:region2useEast Asia & Pacific                            2.40 ** 
+                                                                                            (0.87)   
+International: ctrl_obs_2catTalents:region2useEurope & Central Asia                          2.93 ***
+                                                                                            (0.86)   
+International: ctrl_obs_2catTalents:region2useLatin America & Caribbean                      2.32    
+                                                                                            (1.33)   
+International: ctrl_obs_2catTalents:region2useMiddle East & North Africa                     2.93 ** 
+                                                                                            (1.01)   
+International: ctrl_obs_2catTalents:region2useNorth America                                  3.08 ***
+                                                                                            (0.91)   
+International: ctrl_obs_2catTalents:region2useSouth Asia                                     2.84 ** 
+                                                                                            (1.05)   
+International: ctrl_obs_2catTalents:region2useUSA                                            2.46 ** 
+                                                                                            (0.87)   
+International: ctrl_obs_2catTalents:region2useZAF                                            2.64    
+                                                                                            (1.37)   
+International: genderMale:region2useBRA                                                     19.03 ***
+                                                                                            (0.73)   
+International: genderUnknown:region2useBRA                                                   1.26    
+                                                                                            (1.48)   
+International: genderMale:region2useCHN                                                     18.87 ***
+                                                                                            (0.61)   
+International: genderUnknown:region2useCHN                                                   1.46    
+                                                                                            (1.02)   
+International: genderMale:region2useEast Asia & Pacific                                     18.48 ***
+                                                                                            (0.60)   
+International: genderUnknown:region2useEast Asia & Pacific                                   1.50    
+                                                                                            (1.02)   
+International: genderMale:region2useEurope & Central Asia                                   18.47 ***
+                                                                                            (0.59)   
+International: genderUnknown:region2useEurope & Central Asia                                 1.85    
+                                                                                            (1.01)   
+International: genderMale:region2useLatin America & Caribbean                               18.09 ***
+                                                                                            (0.71)   
+International: genderUnknown:region2useLatin America & Caribbean                             0.99    
+                                                                                            (1.24)   
+International: genderMale:region2useMiddle East & North Africa                              18.59 ***
+                                                                                            (0.69)   
+International: genderUnknown:region2useMiddle East & North Africa                            1.23    
+                                                                                            (1.15)   
+International: genderMale:region2useNorth America                                           19.02 ***
+                                                                                            (0.64)   
+International: genderUnknown:region2useNorth America                                         2.17    
+                                                                                            (1.11)   
+International: genderMale:region2useSouth Asia                                              18.49 ***
+                                                                                            (0.69)   
+International: genderUnknown:region2useSouth Asia                                            0.89    
+                                                                                            (1.11)   
+International: genderMale:region2useUSA                                                     18.29 ***
+                                                                                            (0.60)   
+International: genderUnknown:region2useUSA                                                   1.28    
+                                                                                            (1.02)   
+International: genderMale:region2useZAF                                                     18.34 ***
+                                                                                            (1.13)   
+International: genderUnknown:region2useZAF                                                 -14.39 ***
+                                                                                            (0.82)   
+International: ctrl_obs_2catTalents:genderMale:region2useBRA                               -20.71 ***
+                                                                                            (0.89)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useBRA                              7.97 ***
+                                                                                            (1.32)   
+International: ctrl_obs_2catTalents:genderMale:region2useCHN                               -20.24 ***
+                                                                                            (0.64)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useCHN                              7.27 ***
+                                                                                            (0.37)   
+International: ctrl_obs_2catTalents:genderMale:region2useEast Asia & Pacific               -19.80 ***
+                                                                                            (0.63)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useEast Asia & Pacific              7.23 ***
+                                                                                            (0.36)   
+International: ctrl_obs_2catTalents:genderMale:region2useEurope & Central Asia             -19.94 ***
+                                                                                            (0.60)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useEurope & Central Asia            7.00 ***
+                                                                                            (0.32)   
+International: ctrl_obs_2catTalents:genderMale:region2useLatin America & Caribbean         -19.63 ***
+                                                                                            (1.22)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useLatin America & Caribbean      -14.39 ***
+                                                                                            (0.00)   
+International: ctrl_obs_2catTalents:genderMale:region2useMiddle East & North Africa        -20.49 ***
+                                                                                            (0.82)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useMiddle East & North Africa       6.54 ***
+                                                                                            (0.84)   
+International: ctrl_obs_2catTalents:genderMale:region2useNorth America                     -20.07 ***
+                                                                                            (0.69)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useNorth America                    6.43 ***
+                                                                                            (0.64)   
+International: ctrl_obs_2catTalents:genderMale:region2useSouth Asia                        -20.38 ***
+                                                                                            (0.89)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useSouth Asia                       7.19 ***
+                                                                                            (0.84)   
+International: ctrl_obs_2catTalents:genderMale:region2useUSA                               -19.83 ***
+                                                                                            (0.62)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useUSA                              7.55 ***
+                                                                                            (0.37)   
+International: ctrl_obs_2catTalents:genderMale:region2useZAF                               -18.83 ***
+                                                                                            (1.37)   
+International: ctrl_obs_2catTalents:genderUnknown:region2useZAF                             22.95 ***
+                                                                                            (0.82)   
+-----------------------------------------------------------------------------------------------------
+AIC                                                                                      68691.40    
+BIC                                                                                      70350.53    
+Log Likelihood                                                                          -34144.70    
+Deviance                                                                                 68289.40    
+Num. obs.                                                                                28406       
+K                                                                                            4       
+=====================================================================================================
+*** p < 0.001; ** p < 0.01; * p < 0.05
+Warning message:
+In sqrt(diag(vc)) : NaNs produced

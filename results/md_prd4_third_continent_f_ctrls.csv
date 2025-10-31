@@ -1,0 +1,217 @@
+x,predicted,response.level,group,facet
+Others,0.2574122648061443,Non mobile,Female,Africa
+Others,0.47254617186108966,Non mobile,Female,Americas
+Others,0.44966608730797447,Non mobile,Female,Asia
+Others,0.5447223731647229,Non mobile,Female,BRA
+Others,0.5952773986739502,Non mobile,Female,CHN
+Others,0.5096210807034783,Non mobile,Female,Europe
+Others,0.4462963695857651,Non mobile,Female,Oceania
+Others,0.33663273189965376,Non mobile,Female,USA
+Others,0.4849183609790765,Non mobile,Female,ZAF
+Others,1.9727174306192997e-5,Both,Female,Africa
+Others,0.07537889336917522,Both,Female,Americas
+Others,0.11187502327512917,Both,Female,Asia
+Others,0.08147611563365285,Both,Female,BRA
+Others,0.09037013565625182,Both,Female,CHN
+Others,0.07096574165418724,Both,Female,Europe
+Others,0.14220584699148237,Both,Female,Oceania
+Others,0.091409799702335,Both,Female,USA
+Others,0.12571639996273862,Both,Female,ZAF
+Others,0.2274732862352243,Internal,Female,Africa
+Others,0.14918357089909806,Internal,Female,Americas
+Others,0.23403718243781987,Internal,Female,Asia
+Others,0.2534210947474677,Internal,Female,BRA
+Others,0.19215319828391556,Internal,Female,CHN
+Others,0.1887988939559822,Internal,Female,Europe
+Others,0.17850186402135404,Internal,Female,Oceania
+Others,0.4319830498747308,Internal,Female,USA
+Others,0.12973275473452991,Internal,Female,ZAF
+Others,0.5150947217843252,International,Female,Africa
+Others,0.302891363870637,International,Female,Americas
+Others,0.20442170697907638,International,Female,Asia
+Others,0.12038041645415642,International,Female,BRA
+Others,0.12219926738588237,International,Female,CHN
+Others,0.2306142836863522,International,Female,Europe
+Others,0.23299591940139855,International,Female,Oceania
+Others,0.13997441852328044,International,Female,USA
+Others,0.2596324843236551,International,Female,ZAF
+Others,0.5258617949658217,Non mobile,Male,Africa
+Others,0.38195860771747553,Non mobile,Male,Americas
+Others,0.43356056332391674,Non mobile,Male,Asia
+Others,0.457587030366647,Non mobile,Male,BRA
+Others,0.5192970375983825,Non mobile,Male,CHN
+Others,0.5115001360991742,Non mobile,Male,Europe
+Others,0.3073189405945677,Non mobile,Male,Oceania
+Others,0.36019540349079476,Non mobile,Male,USA
+Others,0.42732525318867226,Non mobile,Male,ZAF
+Others,0.03116672273815634,Both,Male,Africa
+Others,0.12125298005215332,Both,Male,Americas
+Others,0.0827155459219105,Both,Male,Asia
+Others,0.05034441495312385,Both,Male,BRA
+Others,0.0905635270105625,Both,Male,CHN
+Others,0.07733644157321111,Both,Male,Europe
+Others,0.1878584495128631,Both,Male,Oceania
+Others,0.08972071642949599,Both,Male,USA
+Others,0.25474584925125265,Both,Male,ZAF
+Others,0.11069290973663437,Internal,Male,Africa
+Others,0.13964670387639938,Internal,Male,Americas
+Others,0.26773264067711067,Internal,Male,Asia
+Others,0.30337254497900573,Internal,Male,BRA
+Others,0.21925802933613317,Internal,Male,CHN
+Others,0.16603592162930123,Internal,Male,Europe
+Others,0.17777120386653023,Internal,Male,Oceania
+Others,0.416370188119353,Internal,Male,USA
+Others,0.10502376347836904,Internal,Male,ZAF
+Others,0.33227857255938753,International,Male,Africa
+Others,0.35714170835397174,International,Male,Americas
+Others,0.21599125007706219,International,Male,Asia
+Others,0.18869600970122352,International,Male,BRA
+Others,0.17088140605492189,International,Male,CHN
+Others,0.24512750069831357,International,Male,Europe
+Others,0.3270514060260389,International,Male,Oceania
+Others,0.13371369196035632,International,Male,USA
+Others,0.21290513408170592,International,Male,ZAF
+Others,0.3215544692418553,Non mobile,Unknown,Africa
+Others,0.3741924764786594,Non mobile,Unknown,Americas
+Others,0.4841315178878936,Non mobile,Unknown,Asia
+Others,0.3433484489600919,Non mobile,Unknown,BRA
+Others,0.5922003419503619,Non mobile,Unknown,CHN
+Others,0.4556465461513025,Non mobile,Unknown,Europe
+Others,0.33217847148676327,Non mobile,Unknown,Oceania
+Others,0.37648157824042555,Non mobile,Unknown,USA
+Others,0.999999999981648,Non mobile,Unknown,ZAF
+Others,0.1663077293881436,Both,Unknown,Africa
+Others,0.1294352641758118,Both,Unknown,Americas
+Others,0.07877713200331785,Both,Unknown,Asia
+Others,4.143659300145239e-13,Both,Unknown,BRA
+Others,0.05725771198371815,Both,Unknown,CHN
+Others,0.08859830684820585,Both,Unknown,Europe
+Others,0.13186177968606533,Both,Unknown,Oceania
+Others,0.13191620473230212,Both,Unknown,USA
+Others,5.096967593147353e-13,Both,Unknown,ZAF
+Others,6.634228398044404e-8,Internal,Unknown,Africa
+Others,0.15703097484102144,Internal,Unknown,Americas
+Others,0.23124541772603607,Internal,Unknown,Asia
+Others,0.5974969734159846,Internal,Unknown,BRA
+Others,0.23345120299736744,Internal,Unknown,CHN
+Others,0.17292598483451616,Internal,Unknown,Europe
+Others,0.22383714266400298,Internal,Unknown,Oceania
+Others,0.366608184270455,Internal,Unknown,USA
+Others,9.852682494987373e-15,Internal,Unknown,ZAF
+Others,0.5121377350277171,International,Unknown,Africa
+Others,0.33934128450450735,International,Unknown,Americas
+Others,0.20584593238275248,International,Unknown,Asia
+Others,0.059154577623509084,International,Unknown,BRA
+Others,0.11709074306855262,International,Unknown,CHN
+Others,0.28282916216597553,International,Unknown,Europe
+Others,0.3121226061631684,International,Unknown,Oceania
+Others,0.12499403275681728,International,Unknown,USA
+Others,1.7832612846829548e-11,International,Unknown,ZAF
+Talents,0.660223044900197,Non mobile,Female,Africa
+Talents,0.4857150150113824,Non mobile,Female,Americas
+Talents,0.5558709473070158,Non mobile,Female,Asia
+Talents,0.5920738910674048,Non mobile,Female,BRA
+Talents,0.6487638346095623,Non mobile,Female,CHN
+Talents,0.5167059325291511,Non mobile,Female,Europe
+Talents,0.39634621627544964,Non mobile,Female,Oceania
+Talents,0.33989827553075724,Non mobile,Female,USA
+Talents,0.6143316917350732,Non mobile,Female,ZAF
+Talents,0.16964900200520253,Both,Female,Africa
+Talents,0.06914830299923798,Both,Female,Americas
+Talents,0.05279101123768032,Both,Female,Asia
+Talents,0.033213003074350704,Both,Female,BRA
+Talents,0.0572153663834043,Both,Female,CHN
+Talents,0.07057191130825625,Both,Female,Europe
+Talents,0.1375296837001472,Both,Female,Oceania
+Talents,0.1008977745169597,Both,Female,USA
+Talents,0.09020547271415277,Both,Female,ZAF
+Talents,1.6887590453649704e-11,Internal,Female,Africa
+Talents,0.11252263812993449,Internal,Female,Americas
+Talents,0.2281733839967468,Internal,Female,Asia
+Talents,0.169281924974816,Internal,Female,BRA
+Talents,0.1607690676756203,Internal,Female,CHN
+Talents,0.12949209623233932,Internal,Female,Europe
+Talents,0.21635779843367864,Internal,Female,Oceania
+Talents,0.4524719932858692,Internal,Female,USA
+Talents,2.4764063319723444e-22,Internal,Female,ZAF
+Talents,0.17012795307771275,International,Female,Africa
+Talents,0.3326140438594451,International,Female,Americas
+Talents,0.163164657458557,International,Female,Asia
+Talents,0.20543118088342838,International,Female,BRA
+Talents,0.1332517313314131,International,Female,CHN
+Talents,0.2832300599302534,International,Female,Europe
+Talents,0.2497663015907245,International,Female,Oceania
+Talents,0.10673195666641394,International,Female,USA
+Talents,0.29546283555077407,International,Female,ZAF
+Talents,0.30939334034559046,Non mobile,Male,Africa
+Talents,0.3007367268906422,Non mobile,Male,Americas
+Talents,0.4262602521049755,Non mobile,Male,Asia
+Talents,0.5464996084060336,Non mobile,Male,BRA
+Talents,0.5689539324650398,Non mobile,Male,CHN
+Talents,0.43274067833852103,Non mobile,Male,Europe
+Talents,0.32611329471034434,Non mobile,Male,Oceania
+Talents,0.2993173198066182,Non mobile,Male,USA
+Talents,0.27751076150992604,Non mobile,Male,ZAF
+Talents,0.13358263468165796,Both,Male,Africa
+Talents,0.14913723570742657,Both,Male,Americas
+Talents,0.09929302130006279,Both,Male,Asia
+Talents,0.050811105101415024,Both,Male,BRA
+Talents,0.08663502985576323,Both,Male,CHN
+Talents,0.103901238300944,Both,Male,Europe
+Talents,0.18456548308866874,Both,Male,Oceania
+Talents,0.11550389052290559,Both,Male,USA
+Talents,0.177326653998323,Both,Male,ZAF
+Talents,0.11466989485856914,Internal,Male,Africa
+Talents,0.15198854903409822,Internal,Male,Americas
+Talents,0.2790070759756711,Internal,Male,Asia
+Talents,0.1997007103382763,Internal,Male,BRA
+Talents,0.17381576278019573,Internal,Male,CHN
+Talents,0.1509184494463304,Internal,Male,Europe
+Talents,0.16563992615125522,Internal,Male,Oceania
+Talents,0.4697652581509857,Internal,Male,USA
+Talents,0.07765130707229274,Internal,Male,ZAF
+Talents,0.44235413011418245,International,Male,Africa
+Talents,0.39813748836783286,International,Male,Americas
+Talents,0.19543965061929072,International,Male,Asia
+Talents,0.20298857615427504,International,Male,BRA
+Talents,0.1705952748990014,International,Male,CHN
+Talents,0.3124396339142045,International,Male,Europe
+Talents,0.32368129604973184,International,Male,Oceania
+Talents,0.11541353151949055,International,Male,USA
+Talents,0.46751127741945825,International,Male,ZAF
+Talents,0.5015107902390691,Non mobile,Unknown,Africa
+Talents,0.41981942266601513,Non mobile,Unknown,Americas
+Talents,0.5303056817974339,Non mobile,Unknown,Asia
+Talents,0.5154951670853973,Non mobile,Unknown,BRA
+Talents,0.5796798563765334,Non mobile,Unknown,CHN
+Talents,0.44388301737818064,Non mobile,Unknown,Europe
+Talents,0.22864186829043812,Non mobile,Unknown,Oceania
+Talents,0.3280187162634921,Non mobile,Unknown,USA
+Talents,0.5004684649126195,Non mobile,Unknown,ZAF
+Talents,0.24872089136744036,Both,Unknown,Africa
+Talents,0.20238166588407577,Both,Unknown,Americas
+Talents,0.07376996418746973,Both,Unknown,Asia
+Talents,1.0896776083812546e-19,Both,Unknown,BRA
+Talents,0.10125396056748001,Both,Unknown,CHN
+Talents,0.08102171884091948,Both,Unknown,Europe
+Talents,0.2495854256511558,Both,Unknown,Oceania
+Talents,0.12094990718066703,Both,Unknown,USA
+Talents,0.24933294852899984,Both,Unknown,ZAF
+Talents,0.24976829849572868,Internal,Unknown,Africa
+Talents,0.08334197371408006,Internal,Unknown,Americas
+Talents,0.20368102335088825,Internal,Unknown,Asia
+Talents,0.1185401162332642,Internal,Unknown,BRA
+Talents,0.17283188509627428,Internal,Unknown,CHN
+Talents,0.13569951892291382,Internal,Unknown,Europe
+Talents,0.21081684316442242,Internal,Unknown,Oceania
+Talents,0.4112764059098742,Internal,Unknown,USA
+Talents,1.640375856134621e-20,Internal,Unknown,ZAF
+Talents,1.9897761791501044e-8,International,Unknown,Africa
+Talents,0.29445693773582915,International,Unknown,Americas
+Talents,0.1922433306642082,International,Unknown,Asia
+Talents,0.36596471668133845,International,Unknown,BRA
+Talents,0.14623429795971235,International,Unknown,CHN
+Talents,0.33939574485798607,International,Unknown,Europe
+Talents,0.3109558628939837,International,Unknown,Oceania
+Talents,0.1397549706459665,International,Unknown,USA
+Talents,0.2501985865583806,International,Unknown,ZAF

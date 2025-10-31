@@ -1,0 +1,15 @@
+2025-10-31 15:50:21,543 - root - INFO - These items are in the environment: ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'gg', 'label_number', 'lg', 'pd', 'six_colors_colorblind']
+2025-10-31 15:50:21,549 - root - INFO - Arguments received from command line: 
+ Namespace(input=['G:/ali/talents/results/md_prd4_third_WBregion_f_ctrls.csv'], output=['G:/ali/talents/results/figures/Figure_4_third_WBregion.png'])
+2025-10-31 15:50:21,557 - root - INFO - Data read from 'G:/ali/talents/results/md_prd4_third_WBregion_f_ctrls.csv'
+2025-10-31 15:50:21,565 - root - INFO - A few rows: '           x  ...                       facet
+259  Talents  ...  Middle East & North Africa
+260  Talents  ...               North America
+261  Talents  ...                  South Asia
+262  Talents  ...                         USA
+263  Talents  ...                         ZAF
+
+[5 rows x 5 columns]'
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:615: PlotnineWarning: Saving 7 x 8 in image.
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:616: PlotnineWarning: Filename: G:/ali/talents/results/figures/Figure_4_third_WBregion.png
+2025-10-31 15:50:26,017 - root - INFO - Figure exported in: 'G:/ali/talents/results/figures/Figure_4_third_WBregion.png'

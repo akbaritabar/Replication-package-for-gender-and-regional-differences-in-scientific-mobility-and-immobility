@@ -1,0 +1,5 @@
+# Ignore nothing here, include all
+!*
+EXTRA_OLD_DELETE/
+__pycache__/
+.Rhistory

@@ -1,0 +1,265 @@
+x,predicted,response.level,group,facet
+Others,0.15786257926134437,Non mobile,Female,Sub-Saharan Africa
+Others,0.5572220452241211,Non mobile,Female,BRA
+Others,0.5881785011883651,Non mobile,Female,CHN
+Others,0.4630262904347778,Non mobile,Female,East Asia & Pacific
+Others,0.5066671075765073,Non mobile,Female,Europe & Central Asia
+Others,0.3304960349219773,Non mobile,Female,Latin America & Caribbean
+Others,0.4563462436284777,Non mobile,Female,Middle East & North Africa
+Others,0.5075144627555518,Non mobile,Female,North America
+Others,0.4431474032963347,Non mobile,Female,South Asia
+Others,0.34263427698751003,Non mobile,Female,USA
+Others,0.48765186845338204,Non mobile,Female,ZAF
+Others,1.5133715230954519e-5,Both,Female,Sub-Saharan Africa
+Others,0.07388209834880147,Both,Female,BRA
+Others,0.07588674548173678,Both,Female,CHN
+Others,0.10943380622951952,Both,Female,East Asia & Pacific
+Others,0.0753178639283006,Both,Female,Europe & Central Asia
+Others,0.051501376181306034,Both,Female,Latin America & Caribbean
+Others,0.1067323557572749,Both,Female,Middle East & North Africa
+Others,0.09171961667294556,Both,Female,North America
+Others,0.11879740559394072,Both,Female,South Asia
+Others,0.09459331887229037,Both,Female,USA
+Others,0.12422777479105696,Both,Female,ZAF
+Others,0.2204087081189279,Internal,Female,Sub-Saharan Africa
+Others,0.260139207832947,Internal,Female,BRA
+Others,0.19862299209214274,Internal,Female,CHN
+Others,0.22922220891428607,Internal,Female,East Asia & Pacific
+Others,0.18507341307540856,Internal,Female,Europe & Central Asia
+Others,0.15543847362184376,Internal,Female,Latin America & Caribbean
+Others,0.10882881719528725,Internal,Female,Middle East & North Africa
+Others,0.14680586107121235,Internal,Female,North America
+Others,0.17995084879259884,Internal,Female,South Asia
+Others,0.4268260447046212,Internal,Female,USA
+Others,0.12898876783181312,Internal,Female,ZAF
+Others,0.6217135789044967,International,Female,Sub-Saharan Africa
+Others,0.1087566485941304,International,Female,BRA
+Others,0.13731176123775532,International,Female,CHN
+Others,0.19831769442141664,International,Female,East Asia & Pacific
+Others,0.23294161541978345,International,Female,Europe & Central Asia
+Others,0.4625641152748729,International,Female,Latin America & Caribbean
+Others,0.3280925834189601,International,Female,Middle East & North Africa
+Others,0.25396005950029044,International,Female,North America
+Others,0.25810434231712576,International,Female,South Asia
+Others,0.13594635943557826,International,Female,USA
+Others,0.25913158892374777,International,Female,ZAF
+Others,0.8107274313565195,Non mobile,Male,Sub-Saharan Africa
+Others,0.44071473971058167,Non mobile,Male,BRA
+Others,0.5339568473495019,Non mobile,Male,CHN
+Others,0.4289662584772097,Non mobile,Male,East Asia & Pacific
+Others,0.505541183310965,Non mobile,Male,Europe & Central Asia
+Others,0.36167452642289194,Non mobile,Male,Latin America & Caribbean
+Others,0.39897353248020667,Non mobile,Male,Middle East & North Africa
+Others,0.39379357102309603,Non mobile,Male,North America
+Others,0.40742290794242936,Non mobile,Male,South Asia
+Others,0.36079998336299224,Non mobile,Male,USA
+Others,0.4264850036743156,Non mobile,Male,ZAF
+Others,6.147075875390701e-7,Both,Male,Sub-Saharan Africa
+Others,0.04921509885333842,Both,Male,BRA
+Others,0.08605060885077112,Both,Male,CHN
+Others,0.08847130806549883,Both,Male,East Asia & Pacific
+Others,0.07665026963052879,Both,Male,Europe & Central Asia
+Others,0.08352949872244785,Both,Male,Latin America & Caribbean
+Others,0.09683103097151255,Both,Male,Middle East & North Africa
+Others,0.13913918102651146,Both,Male,North America
+Others,0.12529530769346364,Both,Male,South Asia
+Others,0.09478769840870842,Both,Male,USA
+Others,0.2552648250460541,Both,Male,ZAF
+Others,0.09339781952650093,Internal,Male,Sub-Saharan Africa
+Others,0.3206009381452865,Internal,Male,BRA
+Others,0.224592194137692,Internal,Male,CHN
+Others,0.2862097490213615,Internal,Male,East Asia & Pacific
+Others,0.1705196549871396,Internal,Male,Europe & Central Asia
+Others,0.1738915577106632,Internal,Male,Latin America & Caribbean
+Others,0.10962543273126134,Internal,Male,Middle East & North Africa
+Others,0.11993209630228703,Internal,Male,North America
+Others,0.1651518528442389,Internal,Male,South Asia
+Others,0.41187522227249845,Internal,Male,USA
+Others,0.10530694308315341,Internal,Male,ZAF
+Others,0.0958741344093921,International,Male,Sub-Saharan Africa
+Others,0.18946922329079324,International,Male,BRA
+Others,0.15540034966203498,International,Male,CHN
+Others,0.19635268443593007,International,Male,East Asia & Pacific
+Others,0.2472888920713665,International,Male,Europe & Central Asia
+Others,0.380904417143997,International,Male,Latin America & Caribbean
+Others,0.39457000381701945,International,Male,Middle East & North Africa
+Others,0.34713515164810543,International,Male,North America
+Others,0.30212993151986806,International,Male,South Asia
+Others,0.1325370959558008,International,Male,USA
+Others,0.21294322819647707,International,Male,ZAF
+Others,0.9998752096005907,Non mobile,Unknown,Sub-Saharan Africa
+Others,0.3589048950572088,Non mobile,Unknown,BRA
+Others,0.530356850421708,Non mobile,Unknown,CHN
+Others,0.3367460632911952,Non mobile,Unknown,East Asia & Pacific
+Others,0.5609644591715872,Non mobile,Unknown,Europe & Central Asia
+Others,0.5199466975200048,Non mobile,Unknown,Latin America & Caribbean
+Others,0.4216362843586013,Non mobile,Unknown,Middle East & North Africa
+Others,0.17456058883736084,Non mobile,Unknown,North America
+Others,0.5051039201502172,Non mobile,Unknown,South Asia
+Others,0.3930393374845798,Non mobile,Unknown,USA
+Others,0.9999994903252971,Non mobile,Unknown,ZAF
+Others,7.75332037487893e-7,Both,Unknown,Sub-Saharan Africa
+Others,2.469727619901912e-8,Both,Unknown,BRA
+Others,0.06638401122010276,Both,Unknown,CHN
+Others,0.07424143629215739,Both,Unknown,East Asia & Pacific
+Others,0.06510030565727616,Both,Unknown,Europe & Central Asia
+Others,0.1541468395322783,Both,Unknown,Latin America & Caribbean
+Others,6.876873309646626e-8,Both,Unknown,Middle East & North Africa
+Others,0.15753539906785027,Both,Unknown,North America
+Others,0.20446874257667058,Both,Unknown,South Asia
+Others,0.025527650114588442,Both,Unknown,USA
+Others,5.076519940226568e-7,Both,Unknown,ZAF
+Others,7.40739544302736e-5,Internal,Unknown,Sub-Saharan Africa
+Others,0.6410950708488814,Internal,Unknown,BRA
+Others,0.23511590228903864,Internal,Unknown,CHN
+Others,0.3223275885122975,Internal,Unknown,East Asia & Pacific
+Others,0.10655038996565094,Internal,Unknown,Europe & Central Asia
+Others,0.16112601670108903,Internal,Unknown,Latin America & Caribbean
+Others,1.495043664150042e-10,Internal,Unknown,Middle East & North Africa
+Others,0.33030190538776616,Internal,Unknown,North America
+Others,0.07179101175604109,Internal,Unknown,South Asia
+Others,0.3811005015850816,Internal,Unknown,USA
+Others,1.9941933109305718e-9,Internal,Unknown,ZAF
+Others,4.994111294165773e-5,International,Unknown,Sub-Saharan Africa
+Others,9.396633724620853e-9,International,Unknown,BRA
+Others,0.16814323606915055,International,Unknown,CHN
+Others,0.26668491190434984,International,Unknown,East Asia & Pacific
+Others,0.26738484520548567,International,Unknown,Europe & Central Asia
+Others,0.164780446246628,International,Unknown,Latin America & Caribbean
+Others,0.5783636467231613,International,Unknown,Middle East & North Africa
+Others,0.33760210670702273,International,Unknown,North America
+Others,0.21863632551707116,International,Unknown,South Asia
+Others,0.20033251081575015,International,Unknown,USA
+Others,2.851572418953203e-11,International,Unknown,ZAF
+Talents,0.6605064909124231,Non mobile,Female,Sub-Saharan Africa
+Talents,0.5743592613766811,Non mobile,Female,BRA
+Talents,0.6174828615337159,Non mobile,Female,CHN
+Talents,0.5267114900403156,Non mobile,Female,East Asia & Pacific
+Talents,0.5077216101401031,Non mobile,Female,Europe & Central Asia
+Talents,0.37211656374330065,Non mobile,Female,Latin America & Caribbean
+Talents,0.44767174826459666,Non mobile,Female,Middle East & North Africa
+Talents,0.47314286902938657,Non mobile,Female,North America
+Talents,0.45541319082315945,Non mobile,Female,South Asia
+Talents,0.3430667934368581,Non mobile,Female,USA
+Talents,0.595017520889481,Non mobile,Female,ZAF
+Talents,0.1698308058774958,Both,Female,Sub-Saharan Africa
+Talents,0.03165908778672315,Both,Female,BRA
+Talents,0.08168837672464806,Both,Female,CHN
+Talents,0.0718644937395048,Both,Female,East Asia & Pacific
+Talents,0.06909464443845754,Both,Female,Europe & Central Asia
+Talents,0.24931502518967946,Both,Female,Latin America & Caribbean
+Talents,0.09724465903097597,Both,Female,Middle East & North Africa
+Talents,0.0800801841174479,Both,Female,North America
+Talents,0.056101472510092294,Both,Female,South Asia
+Talents,0.10936862982926669,Both,Female,USA
+Talents,0.07656886039116557,Both,Female,ZAF
+Talents,1.2246510005247243e-5,Internal,Female,Sub-Saharan Africa
+Talents,0.16292025368443433,Internal,Female,BRA
+Talents,0.1653234200134346,Internal,Female,CHN
+Talents,0.23778447503238354,Internal,Female,East Asia & Pacific
+Talents,0.13688084826639899,Internal,Female,Europe & Central Asia
+Talents,0.12612369864802309,Internal,Female,Latin America & Caribbean
+Talents,0.130165766614245,Internal,Female,Middle East & North Africa
+Talents,0.11980259952923474,Internal,Female,North America
+Talents,0.11000635071462997,Internal,Female,South Asia
+Talents,0.4394176343244164,Internal,Female,USA
+Talents,5.218748840943456e-12,Internal,Female,ZAF
+Talents,0.16965045670007595,International,Female,Sub-Saharan Africa
+Talents,0.2310613971521614,International,Female,BRA
+Talents,0.1355053417282015,International,Female,CHN
+Talents,0.16363954118779603,International,Female,East Asia & Pacific
+Talents,0.28630289715504026,International,Female,Europe & Central Asia
+Talents,0.25244471241899685,International,Female,Latin America & Caribbean
+Talents,0.3249178260901824,International,Female,Middle East & North Africa
+Talents,0.32697434732393077,International,Female,North America
+Talents,0.37847898595211826,International,Female,South Asia
+Talents,0.108146942409459,International,Female,USA
+Talents,0.3284136187141346,International,Female,ZAF
+Talents,0.3379025818695991,Non mobile,Male,Sub-Saharan Africa
+Talents,0.5550941284972678,Non mobile,Male,BRA
+Talents,0.5759574827689395,Non mobile,Male,CHN
+Talents,0.41804829762047,Non mobile,Male,East Asia & Pacific
+Talents,0.43266996717051676,Non mobile,Male,Europe & Central Asia
+Talents,0.31329540063659045,Non mobile,Male,Latin America & Caribbean
+Talents,0.3959220435427485,Non mobile,Male,Middle East & North Africa
+Talents,0.3058406836435086,Non mobile,Male,North America
+Talents,0.42740734476786707,Non mobile,Male,South Asia
+Talents,0.30043399081280225,Non mobile,Male,USA
+Talents,0.2881295291287478,Non mobile,Male,ZAF
+Talents,0.09214801124020054,Both,Male,Sub-Saharan Africa
+Talents,0.04877994839239931,Both,Male,BRA
+Talents,0.08506872723314265,Both,Male,CHN
+Talents,0.10554220559193812,Both,Male,East Asia & Pacific
+Talents,0.10506457610865068,Both,Male,Europe & Central Asia
+Talents,0.18618302600461836,Both,Male,Latin America & Caribbean
+Talents,0.1378844815005142,Both,Male,Middle East & North Africa
+Talents,0.14872001850832856,Both,Male,North America
+Talents,0.11965811605096947,Both,Male,South Asia
+Talents,0.11454825448873837,Both,Male,USA
+Talents,0.19325184352031075,Both,Male,ZAF
+Talents,0.14139809673096576,Internal,Male,Sub-Saharan Africa
+Talents,0.19155579108511603,Internal,Male,BRA
+Talents,0.173931302226605,Internal,Male,CHN
+Talents,0.28060216122299425,Internal,Male,East Asia & Pacific
+Talents,0.1513710480401255,Internal,Male,Europe & Central Asia
+Talents,0.1411720670799961,Internal,Male,Latin America & Caribbean
+Talents,0.12475270396088314,Internal,Male,Middle East & North Africa
+Talents,0.14491995363115565,Internal,Male,North America
+Talents,0.1657415415518037,Internal,Male,South Asia
+Talents,0.46685687586858304,Internal,Male,USA
+Talents,0.0739283945014805,Internal,Male,ZAF
+Talents,0.4285513101592347,International,Male,Sub-Saharan Africa
+Talents,0.20457013202521684,International,Male,BRA
+Talents,0.16504248777131272,International,Male,CHN
+Talents,0.19580733556459756,International,Male,East Asia & Pacific
+Talents,0.3108944086807071,International,Male,Europe & Central Asia
+Talents,0.359349506278795,International,Male,Latin America & Caribbean
+Talents,0.3414407709958542,International,Male,Middle East & North Africa
+Talents,0.40051934421700713,International,Male,North America
+Talents,0.2871929976293598,International,Male,South Asia
+Talents,0.11816087882987635,International,Male,USA
+Talents,0.444690232849461,International,Male,ZAF
+Talents,0.9999981368415515,Non mobile,Unknown,Sub-Saharan Africa
+Talents,0.3504493681513035,Non mobile,Unknown,BRA
+Talents,0.45782178196811746,Non mobile,Unknown,CHN
+Talents,0.5510819974418889,Non mobile,Unknown,East Asia & Pacific
+Talents,0.47023416890333253,Non mobile,Unknown,Europe & Central Asia
+Talents,0.990148907946028,Non mobile,Unknown,Latin America & Caribbean
+Talents,0.99999999971081,Non mobile,Unknown,Middle East & North Africa
+Talents,0.9999999999838771,Non mobile,Unknown,North America
+Talents,0.5694750403409271,Non mobile,Unknown,South Asia
+Talents,0.28860617487887436,Non mobile,Unknown,USA
+Talents,0.9999999997806055,Non mobile,Unknown,ZAF
+Talents,1.772671413838811e-6,Both,Unknown,Sub-Saharan Africa
+Talents,2.2546111656157463e-12,Both,Unknown,BRA
+Talents,0.12729641284271348,Both,Unknown,CHN
+Talents,0.10999834862744365,Both,Unknown,East Asia & Pacific
+Talents,0.055837630844164175,Both,Unknown,Europe & Central Asia
+Talents,0.0010757399260550148,Both,Unknown,Latin America & Caribbean
+Talents,1.4686016122014675e-12,Both,Unknown,Middle East & North Africa
+Talents,1.6691660833768233e-12,Both,Unknown,North America
+Talents,3.5662314720817985e-10,Both,Unknown,South Asia
+Talents,0.09335706756489602,Both,Unknown,USA
+Talents,2.1857175409747775e-10,Both,Unknown,ZAF
+Talents,2.024872062451905e-11,Internal,Unknown,Sub-Saharan Africa
+Talents,0.32054423805094395,Internal,Unknown,BRA
+Talents,0.16007236604428784,Internal,Unknown,CHN
+Talents,0.16647329766360097,Internal,Unknown,East Asia & Pacific
+Talents,0.12867867884537373,Internal,Unknown,Europe & Central Asia
+Talents,0.004551198290409131,Internal,Unknown,Latin America & Caribbean
+Talents,4.900002178112641e-14,Internal,Unknown,Middle East & North Africa
+Talents,1.6887095381577735e-12,Internal,Unknown,North America
+Talents,0.28514682432198835,Internal,Unknown,South Asia
+Talents,0.49209533190493443,Internal,Unknown,USA
+Talents,1.3609904830326164e-21,Internal,Unknown,ZAF
+Talents,9.046678605919734e-8,International,Unknown,Sub-Saharan Africa
+Talents,0.3290063937954979,International,Unknown,BRA
+Talents,0.25480943914488124,International,Unknown,CHN
+Talents,0.17244635626706653,International,Unknown,East Asia & Pacific
+Talents,0.34524952140712944,International,Unknown,Europe & Central Asia
+Talents,0.004224153837508128,International,Unknown,Latin America & Caribbean
+Talents,2.8767224345812874e-10,International,Unknown,Middle East & North Africa
+Talents,1.276514948753962e-11,International,Unknown,North America
+Talents,0.14537813498046143,International,Unknown,South Asia
+Talents,0.1259414256512952,International,Unknown,USA
+Talents,8.225765719121551e-13,International,Unknown,ZAF

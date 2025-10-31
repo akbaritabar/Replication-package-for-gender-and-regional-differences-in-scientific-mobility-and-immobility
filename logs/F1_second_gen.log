@@ -1,0 +1,196 @@
+running
+  'C:\PROGRA~1\R\R-45~1.1\bin\x64\Rterm.exe --no-echo --no-restore --no-save --no-restore --file=workflow/scripts/figure_description_of_study_sample.R --args --input G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv --gender second --output G:/ali/talents/results/figures/Figure_1_second_gender.png'
+
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.2
+v ggplot2   4.0.0     v tibble    3.3.0
+v lubridate 1.9.4     v tidyr     1.3.1
+v purrr     1.1.0     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+[1] "R working directory: "
+[1] "G:/ali/talents"
+[1] "##################################################"
+[1] "Received these arguments from command line: "
+[[1]]
+[1] FALSE
+
+$help
+[1] FALSE
+
+$opts
+[1] NA
+
+$input
+[1] "G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv"
+
+$gender
+[1] "second"
+
+$output
+[1] "G:/ali/talents/results/figures/Figure_1_second_gender.png"
+
+[1] "Current R session Info: "
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows Server 2019 x64 (build 17763)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] argparser_0.7.2    RColorBrewer_1.1-3 lubridate_1.9.4    forcats_1.0.0     
+ [5] stringr_1.5.2      dplyr_1.1.4        purrr_1.1.0        readr_2.1.5       
+ [9] tidyr_1.3.1        tibble_3.3.0       ggplot2_4.0.0      tidyverse_2.0.0   
+
+loaded via a namespace (and not attached):
+ [1] vctrs_0.6.5      cli_3.6.5        rlang_1.1.6      stringi_1.8.7   
+ [5] generics_0.1.4   S7_0.2.0         glue_1.8.0       hms_1.1.3       
+ [9] scales_1.4.0     grid_4.5.1       tzdb_0.5.0       lifecycle_1.0.4 
+[13] compiler_4.5.1   timechange_0.3.0 pkgconfig_2.0.3  farver_2.1.2    
+[17] R6_2.6.1         tidyselect_1.2.1 pillar_1.11.0    magrittr_2.0.4  
+[21] tools_4.5.1      withr_3.0.2      gtable_0.3.6    
+Rows: 28406 Columns: 14
+-- Column specification --------------------------------------------------------
+Delimiter: ","
+chr (12): ctrl_obs_cat, ctrl_obs_2cat, first_gender, second_gender, third_ge...
+dbl  (2): fake_author_ID, acadmic_age
+
+i Use `spec()` to retrieve the full column specification for this data.
+i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+`summarise()` has grouped output by 'ctrl_obs_2cat', 'gender'. You can override
+using the `.groups` argument.
+[1] "Figure with description of sample exported in: "
+[1] "G:/ali/talents/results/figures/Figure_1_second_gender.png"
+[1] "##################################################"
+[1] "#### Testing independence of categorical variables ####"
+
+	Pearson's Chi-squared test
+
+data:  ctrl_obs_2cat_vs_gender
+X-squared = 53.43, df = 2, p-value = 0.000000000002499
+
+
+	Pearson's Chi-squared test
+
+data:  ctrl_obs_2cat_vs_mobility
+X-squared = 57.045, df = 3, p-value = 0.000000000002514
+
+
+	Pearson's Chi-squared test
+
+data:  gender_vs_mobility
+X-squared = 49.072, df = 6, p-value = 0.000000007212
+
+[1] "##################################################"
+`summarise()` has grouped output by 'ctrl_obs_2cat', 'gender'. You can override
+using the `.groups` argument.
+[1] "##################################################"
+[1] "A summary table is created for groups and proportion of researchers per groups as:"
+# A tibble: 24 x 6
+# Groups:   ctrl_obs_2cat, gender [6]
+   ctrl_obs_2cat gender  mobility_status2 count etotal Proportion
+   <fct>         <fct>   <fct>            <int>  <int>      <dbl>
+ 1 Others        Female  Non mobile        1691   3566      47.4 
+ 2 Others        Female  Both               311   3566       8.72
+ 3 Others        Female  Internal           875   3566      24.5 
+ 4 Others        Female  International      689   3566      19.3 
+ 5 Others        Male    Non mobile        4750  10421      45.6 
+ 6 Others        Male    Both               922  10421       8.85
+ 7 Others        Male    Internal          2604  10421      25.0 
+ 8 Others        Male    International     2145  10421      20.6 
+ 9 Others        Unknown Non mobile         110    236      46.6 
+10 Others        Unknown Both                17    236       7.20
+# i 14 more rows
+[1] "##################################################"
+[1] "Now some tests for group differences to report in paper: "
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  count by ctrl_obs_2cat
+W = 75.5, p-value = 0.8625
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(x = DATA[[1L]], y = DATA[[2L]], ...) :
+  cannot compute exact p-value with ties
+[1] "##################################################"
+
+	Kruskal-Wallis rank sum test
+
+data:  count by ctrl_obs_2cat
+Kruskal-Wallis chi-squared = 0.040851, df = 1, p-value = 0.8398
+
+[1] "##################################################"
+
+	Kruskal-Wallis rank sum test
+
+data:  count by gender
+Kruskal-Wallis chi-squared = 19.288, df = 2, p-value = 0.0000648
+
+[1] "##################################################"
+
+	Kruskal-Wallis rank sum test
+
+data:  count by mobility_status2
+Kruskal-Wallis chi-squared = 3.3348, df = 3, p-value = 0.3428
+
+[1] "##################################################"
+[1] "Here I will repeat these test by filtering group per group!"
+[1] "##################################################"
+# A tibble: 2 x 6
+# Groups:   ctrl_obs_2cat, gender [2]
+  ctrl_obs_2cat gender mobility_status2 count etotal Proportion
+  <fct>         <fct>  <fct>            <int>  <int>      <dbl>
+1 Others        Female Non mobile        1691   3566       47.4
+2 Talents       Female Non mobile        1455   3063       47.5
+
+	Wilcoxon rank sum exact test
+
+data:  count by ctrl_obs_2cat
+W = 1, p-value = 1
+alternative hypothesis: true location shift is not equal to 0
+
+[1] "##################################################"
+# A tibble: 2 x 6
+# Groups:   ctrl_obs_2cat, gender [2]
+  ctrl_obs_2cat gender mobility_status2 count etotal Proportion
+  <fct>         <fct>  <fct>            <int>  <int>      <dbl>
+1 Others        Male   Non mobile        4750  10421       45.6
+2 Talents       Male   Non mobile        4423  10923       40.5
+
+	Wilcoxon rank sum exact test
+
+data:  count by ctrl_obs_2cat
+W = 1, p-value = 1
+alternative hypothesis: true location shift is not equal to 0
+
+[1] "##################################################"
+# A tibble: 2 x 6
+# Groups:   ctrl_obs_2cat, gender [2]
+  ctrl_obs_2cat gender  mobility_status2 count etotal Proportion
+  <fct>         <fct>   <fct>            <int>  <int>      <dbl>
+1 Others        Unknown Non mobile         110    236       46.6
+2 Talents       Unknown Non mobile          90    197       45.7
+
+	Wilcoxon rank sum exact test
+
+data:  count by ctrl_obs_2cat
+W = 1, p-value = 1
+alternative hypothesis: true location shift is not equal to 0
+
+[1] "##################################################"

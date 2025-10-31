@@ -1,0 +1,1315 @@
+running
+  'C:\PROGRA~1\R\R-45~1.1\bin\x64\Rterm.exe --no-echo --no-restore --no-save --no-restore --file=workflow/scripts/testing_model_diagnostics_goodnessOfFit.R --args --input G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv --gender third --region2use UNsubregion --output G:/ali/talents/results/diagn_obj_third_UNsubregion_full_ctrls.RData'
+
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.2
+v ggplot2   4.0.0     v tibble    3.3.0
+v lubridate 1.9.4     v tidyr     1.3.1
+v purrr     1.1.0     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+Version:  1.39.4
+Date:     2024-07-23
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+
+Attaching package: 'texreg'
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Loading required package: zoo
+
+Attaching package: 'zoo'
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric
+
+Warning message:
+In options(scipen = 99999) : invalid 'scipen' 99999, used 9999
+[1] "Running the script now at time: "
+[1] "2025-10-31 15:50:01 CET"
+[1] "R working directory: "
+[1] "G:/ali/talents"
+[1] "##################################################"
+[1] "Received these arguments from command line: "
+[[1]]
+[1] FALSE
+
+$help
+[1] FALSE
+
+$opts
+[1] NA
+
+$input
+[1] "G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv"
+
+$gender
+[1] "third"
+
+$region2use
+[1] "UNsubregion"
+
+$output
+[1] "G:/ali/talents/results/diagn_obj_third_UNsubregion_full_ctrls.RData"
+
+[1] "Current R session Info: "
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows Server 2019 x64 (build 17763)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] argparser_0.7.2   DescTools_0.99.60 lmtest_0.9-40     zoo_1.8-14       
+ [5] ggeffects_2.3.1   GGally_2.4.0      nnet_7.3-20       texreg_1.39.4    
+ [9] stargazer_5.2.3   lubridate_1.9.4   forcats_1.0.0     stringr_1.5.2    
+[13] dplyr_1.1.4       purrr_1.1.0       readr_2.1.5       tidyr_1.3.1      
+[17] tibble_3.3.0      ggplot2_4.0.0     tidyverse_2.0.0  
+
+loaded via a namespace (and not attached):
+ [1] generics_0.1.4     class_7.3-23       stringi_1.8.7      lattice_0.22-7    
+ [5] hms_1.1.3          magrittr_2.0.4     grid_4.5.1         timechange_0.3.0  
+ [9] RColorBrewer_1.1-3 mvtnorm_1.3-3      cellranger_1.1.0   Matrix_1.7-3      
+[13] e1071_1.7-16       httr_1.4.7         scales_1.4.0       cli_3.6.5         
+[17] expm_1.0-0         rlang_1.1.6        withr_3.0.2        rootSolve_1.8.2.4 
+[21] tools_4.5.1        tzdb_0.5.0         lmom_3.2           gld_2.6.7         
+[25] Exact_3.3          boot_1.3-31        ggstats_0.10.0     vctrs_0.6.5       
+[29] R6_2.6.1           proxy_0.4-27       lifecycle_1.0.4    fs_1.6.6          
+[33] MASS_7.3-65        insight_1.4.2      pkgconfig_2.0.3    pillar_1.11.0     
+[37] gtable_0.3.6       Rcpp_1.1.0         glue_1.8.0         data.table_1.17.8 
+[41] haven_2.5.5        tidyselect_1.2.1   rstudioapi_0.17.1  farver_2.1.2      
+[45] compiler_4.5.1     S7_0.2.0           readxl_1.4.5      
+Rows: 28406 Columns: 14
+-- Column specification --------------------------------------------------------
+Delimiter: ","
+chr (12): ctrl_obs_cat, ctrl_obs_2cat, first_gender, second_gender, third_ge...
+dbl  (2): fake_author_ID, acadmic_age
+
+i Use `spec()` to retrieve the full column specification for this data.
+i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+# weights:  8 (3 variable)
+initial  value 39379.077622 
+final  value 35858.206753 
+converged
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34568.477396
+iter  20 value 34292.235629
+iter  30 value 34086.904731
+iter  40 value 33872.355105
+iter  50 value 33787.868631
+iter  60 value 33753.643008
+iter  70 value 33747.708602
+iter  80 value 33744.650685
+iter  90 value 33742.007097
+iter 100 value 33739.508174
+iter 110 value 33736.488113
+iter 120 value 33734.384807
+iter 130 value 33733.335624
+iter 140 value 33732.815236
+iter 150 value 33732.289808
+iter 160 value 33731.514270
+iter 170 value 33730.678411
+iter 180 value 33730.304040
+iter 190 value 33729.991771
+iter 200 value 33729.831077
+iter 210 value 33729.758266
+iter 220 value 33729.722124
+iter 230 value 33729.700623
+iter 240 value 33729.660325
+final  value 33729.651138 
+converged
+[1] "##################################################"
+[1] "Model diagnostics and goodness of fit results for the multinomial probit regression model with controls:"
+Warning messages:
+1: In sqrt(diag(vc)) : NaNs produced
+2: In sqrt(diag(vc)) : NaNs produced
+[1] "##################################################"
+[1] "Z-scores for the model coefficients:"
+              (Intercept) ctrl_obs_2catTalents genderMale genderUnknown
+Both          -19.3102053            12.283348  -4.895214    -17.815441
+Internal       -2.1039369           -10.521056  -7.852631    -35.538750
+International   0.1267339            -6.350013 -29.777900     -2.721406
+              region2useAustralia and New Zealand region2useBRA
+Both                                    11.253897      8.561682
+Internal                                -1.836208     -1.588577
+International                           -3.170274     -4.057063
+              region2useCentral Asia region2useCHN region2useEastern Asia
+Both                        28.32740     10.731326              11.030256
+Internal                    13.58559     -2.262303              -1.343496
+International               34.07661     -4.860986              -3.886380
+              region2useEastern Europe
+Both                          6.685253
+Internal                     -3.244944
+International                -3.084821
+              region2useLatin America and the Caribbean region2useMelanesia
+Both                                           6.823130           -18105810
+Internal                                      -1.239471           -35843927
+International                                 -1.448667            20779076
+              region2useNorthern Africa region2useNorthern America
+Both                         -10.670953                   9.570791
+Internal                      -0.646161                  -2.376449
+International                 -1.044082                  -3.353733
+              region2useNorthern Europe region2useSouth-eastern Asia
+Both                           9.846040                   7.92657727
+Internal                      -2.651050                  -0.20970492
+International                 -3.196081                   0.08183499
+              region2useSouthern Asia region2useSouthern Europe region2useUSA
+Both                         9.038128                  9.061462    12.1105480
+Internal                    -1.701450                 -2.240328    -0.1922882
+International               -2.732716                 -4.466591    -3.7626391
+              region2useWestern Asia region2useWestern Europe region2useZAF
+Both                       10.475991                12.018303      5.430905
+Internal                   -2.401933                -1.391237     -1.346218
+International              -2.761116                -3.284104     -1.905111
+              acadmic_age ctrl_obs_2catTalents:genderMale
+Both             16.29719                        5.151718
+Internal         16.51458                       12.877213
+International    11.85765                       32.031901
+              ctrl_obs_2catTalents:genderUnknown
+Both                                   -6.438796
+Internal                                7.807776
+International                         -21.624523
+              ctrl_obs_2catTalents:region2useAustralia and New Zealand
+Both                                                         -9.645157
+Internal                                                      9.431766
+International                                                 5.326136
+              ctrl_obs_2catTalents:region2useBRA
+Both                                   -6.149298
+Internal                                6.978029
+International                           4.320139
+              ctrl_obs_2catTalents:region2useCentral Asia
+Both                                            -23.46199
+Internal                                 -275747534.96007
+International                                   -23.73714
+              ctrl_obs_2catTalents:region2useCHN
+Both                                  -11.649219
+Internal                                9.537685
+International                           5.610974
+              ctrl_obs_2catTalents:region2useEastern Asia
+Both                                           -11.553996
+Internal                                         9.558189
+International                                    4.260946
+              ctrl_obs_2catTalents:region2useEastern Europe
+Both                                              -5.518909
+Internal                                         -13.967970
+International                                      3.198188
+              ctrl_obs_2catTalents:region2useLatin America and the Caribbean
+Both                                                               -3.776708
+Internal                                                            4.352574
+International                                                       2.117077
+              ctrl_obs_2catTalents:region2useMelanesia
+Both                                         -17797474
+Internal                                     -35844175
+International                                 20779076
+              ctrl_obs_2catTalents:region2useNorthern Africa
+Both                                               -5.546313
+Internal                                            8.412850
+International                                     -28.121524
+              ctrl_obs_2catTalents:region2useNorthern America
+Both                                                -8.817577
+Internal                                             8.208651
+International                                        5.751118
+              ctrl_obs_2catTalents:region2useNorthern Europe
+Both                                              -10.502371
+Internal                                            9.165367
+International                                       5.630485
+              ctrl_obs_2catTalents:region2useSouth-eastern Asia
+Both                                                 -6.4747586
+Internal                                              2.2446861
+International                                         0.2157596
+              ctrl_obs_2catTalents:region2useSouthern Asia
+Both                                             -6.778733
+Internal                                          5.175041
+International                                     3.654248
+              ctrl_obs_2catTalents:region2useSouthern Europe
+Both                                               -9.991799
+Internal                                            9.189379
+International                                       6.239548
+              ctrl_obs_2catTalents:region2useUSA
+Both                                  -11.462008
+Internal                               10.390562
+International                           5.304038
+              ctrl_obs_2catTalents:region2useWestern Asia
+Both                                            -7.654958
+Internal                                         6.465030
+International                                    4.813292
+              ctrl_obs_2catTalents:region2useWestern Europe
+Both                                             -11.131840
+Internal                                           9.529627
+International                                      7.032745
+              ctrl_obs_2catTalents:region2useZAF
+Both                                   -4.432657
+Internal                              -16.428474
+International                           2.289037
+              genderMale:region2useAustralia and New Zealand
+Both                                                5.255428
+Internal                                            6.451270
+International                                      25.064321
+              genderUnknown:region2useAustralia and New Zealand
+Both                                                   5.907008
+Internal                                              11.094502
+International                                          2.621692
+              genderMale:region2useBRA genderUnknown:region2useBRA
+Both                          3.255055        -13508507234.9177456
+Internal                      6.131682                  12.9836433
+International                19.966479                   0.9168833
+              genderMale:region2useCentral Asia
+Both                                   28.32740
+Internal                               13.58559
+International                          34.07661
+              genderUnknown:region2useCentral Asia genderMale:region2useCHN
+Both                                           NaN                 4.857282
+Internal                                         0                 7.861667
+International                                  NaN                27.872569
+              genderUnknown:region2useCHN genderMale:region2useEastern Asia
+Both                            10.412868                          4.306521
+Internal                        26.424384                          7.571619
+International                    2.430421                         26.625700
+              genderUnknown:region2useEastern Asia
+Both                                     10.069681
+Internal                                 23.967267
+International                             2.516016
+              genderMale:region2useEastern Europe
+Both                                     3.853911
+Internal                                 5.433092
+International                           23.482258
+              genderUnknown:region2useEastern Europe
+Both                                        4.225856
+Internal                                    6.068079
+International                               1.746583
+              genderMale:region2useLatin America and the Caribbean
+Both                                                      3.350402
+Internal                                                  3.979415
+International                                            19.319985
+              genderUnknown:region2useLatin America and the Caribbean
+Both                                                        3.3518856
+Internal                                                    4.7741159
+International                                               0.9359124
+              genderMale:region2useMelanesia genderUnknown:region2useMelanesia
+Both                               -18003246                               NaN
+Internal                           -35844080                               NaN
+International                       20779076                                 0
+              genderMale:region2useNorthern Africa
+Both                                     20.033686
+Internal                                  1.446565
+International                            12.032513
+              genderUnknown:region2useNorthern Africa
+Both                                         18.00406
+Internal                                    -13.56661
+International                                 1.27613
+              genderMale:region2useNorthern America
+Both                                       5.341347
+Internal                                   5.796392
+International                             25.593294
+              genderUnknown:region2useNorthern America
+Both                                          7.389068
+Internal                                     11.631318
+International                                 2.908206
+              genderMale:region2useNorthern Europe
+Both                                      4.982470
+Internal                                  5.804014
+International                            27.775176
+              genderUnknown:region2useNorthern Europe
+Both                                         7.443251
+Internal                                    14.806466
+International                                2.783852
+              genderMale:region2useSouth-eastern Asia
+Both                                        0.1659933
+Internal                                    0.1765214
+International                               8.4579003
+              genderUnknown:region2useSouth-eastern Asia
+Both                                           1.0796235
+Internal                                     -19.2478814
+International                                  0.3992842
+              genderMale:region2useSouthern Asia
+Both                                    3.911621
+Internal                                4.814197
+International                          21.708178
+              genderUnknown:region2useSouthern Asia
+Both                                       5.579178
+Internal                                   9.779371
+International                              1.129517
+              genderMale:region2useSouthern Europe
+Both                                      4.830838
+Internal                                  6.481940
+International                            27.752244
+              genderUnknown:region2useSouthern Europe genderMale:region2useUSA
+Both                                         5.296053                 4.622752
+Internal                                    15.156531                 7.230554
+International                                2.596608                27.723871
+              genderUnknown:region2useUSA genderMale:region2useWestern Asia
+Both                            13.649945                          3.724646
+Internal                        25.914319                          5.291311
+International                    2.085199                         22.011288
+              genderUnknown:region2useWestern Asia
+Both                                      4.789674
+Internal                                  8.182221
+International                             2.364272
+              genderMale:region2useWestern Europe
+Both                                     4.392478
+Internal                                 6.956937
+International                           28.030762
+              genderUnknown:region2useWestern Europe genderMale:region2useZAF
+Both                                       10.655991                 2.891193
+Internal                                   18.858416                 1.865643
+International                               3.016547                10.049896
+              genderUnknown:region2useZAF
+Both                            -7.001567
+Internal                  -6329750.446473
+International                  -14.035139
+              ctrl_obs_2catTalents:genderMale:region2useAustralia and New Zealand
+Both                                                                    -4.378896
+Internal                                                               -11.044050
+International                                                          -23.311250
+              ctrl_obs_2catTalents:genderUnknown:region2useAustralia and New Zealand
+Both                                                                        3.222923
+Internal                                                                   -2.132923
+International                                                               6.247189
+              ctrl_obs_2catTalents:genderMale:region2useBRA
+Both                                              -1.795639
+Internal                                          -8.848600
+International                                    -16.841131
+              ctrl_obs_2catTalents:genderUnknown:region2useBRA
+Both                                     -1189596747818.372803
+Internal                                             -2.606856
+International                                         4.099990
+              ctrl_obs_2catTalents:genderMale:region2useCentral Asia
+Both                                                       -23.46199
+Internal                                            -275748095.06515
+International                                              -23.73714
+              ctrl_obs_2catTalents:genderUnknown:region2useCentral Asia
+Both                                                                  0
+Internal                                                            NaN
+International                                                       NaN
+              ctrl_obs_2catTalents:genderMale:region2useCHN
+Both                                              -4.032174
+Internal                                         -12.160963
+International                                    -27.322217
+              ctrl_obs_2catTalents:genderUnknown:region2useCHN
+Both                                                  6.568607
+Internal                                             -5.342384
+International                                        13.514619
+              ctrl_obs_2catTalents:genderMale:region2useEastern Asia
+Both                                                       -2.900078
+Internal                                                  -11.581292
+International                                             -24.983129
+              ctrl_obs_2catTalents:genderUnknown:region2useEastern Asia
+Both                                                           5.222365
+Internal                                                      -5.501025
+International                                                 12.818515
+              ctrl_obs_2catTalents:genderMale:region2useEastern Europe
+Both                                                          -2.61974
+Internal                                                      11.15714
+International                                                -16.66446
+              ctrl_obs_2catTalents:genderUnknown:region2useEastern Europe
+Both                                                            0.4113147
+Internal                                                       14.5587965
+International                                                   5.9815477
+              ctrl_obs_2catTalents:genderMale:region2useLatin America and the Caribbean
+Both                                                                          -2.039867
+Internal                                                                      -5.176438
+International                                                                -10.702279
+              ctrl_obs_2catTalents:genderUnknown:region2useLatin America and the Caribbean
+Both                                                                              1.569135
+Internal                                                                     -38611.962049
+International                                                              -8015216.594917
+              ctrl_obs_2catTalents:genderMale:region2useMelanesia
+Both                                                    -18002810
+Internal                                                -35844062
+International                                            20779076
+              ctrl_obs_2catTalents:genderUnknown:region2useMelanesia
+Both                                                               0
+Internal                                                         NaN
+International                                                    NaN
+              ctrl_obs_2catTalents:genderMale:region2useNorthern Africa
+Both                                                          -3.989858
+Internal                                                      -9.036037
+International                                                  2.898663
+              ctrl_obs_2catTalents:genderUnknown:region2useNorthern Africa
+Both                                                            -0.2968423
+Internal                                                        20.7607669
+International                                       -4799716110808.4873047
+              ctrl_obs_2catTalents:genderMale:region2useNorthern America
+Both                                                           -3.250086
+Internal                                                       -8.936922
+International                                                 -23.309649
+              ctrl_obs_2catTalents:genderUnknown:region2useNorthern America
+Both                                                               2.650591
+Internal                                                          -2.954907
+International                                                      6.221107
+              ctrl_obs_2catTalents:genderMale:region2useNorthern Europe
+Both                                                          -4.107469
+Internal                                                     -11.062945
+International                                                -27.772307
+              ctrl_obs_2catTalents:genderUnknown:region2useNorthern Europe
+Both                                                              3.363993
+Internal                                                         -2.769922
+International                                                    10.365891
+              ctrl_obs_2catTalents:genderMale:region2useSouth-eastern Asia
+Both                                                             0.3653392
+Internal                                                        -2.5570505
+International                                                   -8.0985852
+              ctrl_obs_2catTalents:genderUnknown:region2useSouth-eastern Asia
+Both                                                                 2.855321
+Internal                                                            26.147679
+International                                                        4.032546
+              ctrl_obs_2catTalents:genderMale:region2useSouthern Asia
+Both                                                        -2.893758
+Internal                                                    -6.849563
+International                                              -18.299245
+              ctrl_obs_2catTalents:genderUnknown:region2useSouthern Asia
+Both                                                -86332171443.1324615
+Internal                                                      -0.1360181
+International                                                  6.0996723
+              ctrl_obs_2catTalents:genderMale:region2useSouthern Europe
+Both                                                          -4.170623
+Internal                                                     -11.075517
+International                                                -27.390560
+              ctrl_obs_2catTalents:genderUnknown:region2useSouthern Europe
+Both                                                              1.491752
+Internal                                                         -2.616688
+International                                                    10.513685
+              ctrl_obs_2catTalents:genderMale:region2useUSA
+Both                                              -4.385113
+Internal                                         -12.133753
+International                                    -28.206420
+              ctrl_obs_2catTalents:genderUnknown:region2useUSA
+Both                                                  4.739804
+Internal                                             -5.179031
+International                                        14.506813
+              ctrl_obs_2catTalents:genderMale:region2useWestern Asia
+Both                                                       -2.030379
+Internal                                                   -7.233985
+International                                             -19.082686
+              ctrl_obs_2catTalents:genderUnknown:region2useWestern Asia
+Both                                                          2.4170354
+Internal                                                     -0.9570752
+International                                                 5.0222039
+              ctrl_obs_2catTalents:genderMale:region2useWestern Europe
+Both                                                         -3.840545
+Internal                                                    -11.370744
+International                                               -28.848288
+              ctrl_obs_2catTalents:genderUnknown:region2useWestern Europe
+Both                                                             3.519459
+Internal                                                        -3.965417
+International                                                   10.984292
+              ctrl_obs_2catTalents:genderMale:region2useZAF
+Both                                              -1.500672
+Internal                                          14.621804
+International                                     -8.698851
+              ctrl_obs_2catTalents:genderUnknown:region2useZAF
+Both                                                  16.60029
+Internal                                 -59094078832408.03906
+International                                         22.71995
+[1] "##################################################"
+[1] "P-values for the model coefficients:"
+              (Intercept) ctrl_obs_2catTalents              genderMale
+Both           0.00000000   0.0000000000000000 0.000000981989772164127
+Internal       0.03538395   0.0000000000000000 0.000000000000003996803
+International  0.89915105   0.0000000002152962 0.000000000000000000000
+              genderUnknown region2useAustralia and New Zealand region2useBRA
+Both            0.000000000                         0.000000000 0.00000000000
+Internal        0.000000000                         0.066326905 0.11215583581
+International   0.006500496                         0.001522954 0.00004969369
+              region2useCentral Asia  region2useCHN region2useEastern Asia
+Both                               0 0.000000000000           0.0000000000
+Internal                           0 0.023678665808           0.1791114802
+International                      0 0.000001168028           0.0001017502
+              region2useEastern Europe
+Both               0.00000000002305267
+Internal           0.00117473547680835
+International      0.00203675018837979
+              region2useLatin America and the Caribbean region2useMelanesia
+Both                               0.000000000008907763                   0
+Internal                           0.215171060577864726                   0
+International                      0.147430584733883485                   0
+              region2useNorthern Africa region2useNorthern America
+Both                          0.0000000                0.000000000
+Internal                      0.5181751                0.017480174
+International                 0.2964476                0.000797293
+              region2useNorthern Europe region2useSouth-eastern Asia
+Both                        0.000000000      0.000000000000002220446
+Internal                    0.008024201      0.833897986724210227294
+International               0.001393079      0.934777933650136505506
+              region2useSouthern Asia region2useSouthern Europe region2useUSA
+Both                      0.000000000            0.000000000000  0.0000000000
+Internal                  0.088858574            0.025069660626  0.8475164521
+International             0.006281451            0.000007947598  0.0001681297
+              region2useWestern Asia region2useWestern Europe    region2useZAF
+Both                     0.000000000              0.000000000 0.00000005606883
+Internal                 0.016308695              0.164153612 0.17823231184301
+International            0.005760426              0.001023071 0.05676559593599
+              acadmic_age ctrl_obs_2catTalents:genderMale
+Both                    0                 0.0000002581111
+Internal                0                 0.0000000000000
+International           0                 0.0000000000000
+              ctrl_obs_2catTalents:genderUnknown
+Both                      0.00000000012042478126
+Internal                  0.00000000000000577316
+International             0.00000000000000000000
+              ctrl_obs_2catTalents:region2useAustralia and New Zealand
+Both                                                   0.0000000000000
+Internal                                               0.0000000000000
+International                                          0.0000001003238
+              ctrl_obs_2catTalents:region2useBRA
+Both                        0.000000000778266340
+Internal                    0.000000000002993383
+International               0.000015593128777747
+              ctrl_obs_2catTalents:region2useCentral Asia
+Both                                                    0
+Internal                                                0
+International                                           0
+              ctrl_obs_2catTalents:region2useCHN
+Both                            0.00000000000000
+Internal                        0.00000000000000
+International                   0.00000002011908
+              ctrl_obs_2catTalents:region2useEastern Asia
+Both                                        0.00000000000
+Internal                                    0.00000000000
+International                               0.00002035631
+              ctrl_obs_2catTalents:region2useEastern Europe
+Both                                       0.00000003411111
+Internal                                   0.00000000000000
+International                              0.00138294085064
+              ctrl_obs_2catTalents:region2useLatin America and the Caribbean
+Both                                                           0.00015891485
+Internal                                                       0.00001345482
+International                                                  0.03425333445
+              ctrl_obs_2catTalents:region2useMelanesia
+Both                                                 0
+Internal                                             0
+International                                        0
+              ctrl_obs_2catTalents:region2useNorthern Africa
+Both                                        0.00000002917565
+Internal                                    0.00000000000000
+International                               0.00000000000000
+              ctrl_obs_2catTalents:region2useNorthern America
+Both                                 0.0000000000000000000000
+Internal                             0.0000000000000002220446
+International                        0.0000000088655280894301
+              ctrl_obs_2catTalents:region2useNorthern Europe
+Both                                        0.00000000000000
+Internal                                    0.00000000000000
+International                               0.00000001797032
+              ctrl_obs_2catTalents:region2useSouth-eastern Asia
+Both                                        0.00000000009496359
+Internal                                    0.02478828878660710
+International                               0.82917512361219647
+              ctrl_obs_2catTalents:region2useSouthern Asia
+Both                                   0.00000000001212341
+Internal                               0.00000022786101961
+International                          0.00025793696605492
+              ctrl_obs_2catTalents:region2useSouthern Europe
+Both                                      0.0000000000000000
+Internal                                  0.0000000000000000
+International                             0.0000000004388359
+              ctrl_obs_2catTalents:region2useUSA
+Both                             0.0000000000000
+Internal                         0.0000000000000
+International                    0.0000001132686
+              ctrl_obs_2catTalents:region2useWestern Asia
+Both                               0.00000000000001931788
+Internal                           0.00000000010127876315
+International                      0.00000148464076588084
+              ctrl_obs_2catTalents:region2useWestern Europe
+Both                                   0.000000000000000000
+Internal                               0.000000000000000000
+International                          0.000000000002025047
+              ctrl_obs_2catTalents:region2useZAF
+Both                              0.000009307905
+Internal                          0.000000000000
+International                     0.022077194980
+              genderMale:region2useAustralia and New Zealand
+Both                                      0.0000001476808695
+Internal                                  0.0000000001109168
+International                             0.0000000000000000
+              genderUnknown:region2useAustralia and New Zealand
+Both                                          0.000000003483776
+Internal                                      0.000000000000000
+International                                 0.008749449703971
+              genderMale:region2useBRA genderUnknown:region2useBRA
+Both                0.0011337047674145                   0.0000000
+Internal            0.0000000008695473                   0.0000000
+International       0.0000000000000000                   0.3592038
+              genderMale:region2useCentral Asia
+Both                                          0
+Internal                                      0
+International                                 0
+              genderUnknown:region2useCentral Asia genderMale:region2useCHN
+Both                                           NaN  0.000001190078719348620
+Internal                                         1  0.000000000000003774758
+International                                  NaN  0.000000000000000000000
+              genderUnknown:region2useCHN genderMale:region2useEastern Asia
+Both                            0.0000000             0.0000165842329700183
+Internal                        0.0000000             0.0000000000000368594
+International                   0.0150813             0.0000000000000000000
+              genderUnknown:region2useEastern Asia
+Both                                    0.00000000
+Internal                                0.00000000
+International                           0.01186897
+              genderMale:region2useEastern Europe
+Both                             0.00011624603124
+Internal                         0.00000005538582
+International                    0.00000000000000
+              genderUnknown:region2useEastern Europe
+Both                               0.000023803394860
+Internal                           0.000000001294491
+International                      0.080709743010878
+              genderMale:region2useLatin America and the Caribbean
+Both                                                 0.00080694327
+Internal                                             0.00006908512
+International                                        0.00000000000
+              genderUnknown:region2useLatin America and the Caribbean
+Both                                                   0.000802631740
+Internal                                               0.000001804984
+International                                          0.349318293328
+              genderMale:region2useMelanesia genderUnknown:region2useMelanesia
+Both                                       0                               NaN
+Internal                                   0                               NaN
+International                              0                                 1
+              genderMale:region2useNorthern Africa
+Both                                     0.0000000
+Internal                                 0.1480189
+International                            0.0000000
+              genderUnknown:region2useNorthern Africa
+Both                                        0.0000000
+Internal                                    0.0000000
+International                               0.2019095
+              genderMale:region2useNorthern America
+Both                              0.000000092258617
+Internal                          0.000000006775663
+International                     0.000000000000000
+              genderUnknown:region2useNorthern America
+Both                             0.0000000000001478817
+Internal                         0.0000000000000000000
+International                    0.0036350913138138985
+              genderMale:region2useNorthern Europe
+Both                             0.000000627777565
+Internal                         0.000000006474578
+International                    0.000000000000000
+              genderUnknown:region2useNorthern Europe
+Both                           0.00000000000009814372
+Internal                       0.00000000000000000000
+International                  0.00537175734251649217
+              genderMale:region2useSouth-eastern Asia
+Both                                        0.8681622
+Internal                                    0.8598844
+International                               0.0000000
+              genderUnknown:region2useSouth-eastern Asia
+Both                                           0.2803099
+Internal                                       0.0000000
+International                                  0.6896838
+              genderMale:region2useSouthern Asia
+Both                              0.000091678685
+Internal                          0.000001477927
+International                     0.000000000000
+              genderUnknown:region2useSouthern Asia
+Both                               0.00000002416572
+Internal                           0.00000000000000
+International                      0.25867997624935
+              genderMale:region2useSouthern Europe
+Both                            0.0000013595963237
+Internal                        0.0000000000905509
+International                   0.0000000000000000
+              genderUnknown:region2useSouthern Europe genderMale:region2useUSA
+Both                                  0.0000001183327    0.0000037868321924872
+Internal                              0.0000000000000    0.0000000000004809486
+International                         0.0094149229789    0.0000000000000000000
+              genderUnknown:region2useUSA genderMale:region2useWestern Asia
+Both                           0.00000000                   0.0001955896810
+Internal                       0.00000000                   0.0000001214426
+International                  0.03705124                   0.0000000000000
+              genderUnknown:region2useWestern Asia
+Both                      0.0000016705240999392856
+Internal                  0.0000000000000002220446
+International             0.0180655357260917082129
+              genderMale:region2useWestern Europe
+Both                         0.000011206589302981
+Internal                     0.000000000003477441
+International                0.000000000000000000
+              genderUnknown:region2useWestern Europe genderMale:region2useZAF
+Both                                     0.000000000              0.003837828
+Internal                                 0.000000000              0.062091331
+International                            0.002556716              0.000000000
+              genderUnknown:region2useZAF
+Both                 0.000000000002531086
+Internal             0.000000000000000000
+International        0.000000000000000000
+              ctrl_obs_2catTalents:genderMale:region2useAustralia and New Zealand
+Both                                                                0.00001192821
+Internal                                                            0.00000000000
+International                                                       0.00000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useAustralia and New Zealand
+Both                                                              0.0012688979464037
+Internal                                                          0.0329310790062001
+International                                                     0.0000000004179055
+              ctrl_obs_2catTalents:genderMale:region2useBRA
+Both                                             0.07255189
+Internal                                         0.00000000
+International                                    0.00000000
+              ctrl_obs_2catTalents:genderUnknown:region2useBRA
+Both                                             0.00000000000
+Internal                                         0.00913779047
+International                                    0.00004131687
+              ctrl_obs_2catTalents:genderMale:region2useCentral Asia
+Both                                                               0
+Internal                                                           0
+International                                                      0
+              ctrl_obs_2catTalents:genderUnknown:region2useCentral Asia
+Both                                                                  1
+Internal                                                            NaN
+International                                                       NaN
+              ctrl_obs_2catTalents:genderMale:region2useCHN
+Both                                          0.00005526329
+Internal                                      0.00000000000
+International                                 0.00000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useCHN
+Both                                       0.00000000005078804
+Internal                                   0.00000009173208171
+International                              0.00000000000000000
+              ctrl_obs_2catTalents:genderMale:region2useEastern Asia
+Both                                                     0.003730703
+Internal                                                 0.000000000
+International                                            0.000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useEastern Asia
+Both                                                   0.00000017665279
+Internal                                               0.00000003775907
+International                                          0.00000000000000
+              ctrl_obs_2catTalents:genderMale:region2useEastern Europe
+Both                                                       0.008799679
+Internal                                                   0.000000000
+International                                              0.000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useEastern Europe
+Both                                                    0.680841797235714
+Internal                                                0.000000000000000
+International                                           0.000000002210273
+              ctrl_obs_2catTalents:genderMale:region2useLatin America and the Caribbean
+Both                                                                    0.0413635545313
+Internal                                                                0.0000002261618
+International                                                           0.0000000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useLatin America and the Caribbean
+Both                                                                             0.1166164
+Internal                                                                         0.0000000
+International                                                                    0.0000000
+              ctrl_obs_2catTalents:genderMale:region2useMelanesia
+Both                                                            0
+Internal                                                        0
+International                                                   0
+              ctrl_obs_2catTalents:genderUnknown:region2useMelanesia
+Both                                                               1
+Internal                                                         NaN
+International                                                    NaN
+              ctrl_obs_2catTalents:genderMale:region2useNorthern Africa
+Both                                                      0.00006611286
+Internal                                                  0.00000000000
+International                                             0.00374757683
+              ctrl_obs_2catTalents:genderUnknown:region2useNorthern Africa
+Both                                                             0.7665869
+Internal                                                         0.0000000
+International                                                    0.0000000
+              ctrl_obs_2catTalents:genderMale:region2useNorthern America
+Both                                                         0.001153702
+Internal                                                     0.000000000
+International                                                0.000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useNorthern America
+Both                                                     0.0080351024605554
+Internal                                                 0.0031276291978795
+International                                            0.0000000004936596
+              ctrl_obs_2catTalents:genderMale:region2useNorthern Europe
+Both                                                      0.00004000184
+Internal                                                  0.00000000000
+International                                             0.00000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useNorthern Europe
+Both                                                           0.000768234
+Internal                                                       0.005606970
+International                                                  0.000000000
+              ctrl_obs_2catTalents:genderMale:region2useSouth-eastern Asia
+Both                                              0.7148582176701379076178
+Internal                                          0.0105563883201853503380
+International                                     0.0000000000000006661338
+              ctrl_obs_2catTalents:genderUnknown:region2useSouth-eastern Asia
+Both                                                            0.00429933421
+Internal                                                        0.00000000000
+International                                                   0.00005517583
+              ctrl_obs_2catTalents:genderMale:region2useSouthern Asia
+Both                                              0.00380661064458443
+Internal                                          0.00000000000740763
+International                                     0.00000000000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useSouthern Asia
+Both                                                   0.000000000000000
+Internal                                               0.891806932953939
+International                                          0.000000001062862
+              ctrl_obs_2catTalents:genderMale:region2useSouthern Europe
+Both                                                      0.00003037687
+Internal                                                  0.00000000000
+International                                             0.00000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useSouthern Europe
+Both                                                           0.135764295
+Internal                                                       0.008878739
+International                                                  0.000000000
+              ctrl_obs_2catTalents:genderMale:region2useUSA
+Both                                          0.00001159257
+Internal                                      0.00000000000
+International                                 0.00000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useUSA
+Both                                           0.0000021392492
+Internal                                       0.0000002230415
+International                                  0.0000000000000
+              ctrl_obs_2catTalents:genderMale:region2useWestern Asia
+Both                                           0.0423180730015897399
+Internal                                       0.0000000000004689582
+International                                  0.0000000000000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useWestern Asia
+Both                                                    0.0156474951904
+Internal                                                0.3385293109154
+International                                           0.0000005108192
+              ctrl_obs_2catTalents:genderMale:region2useWestern Europe
+Both                                                      0.0001227615
+Internal                                                  0.0000000000
+International                                             0.0000000000
+              ctrl_obs_2catTalents:genderUnknown:region2useWestern Europe
+Both                                                        0.00043242765
+Internal                                                    0.00007326765
+International                                               0.00000000000
+              ctrl_obs_2catTalents:genderMale:region2useZAF
+Both                                              0.1334405
+Internal                                          0.0000000
+International                                     0.0000000
+              ctrl_obs_2catTalents:genderUnknown:region2useZAF
+Both                                                         0
+Internal                                                     0
+International                                                0
+[1] "##################################################"
+[1] "ANOVA test comparing the null model and the full model with controls:"
+Likelihood ratio tests of Multinomial Models
+
+Response: mobility_status2
+                                              Model Resid. df Resid. Dev   Test
+1                                                 1     85215   71716.41       
+2 ctrl_obs_2cat * gender * region2use + acadmic_age     84903   67459.30 1 vs 2
+     Df LR stat. Pr(Chi)
+1                       
+2   312 4257.111       0
+[1] "##################################################"
+[1] "Percentage of deviance explained by the full model with controls:"
+[1] 5.936035
+[1] "##################################################"
+[1] "Likelihood ratio test comparing the null model and the full model with controls:"
+Likelihood ratio test
+
+Model 1: mobility_status2 ~ 1
+Model 2: mobility_status2 ~ ctrl_obs_2cat * gender * region2use + acadmic_age
+  #Df LogLik  Df  Chisq            Pr(>Chisq)    
+1   3 -35858                                     
+2 315 -33730 312 4257.1 < 0.00000000000000022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+[1] "##################################################"
+[1] "Fitted values (predicted probabilities) for the full model with controls:"
+   Non mobile       Both   Internal International
+1   0.6080463 0.05106530 0.23650151     0.1043869
+2   0.5885546 0.04017268 0.25676197     0.1145108
+3   0.4031930 0.09325250 0.34478858     0.1587659
+4   0.2922592 0.17086601 0.22160761     0.3152672
+5   0.3437262 0.14735636 0.27152223     0.2373952
+6   0.3147585 0.10882470 0.46101672     0.1154000
+7   0.3742034 0.09894417 0.35722290     0.1696295
+8   0.4038127 0.07765768 0.40566050     0.1128691
+9   0.3147585 0.10882470 0.46101672     0.1154000
+10  0.3147585 0.10882470 0.46101672     0.1154000
+11  0.6258499 0.04659288 0.05995096     0.2676063
+12  0.4495350 0.07754222 0.31836490     0.1545578
+13  0.3641246 0.15775095 0.12690821     0.3512162
+14  0.4075083 0.13166963 0.11762452     0.3431976
+15  0.3147585 0.10882470 0.46101672     0.1154000
+16  0.6786120 0.05946596 0.15385691     0.1080651
+17  0.6169338 0.04887777 0.15114194     0.1830465
+18  0.3967195 0.09058987 0.34464819     0.1680424
+19  0.4195342 0.08273267 0.33168106     0.1660521
+20  0.4332378 0.10347041 0.28989924     0.1733926
+21  0.4656766 0.06848908 0.30490147     0.1609328
+22  0.5118537 0.05614485 0.27755094     0.1544505
+23  0.4892595 0.07376798 0.11955913     0.3174134
+24  0.3342973 0.10282993 0.45619438     0.1066784
+25  0.4888093 0.06208547 0.29125639     0.1578488
+26  0.4814726 0.08905827 0.15437525     0.2750938
+27  0.3543834 0.09161371 0.42003005     0.1339729
+28  0.6574427 0.03884704 0.13339088     0.1703194
+29  0.5859716 0.07994584 0.16706442     0.1670182
+30  0.3535893 0.13314581 0.20206837     0.3111965
+[1] "##################################################"
+[1] "Predicted values for the full model with controls:"
+ [1] Non mobile    Non mobile    Non mobile    International Non mobile   
+ [6] Internal      Non mobile    Internal      Internal      Internal     
+[11] Non mobile    Non mobile    Non mobile    Non mobile    Internal     
+[16] Non mobile    Non mobile    Non mobile    Non mobile    Non mobile   
+[21] Non mobile    Non mobile    Non mobile    Internal      Non mobile   
+[26] Non mobile    Internal      Non mobile    Non mobile    Non mobile   
+Levels: Non mobile Both Internal International
+[1] "##################################################"
+[1] "Chi-squared test for goodness of fit for the full model with controls:"
+
+	Pearson's Chi-squared test
+
+data:  talents$mobility_status2 and predict(mprobit1)
+X-squared = 2511.1, df = 9, p-value < 0.00000000000000022
+
+Warning message:
+In chisq.test(talents$mobility_status2, predict(mprobit1)) :
+  Chi-squared approximation may be incorrect
+[1] "##################################################"
+[1] "Pseudo R-squared values for the full model with controls:"
+  CoxSnell Nagelkerke   McFadden 
+0.13917722 0.15129322 0.05936035 
+[1] "##################################################"
+[1] "Likelihood ratio tests for each variable in the full model with controls:"
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34597.844248
+iter  20 value 34323.206596
+iter  30 value 34083.337872
+iter  40 value 33910.285525
+iter  50 value 33798.700513
+iter  60 value 33754.717057
+iter  70 value 33747.419941
+iter  80 value 33745.122837
+iter  90 value 33742.175923
+iter 100 value 33739.968554
+iter 110 value 33736.841308
+iter 120 value 33734.544560
+iter 130 value 33733.456668
+iter 140 value 33732.842945
+iter 150 value 33732.360900
+iter 160 value 33731.536915
+iter 170 value 33730.691252
+iter 180 value 33730.313023
+iter 190 value 33729.996644
+iter 200 value 33729.834913
+iter 210 value 33729.763206
+final  value 33729.747086 
+converged
+Likelihood ratio test
+
+Model 1: mobility_status2 ~ ctrl_obs_2cat * gender * region2use + acadmic_age
+Model 2: mobility_status2 ~ gender + region2use + acadmic_age + ctrl_obs_2cat:gender + 
+    ctrl_obs_2cat:region2use + gender:region2use + ctrl_obs_2cat:gender:region2use
+  #Df LogLik Df  Chisq            Pr(>Chisq)    
+1 315 -33730                                    
+2 315 -33730  0 0.1919 < 0.00000000000000022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34597.844248
+iter  20 value 34323.206596
+iter  30 value 34083.337872
+iter  40 value 33910.285525
+iter  50 value 33798.700513
+iter  60 value 33754.717057
+iter  70 value 33747.419941
+iter  80 value 33745.122837
+iter  90 value 33742.175923
+iter 100 value 33739.968554
+iter 110 value 33736.841308
+iter 120 value 33734.544560
+iter 130 value 33733.456668
+iter 140 value 33732.842945
+iter 150 value 33732.360900
+iter 160 value 33731.536915
+iter 170 value 33730.691252
+iter 180 value 33730.313023
+iter 190 value 33729.996644
+iter 200 value 33729.834913
+iter 210 value 33729.763206
+final  value 33729.747086 
+converged
+[1] "##################################################"
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34608.042068
+iter  20 value 34301.227529
+iter  30 value 34054.233289
+iter  40 value 33836.041332
+iter  50 value 33777.868403
+iter  60 value 33751.957977
+iter  70 value 33747.163772
+iter  80 value 33744.431259
+iter  90 value 33742.130661
+iter 100 value 33739.523237
+iter 110 value 33736.805446
+iter 120 value 33734.407591
+iter 130 value 33733.387326
+iter 140 value 33732.760817
+iter 150 value 33732.315127
+iter 160 value 33731.697399
+iter 170 value 33730.729776
+iter 180 value 33730.341607
+iter 190 value 33730.019424
+iter 200 value 33729.836693
+iter 210 value 33729.753187
+iter 220 value 33729.722855
+iter 230 value 33729.702299
+iter 240 value 33729.674261
+final  value 33729.645728 
+converged
+Likelihood ratio test
+
+Model 1: mobility_status2 ~ ctrl_obs_2cat * gender * region2use + acadmic_age
+Model 2: mobility_status2 ~ ctrl_obs_2cat + region2use + acadmic_age + 
+    ctrl_obs_2cat:gender + ctrl_obs_2cat:region2use + gender:region2use + 
+    ctrl_obs_2cat:gender:region2use
+  #Df LogLik Df  Chisq            Pr(>Chisq)    
+1 315 -33730                                    
+2 315 -33730  0 0.0108 < 0.00000000000000022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34608.042068
+iter  20 value 34301.227529
+iter  30 value 34054.233289
+iter  40 value 33836.041332
+iter  50 value 33777.868403
+iter  60 value 33751.957977
+iter  70 value 33747.163772
+iter  80 value 33744.431259
+iter  90 value 33742.130661
+iter 100 value 33739.523237
+iter 110 value 33736.805446
+iter 120 value 33734.407591
+iter 130 value 33733.387326
+iter 140 value 33732.760817
+iter 150 value 33732.315127
+iter 160 value 33731.697399
+iter 170 value 33730.729776
+iter 180 value 33730.341607
+iter 190 value 33730.019424
+iter 200 value 33729.836693
+iter 210 value 33729.753187
+iter 220 value 33729.722855
+iter 230 value 33729.702299
+iter 240 value 33729.674261
+final  value 33729.645728 
+converged
+[1] "##################################################"
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34979.031883
+iter  20 value 34604.452938
+iter  30 value 34207.864043
+iter  40 value 33963.636452
+iter  50 value 33798.710611
+iter  60 value 33753.927600
+iter  70 value 33746.929810
+iter  80 value 33743.979046
+iter  90 value 33741.692456
+iter 100 value 33739.338929
+iter 110 value 33736.803375
+iter 120 value 33734.275198
+iter 130 value 33733.266909
+iter 140 value 33732.630337
+iter 150 value 33732.042072
+iter 160 value 33731.202115
+iter 170 value 33730.617663
+iter 180 value 33730.211175
+iter 190 value 33729.934780
+iter 200 value 33729.746319
+iter 210 value 33729.681350
+iter 220 value 33729.660513
+final  value 33729.659541 
+converged
+Likelihood ratio test
+
+Model 1: mobility_status2 ~ ctrl_obs_2cat * gender * region2use + acadmic_age
+Model 2: mobility_status2 ~ ctrl_obs_2cat + gender + acadmic_age + ctrl_obs_2cat:gender + 
+    ctrl_obs_2cat:region2use + gender:region2use + ctrl_obs_2cat:gender:region2use
+  #Df LogLik Df  Chisq            Pr(>Chisq)    
+1 315 -33730                                    
+2 315 -33730  0 0.0168 < 0.00000000000000022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34979.031883
+iter  20 value 34604.452938
+iter  30 value 34207.864043
+iter  40 value 33963.636452
+iter  50 value 33798.710611
+iter  60 value 33753.927600
+iter  70 value 33746.929810
+iter  80 value 33743.979046
+iter  90 value 33741.692456
+iter 100 value 33739.338929
+iter 110 value 33736.803375
+iter 120 value 33734.275198
+iter 130 value 33733.266909
+iter 140 value 33732.630337
+iter 150 value 33732.042072
+iter 160 value 33731.202115
+iter 170 value 33730.617663
+iter 180 value 33730.211175
+iter 190 value 33729.934780
+iter 200 value 33729.746319
+iter 210 value 33729.681350
+iter 220 value 33729.660513
+final  value 33729.659541 
+converged
+[1] "##################################################"
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34488.411685
+iter  20 value 34236.669175
+iter  30 value 34041.992073
+iter  40 value 33858.493149
+iter  50 value 33779.506499
+iter  60 value 33751.087079
+iter  70 value 33745.539353
+iter  80 value 33742.566124
+iter  90 value 33739.573716
+iter 100 value 33736.771491
+iter 110 value 33734.165219
+iter 120 value 33733.011719
+iter 130 value 33732.181157
+iter 140 value 33731.653178
+iter 150 value 33731.234913
+iter 160 value 33730.832916
+iter 170 value 33730.377037
+iter 180 value 33729.915818
+iter 190 value 33729.771172
+iter 200 value 33729.737654
+iter 210 value 33729.713818
+iter 220 value 33729.692880
+iter 230 value 33729.673925
+final  value 33729.653097 
+converged
+Likelihood ratio test
+
+Model 1: mobility_status2 ~ ctrl_obs_2cat * gender * region2use + acadmic_age
+Model 2: mobility_status2 ~ ctrl_obs_2cat + gender + region2use + acadmic_age + 
+    ctrl_obs_2cat:region2use + gender:region2use + ctrl_obs_2cat:gender:region2use
+  #Df LogLik Df  Chisq            Pr(>Chisq)    
+1 315 -33730                                    
+2 315 -33730  0 0.0039 < 0.00000000000000022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34488.411685
+iter  20 value 34236.669175
+iter  30 value 34041.992073
+iter  40 value 33858.493149
+iter  50 value 33779.506499
+iter  60 value 33751.087079
+iter  70 value 33745.539353
+iter  80 value 33742.566124
+iter  90 value 33739.573716
+iter 100 value 33736.771491
+iter 110 value 33734.165219
+iter 120 value 33733.011719
+iter 130 value 33732.181157
+iter 140 value 33731.653178
+iter 150 value 33731.234913
+iter 160 value 33730.832916
+iter 170 value 33730.377037
+iter 180 value 33729.915818
+iter 190 value 33729.771172
+iter 200 value 33729.737654
+iter 210 value 33729.713818
+iter 220 value 33729.692880
+iter 230 value 33729.673925
+final  value 33729.653097 
+converged
+[1] "##################################################"
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34613.046158
+iter  20 value 34351.043162
+iter  30 value 34088.722894
+iter  40 value 33841.542667
+iter  50 value 33773.331483
+iter  60 value 33752.224288
+iter  70 value 33747.306302
+iter  80 value 33743.168649
+iter  90 value 33740.702885
+iter 100 value 33737.997037
+iter 110 value 33734.843496
+iter 120 value 33733.649677
+iter 130 value 33732.948878
+iter 140 value 33732.367466
+iter 150 value 33731.372284
+iter 160 value 33730.710132
+iter 170 value 33730.321599
+iter 180 value 33729.981365
+iter 190 value 33729.762956
+iter 200 value 33729.708117
+iter 210 value 33729.697988
+iter 220 value 33729.680202
+final  value 33729.673965 
+converged
+Likelihood ratio test
+
+Model 1: mobility_status2 ~ ctrl_obs_2cat * gender * region2use + acadmic_age
+Model 2: mobility_status2 ~ ctrl_obs_2cat + gender + region2use + acadmic_age + 
+    ctrl_obs_2cat:gender + gender:region2use + ctrl_obs_2cat:gender:region2use
+  #Df LogLik Df  Chisq            Pr(>Chisq)    
+1 315 -33730                                    
+2 315 -33730  0 0.0457 < 0.00000000000000022 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# weights:  464 (345 variable)
+initial  value 39379.077622 
+iter  10 value 34613.046158
+iter  20 value 34351.043162
+iter  30 value 34088.722894
+iter  40 value 33841.542667
+iter  50 value 33773.331483
+iter  60 value 33752.224288
+iter  70 value 33747.306302
+iter  80 value 33743.168649
+iter  90 value 33740.702885
+iter 100 value 33737.997037
+iter 110 value 33734.843496
+iter 120 value 33733.649677
+iter 130 value 33732.948878
+iter 140 value 33732.367466
+iter 150 value 33731.372284
+iter 160 value 33730.710132
+iter 170 value 33730.321599
+iter 180 value 33729.981365
+iter 190 value 33729.762956
+iter 200 value 33729.708117
+iter 210 value 33729.697988
+iter 220 value 33729.680202
+final  value 33729.673965 
+converged
+[1] "##################################################"
+[1] "Model diagnostics and goodness of fit results saved in: "
+[1] "G:/ali/talents/results/diagn_obj_third_UNsubregion_full_ctrls.RData"

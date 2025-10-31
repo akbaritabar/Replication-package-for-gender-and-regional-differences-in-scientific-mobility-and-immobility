@@ -1,0 +1,124 @@
+## File name to use in search: Snakefile ##
+
+# ===========
+## Author details ##
+# ===========
+
+# Script's author:      Aliakbar Akbaritabar
+# Version:              2024-11-05
+# Email:                akbaritabar@demogr.mpg.de
+# GitHub:               https://github.com/akbaritabar
+# Website:              https://www.demogr.mpg.de/en/about_us_6113/staff_directory_1899/aliakbar_akbaritabar_4098/
+
+# Script for replication of analysis and figures from paper "A study of gender and regional differences in scientific mobility and immobility among researchers identified as potentially talented"
+
+# Manuscript authors: Aliakbar Akbaritabar, Robin Haunschild and Lutz Bornmann
+
+# ===========
+## Configuration ##
+# ===========
+# main configurations and settings
+include: r"../config/config.py"
+
+# ===========
+## Include other SnakeFiles ##
+# ===========
+
+# Steps to complement our data for further analysis
+include: "rules/snakefile_prepare_complement_data.smk"
+# Steps to run statistical models and export results
+include: "rules/snakefile_statistical_analysis.smk"
+# Steps to visualize statistical model results
+include: "rules/snakefile_visualize_paper_figures.smk"
+
+# ===========
+## Main output generation rule ##
+# ===========
+
+rule all:
+    input:
+        # includes licensed information,
+        INTERIM_TALENTS_DATA,
+        # our paper's main replication data (no licensed information included)
+        TALENTS_DATA,
+        expand(
+            SAMPLE_SUMMARY_TABLE,
+            gen2use=GENDER_ASSIGNMENT
+        ),
+        # STATISTICAL MODEL RESULTS
+        expand(
+            STAT_MODEL_GENDER,
+            gen2use=GENDER_ASSIGNMENT
+        ),
+        expand(
+            COEF_TABLE_MODEL_GENDER,
+            gen2use=GENDER_ASSIGNMENT
+        ),
+        expand(
+            STAT_MODEL_REGIONS,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        expand(
+            COEF_TABLE_MODEL_REGIONS,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        # FULL STAT MODEL
+        expand(
+            STAT_MODEL_FULL,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        expand(
+            COEF_TABLE_MODEL_FULL,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        # FULL STAT MODEL WITH CONTROLS
+        expand(
+            STAT_MODEL_FULL_CTRLS_RDA_OBJECT,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        expand(
+            STAT_MODEL_FULL_CTRLS,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        expand(
+            COEF_TABLE_MODEL_FULL_CTRLS,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY,
+            fileextension=TAB_RES_EXT
+        ),
+        # DIAGNOSTICS FOR FULL STAT MODEL WITH CONTROLS
+        expand(
+            DIAGNOS_GOODNESS_OF_FIT_STAT_MODEL_FULL_CTRLS_RDA_OBJECT,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        ),        
+        # VISUALIZATIONS
+        expand(
+            FIG_STUDY_SAMPLE,
+            gen2use=GENDER_ASSIGNMENT
+        ),
+        expand(
+            FIG_PREDICTED_PROBABILITY_GENDER,
+            gen2use=GENDER_ASSIGNMENT
+        ),
+        expand(
+            FIG_PREDICTED_PROBABILITY_REGIONS,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        expand(
+            FIG_PREDICTED_PROBABILITY_FULL_CTRLS,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        ),
+        expand(
+            FIG_ERROR_BARS_FULL_CTRLS,
+            gen2use=GENDER_ASSIGNMENT,
+            georegion=GEO_REGION_GRANULARITY
+        )
+
+
+        

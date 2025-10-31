@@ -1,0 +1,89 @@
+x,predicted,response.level,group
+Others,0.6223820475017716,Non mobile,Sub-Saharan Africa
+Others,1.9153114648925212e-5,Both,Sub-Saharan Africa
+Others,0.12480217836555381,Internal,Sub-Saharan Africa
+Others,0.25279662101802575,International,Sub-Saharan Africa
+Others,0.4710609347827612,Non mobile,BRA
+Others,0.05486971663606909,Both,BRA
+Others,0.31222183984721813,Internal,BRA
+Others,0.16184750873395168,International,BRA
+Others,0.5479828318353334,Non mobile,CHN
+Others,0.08311617283639469,Both,CHN
+Others,0.21800799298552095,Internal,CHN
+Others,0.15089300234275108,International,CHN
+Others,0.4335935874747091,Non mobile,East Asia & Pacific
+Others,0.09221594756141674,Both,East Asia & Pacific
+Others,0.2759694426136538,Internal,East Asia & Pacific
+Others,0.19822102235022027,International,East Asia & Pacific
+Others,0.5067220171046515,Non mobile,Europe & Central Asia
+Others,0.07609426624914828,Both,Europe & Central Asia
+Others,0.17363309439933355,Internal,Europe & Central Asia
+Others,0.2435506222468668,International,Europe & Central Asia
+Others,0.35984850418089287,Non mobile,Latin America & Caribbean
+Others,0.07956477531820982,Both,Latin America & Caribbean
+Others,0.16982407589144585,Internal,Latin America & Caribbean
+Others,0.3907626446094515,International,Latin America & Caribbean
+Others,0.4076583435003869,Non mobile,Middle East & North Africa
+Others,0.09787313831532436,Both,Middle East & North Africa
+Others,0.10893179100923135,Internal,Middle East & North Africa
+Others,0.3855367271750574,International,Middle East & North Africa
+Others,0.4223940404576619,Non mobile,North America
+Others,0.12609268039622168,Both,North America
+Others,0.13052719730234477,Internal,North America
+Others,0.3209860818437717,International,North America
+Others,0.41750363091725223,Non mobile,South Asia
+Others,0.1281404884341898,Both,South Asia
+Others,0.1633148262073121,Internal,South Asia
+Others,0.2910410544412459,International,South Asia
+Others,0.3565414459386785,Non mobile,USA
+Others,0.09385711597350004,Both,USA
+Others,0.4153264906690201,Internal,USA
+Others,0.13427494741880142,International,USA
+Others,0.46380235533271363,Non mobile,ZAF
+Others,0.20989414913114976,Both,ZAF
+Others,0.10819781627175204,Internal,ZAF
+Others,0.21810567926438457,International,ZAF
+Talents,0.40954048177049684,Non mobile,Sub-Saharan Africa
+Talents,0.10856806343922307,Both,Sub-Saharan Africa
+Talents,0.11077399647967995,Internal,Sub-Saharan Africa
+Talents,0.37111745831060017,International,Sub-Saharan Africa
+Talents,0.554817198395749,Non mobile,BRA
+Talents,0.0436740635335549,Both,BRA
+Talents,0.18792908772256542,Internal,BRA
+Talents,0.21357965034813065,International,BRA
+Talents,0.5845744808055862,Non mobile,CHN
+Talents,0.08486004610369598,Both,CHN
+Talents,0.1715538555911941,Internal,CHN
+Talents,0.15901161749952364,International,CHN
+Talents,0.44330260649960096,Non mobile,East Asia & Pacific
+Talents,0.09851119969449856,Both,East Asia & Pacific
+Talents,0.26948003147338084,Internal,East Asia & Pacific
+Talents,0.18870616233251966,International,East Asia & Pacific
+Talents,0.44836118689161325,Non mobile,Europe & Central Asia
+Talents,0.0971123915313332,Both,Europe & Central Asia
+Talents,0.14810800321306467,Internal,Europe & Central Asia
+Talents,0.30641841836398886,International,Europe & Central Asia
+Talents,0.32085509134577483,Non mobile,Latin America & Caribbean
+Talents,0.19369500253457292,Both,Latin America & Caribbean
+Talents,0.1393293356642355,Internal,Latin America & Caribbean
+Talents,0.34612057045541683,International,Latin America & Caribbean
+Talents,0.4052002578148308,Non mobile,Middle East & North Africa
+Talents,0.13286090042829699,Both,Middle East & North Africa
+Talents,0.12444658773833074,Internal,Middle East & North Africa
+Talents,0.3374922540185413,International,Middle East & North Africa
+Talents,0.3525440551779616,Non mobile,North America
+Talents,0.13052280509949898,Both,North America
+Talents,0.13759409775070017,Internal,North America
+Talents,0.3793390419718394,International,North America
+Talents,0.4371920109126095,Non mobile,South Asia
+Talents,0.10624734169255919,Both,South Asia
+Talents,0.16469424773377056,Internal,South Asia
+Talents,0.29186639966106087,International,South Asia
+Talents,0.3100355807499768,Non mobile,USA
+Talents,0.11312986851068739,Both,USA
+Talents,0.4608641150501983,Internal,USA
+Talents,0.11597043568913759,International,USA
+Talents,0.35799878328814505,Non mobile,ZAF
+Talents,0.16573176839582524,Both,ZAF
+Talents,0.05675534864513028,Internal,ZAF
+Talents,0.41951409967089964,International,ZAF

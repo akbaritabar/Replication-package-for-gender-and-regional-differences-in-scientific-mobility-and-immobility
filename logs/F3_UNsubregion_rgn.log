@@ -1,0 +1,17 @@
+2025-10-31 15:50:28,703 - root - INFO - These items are in the environment: ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'gg', 'label_number', 'lg', 'pd', 'six_colors_colorblind']
+2025-10-31 15:50:28,708 - root - INFO - Arguments received from command line: 
+ Namespace(input=['G:/ali/talents/results/md_prd2_UNsubregion_region.csv'], output=['G:/ali/talents/results/figures/Figure_3_UNsubregion_rgn.png'])
+2025-10-31 15:50:28,715 - root - INFO - Data read from 'G:/ali/talents/results/md_prd2_UNsubregion_region.csv'
+2025-10-31 15:50:28,724 - root - INFO - A few rows: '           x  ...           group
+147  Talents  ...  Western Europe
+148  Talents  ...             ZAF
+149  Talents  ...             ZAF
+150  Talents  ...             ZAF
+151  Talents  ...             ZAF
+
+[5 rows x 4 columns]'
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:615: PlotnineWarning: Saving 5 x 6 in image.
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:616: PlotnineWarning: Filename: G:/ali/talents/results/figures/Figure_3_UNsubregion_rgn.png
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\layer.py:364: PlotnineWarning: geom_col : Removed 2 rows containing missing values.
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\layer.py:364: PlotnineWarning: geom_text : Removed 2 rows containing missing values.
+2025-10-31 15:50:32,236 - root - INFO - Figure exported in: 'G:/ali/talents/results/figures/Figure_3_UNsubregion_rgn.png'

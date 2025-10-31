@@ -1,0 +1,307 @@
+running
+  'C:\PROGRA~1\R\R-45~1.1\bin\x64\Rterm.exe --no-echo --no-restore --no-save --no-restore --file=workflow/scripts/read_data_run_statistical_model_regions.R --args --input G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv --region2use continent --output G:/ali/talents/results/md_prd2_continent_region.csv G:/ali/talents/results/tables/TABLE_4_continent_region.html'
+
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.2
+v ggplot2   4.0.0     v tibble    3.3.0
+v lubridate 1.9.4     v tidyr     1.3.1
+v purrr     1.1.0     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+Version:  1.39.4
+Date:     2024-07-23
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+
+Attaching package: 'texreg'
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+[1] "R working directory: "
+[1] "G:/ali/talents"
+[1] "##################################################"
+[1] "Received these arguments from command line: "
+[[1]]
+[1] FALSE
+
+$help
+[1] FALSE
+
+$opts
+[1] NA
+
+$input
+[1] "G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv"
+
+$region2use
+[1] "continent"
+
+$output
+[1] "G:/ali/talents/results/md_prd2_continent_region.csv"        
+[2] "G:/ali/talents/results/tables/TABLE_4_continent_region.html"
+
+[1] "Current R session Info: "
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows Server 2019 x64 (build 17763)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] argparser_0.7.2 ggeffects_2.3.1 GGally_2.4.0    nnet_7.3-20    
+ [5] texreg_1.39.4   stargazer_5.2.3 lubridate_1.9.4 forcats_1.0.0  
+ [9] stringr_1.5.2   dplyr_1.1.4     purrr_1.1.0     readr_2.1.5    
+[13] tidyr_1.3.1     tibble_3.3.0    ggplot2_4.0.0   tidyverse_2.0.0
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.6       compiler_4.5.1     tidyselect_1.2.1   ggstats_0.10.0    
+ [5] scales_1.4.0       R6_2.6.1           generics_0.1.4     insight_1.4.2     
+ [9] pillar_1.11.0      RColorBrewer_1.1-3 tzdb_0.5.0         rlang_1.1.6       
+[13] stringi_1.8.7      S7_0.2.0           timechange_0.3.0   cli_3.6.5         
+[17] withr_3.0.2        magrittr_2.0.4     grid_4.5.1         hms_1.1.3         
+[21] lifecycle_1.0.4    vctrs_0.6.5        glue_1.8.0         farver_2.1.2      
+[25] httr_1.4.7         tools_4.5.1        pkgconfig_2.0.3   
+Rows: 28406 Columns: 14
+-- Column specification --------------------------------------------------------
+Delimiter: ","
+chr (12): ctrl_obs_cat, ctrl_obs_2cat, first_gender, second_gender, third_ge...
+dbl  (2): fake_author_ID, acadmic_age
+
+i Use `spec()` to retrieve the full column specification for this data.
+i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+# weights:  80 (57 variable)
+initial  value 39379.077622 
+iter  10 value 34700.128967
+iter  20 value 34538.259653
+iter  30 value 34319.512210
+iter  40 value 34261.950406
+iter  50 value 34255.807584
+final  value 34254.841828 
+converged
+# A tibble: 6 x 4
+  x      predicted response.level group   
+  <fct>      <dbl> <chr>          <fct>   
+1 Others    0.466  Non mobile     Africa  
+2 Others    0.0362 Both           Africa  
+3 Others    0.122  Internal       Africa  
+4 Others    0.376  International  Africa  
+5 Others    0.402  Non mobile     Americas
+6 Others    0.111  Both           Americas
+
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Both</td><td>Internal</td><td>International</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">ctrl_obs_2catTalents</td><td>1.642<sup>**</sup></td><td>0.167</td><td>0.252</td></tr>
+<tr><td style="text-align:left"></td><td>(0.734)</td><td>(0.588)</td><td>(0.401)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useAmericas</td><td>1.270<sup>**</sup></td><td>0.308</td><td>0.057</td></tr>
+<tr><td style="text-align:left"></td><td>(0.616)</td><td>(0.377)</td><td>(0.259)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useAsia</td><td>0.918</td><td>0.807<sup>**</sup></td><td>-0.515<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.604)</td><td>(0.358)</td><td>(0.246)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useBRA</td><td>0.407</td><td>0.931<sup>**</sup></td><td>-0.853<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.669)</td><td>(0.387)</td><td>(0.307)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useCHN</td><td>0.670</td><td>0.421</td><td>-1.075<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.606)</td><td>(0.360)</td><td>(0.249)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useEurope</td><td>0.657</td><td>0.262</td><td>-0.524<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.603)</td><td>(0.357)</td><td>(0.243)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useOceania</td><td>1.866<sup>***</sup></td><td>0.701<sup>*</sup></td><td>0.086</td></tr>
+<tr><td style="text-align:left"></td><td>(0.619)</td><td>(0.385)</td><td>(0.272)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useUSA</td><td>1.222<sup>**</sup></td><td>1.496<sup>***</sup></td><td>-0.762<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.604)</td><td>(0.358)</td><td>(0.247)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useZAF</td><td>1.766<sup>**</sup></td><td>-0.114</td><td>-0.538</td></tr>
+<tr><td style="text-align:left"></td><td>(0.781)</td><td>(0.736)</td><td>(0.551)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">acadmic_age</td><td>0.142<sup>***</sup></td><td>0.094<sup>***</sup></td><td>0.064<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.009)</td><td>(0.006)</td><td>(0.006)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useAmericas</td><td>-1.277<sup>*</sup></td><td>-0.060</td><td>-0.020</td></tr>
+<tr><td style="text-align:left"></td><td>(0.760)</td><td>(0.618)</td><td>(0.426)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useAsia</td><td>-1.640<sup>**</sup></td><td>-0.195</td><td>-0.401</td></tr>
+<tr><td style="text-align:left"></td><td>(0.741)</td><td>(0.592)</td><td>(0.408)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useBRA</td><td>-2.034<sup>**</sup></td><td>-0.838</td><td>-0.138</td></tr>
+<tr><td style="text-align:left"></td><td>(0.898)</td><td>(0.651)</td><td>(0.497)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useCHN</td><td>-1.686<sup>**</sup></td><td>-0.471</td><td>-0.264</td></tr>
+<tr><td style="text-align:left"></td><td>(0.743)</td><td>(0.594)</td><td>(0.411)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useEurope</td><td>-1.285<sup>*</sup></td><td>-0.211</td><td>0.113</td></tr>
+<tr><td style="text-align:left"></td><td>(0.738)</td><td>(0.591)</td><td>(0.404)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useOceania</td><td>-1.593<sup>**</sup></td><td>-0.143</td><td>-0.219</td></tr>
+<tr><td style="text-align:left"></td><td>(0.762)</td><td>(0.622)</td><td>(0.437)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useUSA</td><td>-1.315<sup>*</sup></td><td>0.077</td><td>-0.259</td></tr>
+<tr><td style="text-align:left"></td><td>(0.739)</td><td>(0.591)</td><td>(0.409)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useZAF</td><td>-1.622<sup>*</sup></td><td>-0.551</td><td>0.658</td></tr>
+<tr><td style="text-align:left"></td><td>(0.978)</td><td>(1.072)</td><td>(0.711)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-5.222<sup>***</sup></td><td>-3.114<sup>***</sup></td><td>-1.411<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.624)</td><td>(0.371)</td><td>(0.262)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Akaike Inf. Crit.</td><td>68,623.680</td><td>68,623.680</td><td>68,623.680</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+[1] "Stat model results: \n"
+
+=====================================================================
+                                                        Model 1      
+---------------------------------------------------------------------
+Both: (Intercept)                                           -5.22 ***
+                                                            (0.62)   
+Both: ctrl_obs_2catTalents                                   1.64 *  
+                                                            (0.73)   
+Both: region2useAmericas                                     1.27 *  
+                                                            (0.62)   
+Both: region2useAsia                                         0.92    
+                                                            (0.60)   
+Both: region2useBRA                                          0.41    
+                                                            (0.67)   
+Both: region2useCHN                                          0.67    
+                                                            (0.61)   
+Both: region2useEurope                                       0.66    
+                                                            (0.60)   
+Both: region2useOceania                                      1.87 ** 
+                                                            (0.62)   
+Both: region2useUSA                                          1.22 *  
+                                                            (0.60)   
+Both: region2useZAF                                          1.77 *  
+                                                            (0.78)   
+Both: acadmic_age                                            0.14 ***
+                                                            (0.01)   
+Both: ctrl_obs_2catTalents:region2useAmericas               -1.28    
+                                                            (0.76)   
+Both: ctrl_obs_2catTalents:region2useAsia                   -1.64 *  
+                                                            (0.74)   
+Both: ctrl_obs_2catTalents:region2useBRA                    -2.03 *  
+                                                            (0.90)   
+Both: ctrl_obs_2catTalents:region2useCHN                    -1.69 *  
+                                                            (0.74)   
+Both: ctrl_obs_2catTalents:region2useEurope                 -1.28    
+                                                            (0.74)   
+Both: ctrl_obs_2catTalents:region2useOceania                -1.59 *  
+                                                            (0.76)   
+Both: ctrl_obs_2catTalents:region2useUSA                    -1.31    
+                                                            (0.74)   
+Both: ctrl_obs_2catTalents:region2useZAF                    -1.62    
+                                                            (0.98)   
+Internal: (Intercept)                                       -3.11 ***
+                                                            (0.37)   
+Internal: ctrl_obs_2catTalents                               0.17    
+                                                            (0.59)   
+Internal: region2useAmericas                                 0.31    
+                                                            (0.38)   
+Internal: region2useAsia                                     0.81 *  
+                                                            (0.36)   
+Internal: region2useBRA                                      0.93 *  
+                                                            (0.39)   
+Internal: region2useCHN                                      0.42    
+                                                            (0.36)   
+Internal: region2useEurope                                   0.26    
+                                                            (0.36)   
+Internal: region2useOceania                                  0.70    
+                                                            (0.39)   
+Internal: region2useUSA                                      1.50 ***
+                                                            (0.36)   
+Internal: region2useZAF                                     -0.11    
+                                                            (0.74)   
+Internal: acadmic_age                                        0.09 ***
+                                                            (0.01)   
+Internal: ctrl_obs_2catTalents:region2useAmericas           -0.06    
+                                                            (0.62)   
+Internal: ctrl_obs_2catTalents:region2useAsia               -0.19    
+                                                            (0.59)   
+Internal: ctrl_obs_2catTalents:region2useBRA                -0.84    
+                                                            (0.65)   
+Internal: ctrl_obs_2catTalents:region2useCHN                -0.47    
+                                                            (0.59)   
+Internal: ctrl_obs_2catTalents:region2useEurope             -0.21    
+                                                            (0.59)   
+Internal: ctrl_obs_2catTalents:region2useOceania            -0.14    
+                                                            (0.62)   
+Internal: ctrl_obs_2catTalents:region2useUSA                 0.08    
+                                                            (0.59)   
+Internal: ctrl_obs_2catTalents:region2useZAF                -0.55    
+                                                            (1.07)   
+International: (Intercept)                                  -1.41 ***
+                                                            (0.26)   
+International: ctrl_obs_2catTalents                          0.25    
+                                                            (0.40)   
+International: region2useAmericas                            0.06    
+                                                            (0.26)   
+International: region2useAsia                               -0.51 *  
+                                                            (0.25)   
+International: region2useBRA                                -0.85 ** 
+                                                            (0.31)   
+International: region2useCHN                                -1.07 ***
+                                                            (0.25)   
+International: region2useEurope                             -0.52 *  
+                                                            (0.24)   
+International: region2useOceania                             0.09    
+                                                            (0.27)   
+International: region2useUSA                                -0.76 ** 
+                                                            (0.25)   
+International: region2useZAF                                -0.54    
+                                                            (0.55)   
+International: acadmic_age                                   0.06 ***
+                                                            (0.01)   
+International: ctrl_obs_2catTalents:region2useAmericas      -0.02    
+                                                            (0.43)   
+International: ctrl_obs_2catTalents:region2useAsia          -0.40    
+                                                            (0.41)   
+International: ctrl_obs_2catTalents:region2useBRA           -0.14    
+                                                            (0.50)   
+International: ctrl_obs_2catTalents:region2useCHN           -0.26    
+                                                            (0.41)   
+International: ctrl_obs_2catTalents:region2useEurope         0.11    
+                                                            (0.40)   
+International: ctrl_obs_2catTalents:region2useOceania       -0.22    
+                                                            (0.44)   
+International: ctrl_obs_2catTalents:region2useUSA           -0.26    
+                                                            (0.41)   
+International: ctrl_obs_2catTalents:region2useZAF            0.66    
+                                                            (0.71)   
+---------------------------------------------------------------------
+AIC                                                      68623.68    
+BIC                                                      69094.18    
+Log Likelihood                                          -34254.84    
+Deviance                                                 68509.68    
+Num. obs.                                                28406       
+K                                                            4       
+=====================================================================
+*** p < 0.001; ** p < 0.01; * p < 0.05

@@ -1,0 +1,496 @@
+running
+  'C:\PROGRA~1\R\R-45~1.1\bin\x64\Rterm.exe --no-echo --no-restore --no-save --no-restore --file=workflow/scripts/read_data_run_statistical_model_regions.R --args --input G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv --region2use UNsubregion --output G:/ali/talents/results/md_prd2_UNsubregion_region.csv G:/ali/talents/results/tables/TABLE_4_UNsubregion_region.html'
+
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.2
+v ggplot2   4.0.0     v tibble    3.3.0
+v lubridate 1.9.4     v tidyr     1.3.1
+v purrr     1.1.0     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+Version:  1.39.4
+Date:     2024-07-23
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+
+Attaching package: 'texreg'
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+[1] "R working directory: "
+[1] "G:/ali/talents"
+[1] "##################################################"
+[1] "Received these arguments from command line: "
+[[1]]
+[1] FALSE
+
+$help
+[1] FALSE
+
+$opts
+[1] NA
+
+$input
+[1] "G:/ali/talents/results/Akbaritabar_Haunschild_Bornmann_replication_data.csv"
+
+$region2use
+[1] "UNsubregion"
+
+$output
+[1] "G:/ali/talents/results/md_prd2_UNsubregion_region.csv"        
+[2] "G:/ali/talents/results/tables/TABLE_4_UNsubregion_region.html"
+
+[1] "Current R session Info: "
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows Server 2019 x64 (build 17763)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] argparser_0.7.2 ggeffects_2.3.1 GGally_2.4.0    nnet_7.3-20    
+ [5] texreg_1.39.4   stargazer_5.2.3 lubridate_1.9.4 forcats_1.0.0  
+ [9] stringr_1.5.2   dplyr_1.1.4     purrr_1.1.0     readr_2.1.5    
+[13] tidyr_1.3.1     tibble_3.3.0    ggplot2_4.0.0   tidyverse_2.0.0
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.6       compiler_4.5.1     tidyselect_1.2.1   ggstats_0.10.0    
+ [5] scales_1.4.0       R6_2.6.1           generics_0.1.4     insight_1.4.2     
+ [9] pillar_1.11.0      RColorBrewer_1.1-3 tzdb_0.5.0         rlang_1.1.6       
+[13] stringi_1.8.7      S7_0.2.0           timechange_0.3.0   cli_3.6.5         
+[17] withr_3.0.2        magrittr_2.0.4     grid_4.5.1         hms_1.1.3         
+[21] lifecycle_1.0.4    vctrs_0.6.5        glue_1.8.0         farver_2.1.2      
+[25] httr_1.4.7         tools_4.5.1        pkgconfig_2.0.3   
+Rows: 28406 Columns: 14
+-- Column specification --------------------------------------------------------
+Delimiter: ","
+chr (12): ctrl_obs_cat, ctrl_obs_2cat, first_gender, second_gender, third_ge...
+dbl  (2): fake_author_ID, acadmic_age
+
+i Use `spec()` to retrieve the full column specification for this data.
+i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+# weights:  160 (117 variable)
+initial  value 39379.077622 
+iter  10 value 34605.127045
+iter  20 value 34345.528136
+iter  30 value 33957.224018
+iter  40 value 33901.119376
+iter  50 value 33878.342657
+iter  60 value 33869.360206
+iter  70 value 33868.195295
+iter  80 value 33867.216180
+iter  90 value 33866.268797
+iter 100 value 33865.439507
+iter 110 value 33865.136601
+iter 120 value 33864.964002
+final  value 33864.955398 
+converged
+# A tibble: 6 x 4
+  x      predicted response.level group                    
+  <fct>      <dbl> <chr>          <fct>                    
+1 Others 0.622     Non mobile     Sub-Saharan Africa       
+2 Others 0.0000188 Both           Sub-Saharan Africa       
+3 Others 0.125     Internal       Sub-Saharan Africa       
+4 Others 0.253     International  Sub-Saharan Africa       
+5 Others 0.344     Non mobile     Australia and New Zealand
+6 Others 0.172     Both           Australia and New Zealand
+
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Both</td><td>Internal</td><td>International</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">ctrl_obs_2catTalents</td><td>9.082<sup>***</sup></td><td>0.296</td><td>0.803</td></tr>
+<tr><td style="text-align:left"></td><td>(0.338)</td><td>(1.017)</td><td>(0.739)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useAustralia and New Zealand</td><td>9.715<sup>***</sup></td><td>0.965</td><td>0.772</td></tr>
+<tr><td style="text-align:left"></td><td>(0.364)</td><td>(0.794)</td><td>(0.609)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useBRA</td><td>8.254<sup>***</sup></td><td>1.195</td><td>-0.168</td></tr>
+<tr><td style="text-align:left"></td><td>(0.435)</td><td>(0.794)</td><td>(0.625)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useCentral Asia</td><td>34.126<sup>***</sup></td><td>25.339<sup>***</sup></td><td>25.720<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.875)</td><td>(1.156)</td><td>(0.747)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useCHN</td><td>8.518<sup>***</sup></td><td>0.685</td><td>-0.389</td></tr>
+<tr><td style="text-align:left"></td><td>(0.344)</td><td>(0.782)</td><td>(0.599)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useEastern Asia</td><td>8.612<sup>***</sup></td><td>1.203</td><td>-0.106</td></tr>
+<tr><td style="text-align:left"></td><td>(0.345)</td><td>(0.781)</td><td>(0.599)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useEastern Europe</td><td>7.966<sup>***</sup></td><td>-0.111</td><td>0.209</td></tr>
+<tr><td style="text-align:left"></td><td>(0.412)</td><td>(0.802)</td><td>(0.609)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useLatin America and the Caribbean</td><td>8.894<sup>***</sup></td><td>0.855</td><td>0.983</td></tr>
+<tr><td style="text-align:left"></td><td>(0.426)</td><td>(0.808)</td><td>(0.619)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useMelanesia</td><td>-1.542</td><td>-1.715<sup>***</sup></td><td>15.344<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.000)</td><td>(0.000)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useNorthern Africa</td><td>8.151<sup>***</sup></td><td>0.337</td><td>0.841</td></tr>
+<tr><td style="text-align:left"></td><td>(0.663)</td><td>(0.876)</td><td>(0.652)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useNorthern America</td><td>9.195<sup>***</sup></td><td>0.432</td><td>0.626</td></tr>
+<tr><td style="text-align:left"></td><td>(0.366)</td><td>(0.795)</td><td>(0.607)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useNorthern Europe</td><td>8.429<sup>***</sup></td><td>-0.016</td><td>0.365</td></tr>
+<tr><td style="text-align:left"></td><td>(0.351)</td><td>(0.785)</td><td>(0.599)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useSouth-eastern Asia</td><td>9.449<sup>***</sup></td><td>-0.472</td><td>1.198<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.461)</td><td>(0.942)</td><td>(0.637)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useSouthern Asia</td><td>8.916<sup>***</sup></td><td>0.568</td><td>0.380</td></tr>
+<tr><td style="text-align:left"></td><td>(0.373)</td><td>(0.793)</td><td>(0.608)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useSouthern Europe</td><td>7.890<sup>***</sup></td><td>0.355</td><td>-0.306</td></tr>
+<tr><td style="text-align:left"></td><td>(0.357)</td><td>(0.783)</td><td>(0.600)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useUSA</td><td>9.070<sup>***</sup></td><td>1.759<sup>**</sup></td><td>-0.076</td></tr>
+<tr><td style="text-align:left"></td><td>(0.341)</td><td>(0.781)</td><td>(0.598)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useWestern Asia</td><td>9.253<sup>***</sup></td><td>0.627</td><td>0.885</td></tr>
+<tr><td style="text-align:left"></td><td>(0.381)</td><td>(0.800)</td><td>(0.610)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useWestern Europe</td><td>8.942<sup>***</sup></td><td>0.970</td><td>0.298</td></tr>
+<tr><td style="text-align:left"></td><td>(0.343)</td><td>(0.782)</td><td>(0.598)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">region2useZAF</td><td>9.611<sup>***</sup></td><td>0.150</td><td>0.146</td></tr>
+<tr><td style="text-align:left"></td><td>(0.578)</td><td>(1.011)</td><td>(0.775)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">acadmic_age</td><td>0.145<sup>***</sup></td><td>0.094<sup>***</sup></td><td>0.067<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.009)</td><td>(0.006)</td><td>(0.006)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useAustralia and New Zealand</td><td>-9.035<sup>***</sup></td><td>-0.273</td><td>-0.778</td></tr>
+<tr><td style="text-align:left"></td><td>(0.390)</td><td>(1.037)</td><td>(0.759)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useBRA</td><td>-9.475<sup>***</sup></td><td>-0.967</td><td>-0.689</td></tr>
+<tr><td style="text-align:left"></td><td>(0.602)</td><td>(1.054)</td><td>(0.795)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useCentral Asia</td><td>-33.344<sup>***</sup></td><td>-45.509<sup>***</sup></td><td>-26.781<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.042)</td><td>(0.00000)</td><td>(1.153)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useCHN</td><td>-9.126<sup>***</sup></td><td>-0.600</td><td>-0.815</td></tr>
+<tr><td style="text-align:left"></td><td>(0.356)</td><td>(1.020)</td><td>(0.745)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useEastern Asia</td><td>-9.109<sup>***</sup></td><td>-0.343</td><td>-0.914</td></tr>
+<tr><td style="text-align:left"></td><td>(0.359)</td><td>(1.020)</td><td>(0.745)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useEastern Europe</td><td>-8.386<sup>***</sup></td><td>-0.677</td><td>-0.547</td></tr>
+<tr><td style="text-align:left"></td><td>(0.480)</td><td>(1.075)</td><td>(0.766)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useLatin America and the Caribbean</td><td>-8.077<sup>***</sup></td><td>-0.379</td><td>-0.809</td></tr>
+<tr><td style="text-align:left"></td><td>(0.552)</td><td>(1.114)</td><td>(0.819)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useMelanesia</td><td>-1.542<sup>***</sup></td><td>-1.715</td><td>15.344<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.000)</td><td></td><td>(0.000)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useNorthern Africa</td><td>-7.373<sup>***</sup></td><td>-0.048</td><td>-0.547</td></tr>
+<tr><td style="text-align:left"></td><td>(0.866)</td><td>(1.286)</td><td>(0.918)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useNorthern America</td><td>-8.867<sup>***</sup></td><td>-0.062</td><td>-0.455</td></tr>
+<tr><td style="text-align:left"></td><td>(0.398)</td><td>(1.040)</td><td>(0.757)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useNorthern Europe</td><td>-9.008<sup>***</sup></td><td>-0.384</td><td>-0.652</td></tr>
+<tr><td style="text-align:left"></td><td>(0.367)</td><td>(1.026)</td><td>(0.744)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useSouth-eastern Asia</td><td>-9.409<sup>***</sup></td><td>-0.046</td><td>-1.689<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.594)</td><td>(1.244)</td><td>(0.831)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useSouthern Asia</td><td>-9.514<sup>***</sup></td><td>-0.612</td><td>-1.064</td></tr>
+<tr><td style="text-align:left"></td><td>(0.439)</td><td>(1.044)</td><td>(0.763)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useSouthern Europe</td><td>-8.824<sup>***</sup></td><td>-0.395</td><td>-0.416</td></tr>
+<tr><td style="text-align:left"></td><td>(0.381)</td><td>(1.023)</td><td>(0.746)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useUSA</td><td>-8.756<sup>***</sup></td><td>-0.052</td><td>-0.810</td></tr>
+<tr><td style="text-align:left"></td><td>(0.348)</td><td>(1.018)</td><td>(0.743)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useWestern Asia</td><td>-8.518<sup>***</sup></td><td>0.210</td><td>-0.653</td></tr>
+<tr><td style="text-align:left"></td><td>(0.424)</td><td>(1.048)</td><td>(0.766)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useWestern Europe</td><td>-8.568<sup>***</sup></td><td>-0.227</td><td>-0.275</td></tr>
+<tr><td style="text-align:left"></td><td>(0.353)</td><td>(1.020)</td><td>(0.743)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ctrl_obs_2catTalents:region2useZAF</td><td>-9.060<sup>***</sup></td><td>-0.681</td><td>0.110</td></tr>
+<tr><td style="text-align:left"></td><td>(0.703)</td><td>(1.355)</td><td>(0.944)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-13.121<sup>***</sup></td><td>-3.366<sup>***</sup></td><td>-2.148<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.374)</td><td>(0.787)</td><td>(0.605)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Akaike Inf. Crit.</td><td>67,957.910</td><td>67,957.910</td><td>67,957.910</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+[1] "Stat model results: \n"
+
+============================================================================================
+                                                                               Model 1      
+--------------------------------------------------------------------------------------------
+Both: (Intercept)                                                                 -13.12 ***
+                                                                                   (0.37)   
+Both: ctrl_obs_2catTalents                                                          9.08 ***
+                                                                                   (0.34)   
+Both: region2useAustralia and New Zealand                                           9.71 ***
+                                                                                   (0.36)   
+Both: region2useBRA                                                                 8.25 ***
+                                                                                   (0.43)   
+Both: region2useCentral Asia                                                       34.13 ***
+                                                                                   (0.88)   
+Both: region2useCHN                                                                 8.52 ***
+                                                                                   (0.34)   
+Both: region2useEastern Asia                                                        8.61 ***
+                                                                                   (0.34)   
+Both: region2useEastern Europe                                                      7.97 ***
+                                                                                   (0.41)   
+Both: region2useLatin America and the Caribbean                                     8.89 ***
+                                                                                   (0.43)   
+Both: region2useMelanesia                                                          -1.54    
+                                                                                            
+Both: region2useNorthern Africa                                                     8.15 ***
+                                                                                   (0.66)   
+Both: region2useNorthern America                                                    9.19 ***
+                                                                                   (0.37)   
+Both: region2useNorthern Europe                                                     8.43 ***
+                                                                                   (0.35)   
+Both: region2useSouth-eastern Asia                                                  9.45 ***
+                                                                                   (0.46)   
+Both: region2useSouthern Asia                                                       8.92 ***
+                                                                                   (0.37)   
+Both: region2useSouthern Europe                                                     7.89 ***
+                                                                                   (0.36)   
+Both: region2useUSA                                                                 9.07 ***
+                                                                                   (0.34)   
+Both: region2useWestern Asia                                                        9.25 ***
+                                                                                   (0.38)   
+Both: region2useWestern Europe                                                      8.94 ***
+                                                                                   (0.34)   
+Both: region2useZAF                                                                 9.61 ***
+                                                                                   (0.58)   
+Both: acadmic_age                                                                   0.14 ***
+                                                                                   (0.01)   
+Both: ctrl_obs_2catTalents:region2useAustralia and New Zealand                     -9.03 ***
+                                                                                   (0.39)   
+Both: ctrl_obs_2catTalents:region2useBRA                                           -9.48 ***
+                                                                                   (0.60)   
+Both: ctrl_obs_2catTalents:region2useCentral Asia                                 -33.34 ***
+                                                                                   (1.04)   
+Both: ctrl_obs_2catTalents:region2useCHN                                           -9.13 ***
+                                                                                   (0.36)   
+Both: ctrl_obs_2catTalents:region2useEastern Asia                                  -9.11 ***
+                                                                                   (0.36)   
+Both: ctrl_obs_2catTalents:region2useEastern Europe                                -8.39 ***
+                                                                                   (0.48)   
+Both: ctrl_obs_2catTalents:region2useLatin America and the Caribbean               -8.08 ***
+                                                                                   (0.55)   
+Both: ctrl_obs_2catTalents:region2useMelanesia                                     -1.54 ***
+                                                                                   (0.00)   
+Both: ctrl_obs_2catTalents:region2useNorthern Africa                               -7.37 ***
+                                                                                   (0.87)   
+Both: ctrl_obs_2catTalents:region2useNorthern America                              -8.87 ***
+                                                                                   (0.40)   
+Both: ctrl_obs_2catTalents:region2useNorthern Europe                               -9.01 ***
+                                                                                   (0.37)   
+Both: ctrl_obs_2catTalents:region2useSouth-eastern Asia                            -9.41 ***
+                                                                                   (0.59)   
+Both: ctrl_obs_2catTalents:region2useSouthern Asia                                 -9.51 ***
+                                                                                   (0.44)   
+Both: ctrl_obs_2catTalents:region2useSouthern Europe                               -8.82 ***
+                                                                                   (0.38)   
+Both: ctrl_obs_2catTalents:region2useUSA                                           -8.76 ***
+                                                                                   (0.35)   
+Both: ctrl_obs_2catTalents:region2useWestern Asia                                  -8.52 ***
+                                                                                   (0.42)   
+Both: ctrl_obs_2catTalents:region2useWestern Europe                                -8.57 ***
+                                                                                   (0.35)   
+Both: ctrl_obs_2catTalents:region2useZAF                                           -9.06 ***
+                                                                                   (0.70)   
+Internal: (Intercept)                                                              -3.37 ***
+                                                                                   (0.79)   
+Internal: ctrl_obs_2catTalents                                                      0.30    
+                                                                                   (1.02)   
+Internal: region2useAustralia and New Zealand                                       0.97    
+                                                                                   (0.79)   
+Internal: region2useBRA                                                             1.20    
+                                                                                   (0.79)   
+Internal: region2useCentral Asia                                                   25.34 ***
+                                                                                   (1.16)   
+Internal: region2useCHN                                                             0.68    
+                                                                                   (0.78)   
+Internal: region2useEastern Asia                                                    1.20    
+                                                                                   (0.78)   
+Internal: region2useEastern Europe                                                 -0.11    
+                                                                                   (0.80)   
+Internal: region2useLatin America and the Caribbean                                 0.86    
+                                                                                   (0.81)   
+Internal: region2useMelanesia                                                      -1.71 ***
+                                                                                   (0.00)   
+Internal: region2useNorthern Africa                                                 0.34    
+                                                                                   (0.88)   
+Internal: region2useNorthern America                                                0.43    
+                                                                                   (0.80)   
+Internal: region2useNorthern Europe                                                -0.02    
+                                                                                   (0.79)   
+Internal: region2useSouth-eastern Asia                                             -0.47    
+                                                                                   (0.94)   
+Internal: region2useSouthern Asia                                                   0.57    
+                                                                                   (0.79)   
+Internal: region2useSouthern Europe                                                 0.35    
+                                                                                   (0.78)   
+Internal: region2useUSA                                                             1.76 *  
+                                                                                   (0.78)   
+Internal: region2useWestern Asia                                                    0.63    
+                                                                                   (0.80)   
+Internal: region2useWestern Europe                                                  0.97    
+                                                                                   (0.78)   
+Internal: region2useZAF                                                             0.15    
+                                                                                   (1.01)   
+Internal: acadmic_age                                                               0.09 ***
+                                                                                   (0.01)   
+Internal: ctrl_obs_2catTalents:region2useAustralia and New Zealand                 -0.27    
+                                                                                   (1.04)   
+Internal: ctrl_obs_2catTalents:region2useBRA                                       -0.97    
+                                                                                   (1.05)   
+Internal: ctrl_obs_2catTalents:region2useCentral Asia                             -45.51 ***
+                                                                                   (0.00)   
+Internal: ctrl_obs_2catTalents:region2useCHN                                       -0.60    
+                                                                                   (1.02)   
+Internal: ctrl_obs_2catTalents:region2useEastern Asia                              -0.34    
+                                                                                   (1.02)   
+Internal: ctrl_obs_2catTalents:region2useEastern Europe                            -0.68    
+                                                                                   (1.07)   
+Internal: ctrl_obs_2catTalents:region2useLatin America and the Caribbean           -0.38    
+                                                                                   (1.11)   
+Internal: ctrl_obs_2catTalents:region2useMelanesia                                 -1.71    
+                                                                                            
+Internal: ctrl_obs_2catTalents:region2useNorthern Africa                           -0.05    
+                                                                                   (1.29)   
+Internal: ctrl_obs_2catTalents:region2useNorthern America                          -0.06    
+                                                                                   (1.04)   
+Internal: ctrl_obs_2catTalents:region2useNorthern Europe                           -0.38    
+                                                                                   (1.03)   
+Internal: ctrl_obs_2catTalents:region2useSouth-eastern Asia                        -0.05    
+                                                                                   (1.24)   
+Internal: ctrl_obs_2catTalents:region2useSouthern Asia                             -0.61    
+                                                                                   (1.04)   
+Internal: ctrl_obs_2catTalents:region2useSouthern Europe                           -0.40    
+                                                                                   (1.02)   
+Internal: ctrl_obs_2catTalents:region2useUSA                                       -0.05    
+                                                                                   (1.02)   
+Internal: ctrl_obs_2catTalents:region2useWestern Asia                               0.21    
+                                                                                   (1.05)   
+Internal: ctrl_obs_2catTalents:region2useWestern Europe                            -0.23    
+                                                                                   (1.02)   
+Internal: ctrl_obs_2catTalents:region2useZAF                                       -0.68    
+                                                                                   (1.36)   
+International: (Intercept)                                                         -2.15 ***
+                                                                                   (0.60)   
+International: ctrl_obs_2catTalents                                                 0.80    
+                                                                                   (0.74)   
+International: region2useAustralia and New Zealand                                  0.77    
+                                                                                   (0.61)   
+International: region2useBRA                                                       -0.17    
+                                                                                   (0.63)   
+International: region2useCentral Asia                                              25.72 ***
+                                                                                   (0.75)   
+International: region2useCHN                                                       -0.39    
+                                                                                   (0.60)   
+International: region2useEastern Asia                                              -0.11    
+                                                                                   (0.60)   
+International: region2useEastern Europe                                             0.21    
+                                                                                   (0.61)   
+International: region2useLatin America and the Caribbean                            0.98    
+                                                                                   (0.62)   
+International: region2useMelanesia                                                 15.34 ***
+                                                                                   (0.00)   
+International: region2useNorthern Africa                                            0.84    
+                                                                                   (0.65)   
+International: region2useNorthern America                                           0.63    
+                                                                                   (0.61)   
+International: region2useNorthern Europe                                            0.37    
+                                                                                   (0.60)   
+International: region2useSouth-eastern Asia                                         1.20    
+                                                                                   (0.64)   
+International: region2useSouthern Asia                                              0.38    
+                                                                                   (0.61)   
+International: region2useSouthern Europe                                           -0.31    
+                                                                                   (0.60)   
+International: region2useUSA                                                       -0.08    
+                                                                                   (0.60)   
+International: region2useWestern Asia                                               0.89    
+                                                                                   (0.61)   
+International: region2useWestern Europe                                             0.30    
+                                                                                   (0.60)   
+International: region2useZAF                                                        0.15    
+                                                                                   (0.77)   
+International: acadmic_age                                                          0.07 ***
+                                                                                   (0.01)   
+International: ctrl_obs_2catTalents:region2useAustralia and New Zealand            -0.78    
+                                                                                   (0.76)   
+International: ctrl_obs_2catTalents:region2useBRA                                  -0.69    
+                                                                                   (0.80)   
+International: ctrl_obs_2catTalents:region2useCentral Asia                        -26.78 ***
+                                                                                   (1.15)   
+International: ctrl_obs_2catTalents:region2useCHN                                  -0.82    
+                                                                                   (0.74)   
+International: ctrl_obs_2catTalents:region2useEastern Asia                         -0.91    
+                                                                                   (0.75)   
+International: ctrl_obs_2catTalents:region2useEastern Europe                       -0.55    
+                                                                                   (0.77)   
+International: ctrl_obs_2catTalents:region2useLatin America and the Caribbean      -0.81    
+                                                                                   (0.82)   
+International: ctrl_obs_2catTalents:region2useMelanesia                            15.34 ***
+                                                                                   (0.00)   
+International: ctrl_obs_2catTalents:region2useNorthern Africa                      -0.55    
+                                                                                   (0.92)   
+International: ctrl_obs_2catTalents:region2useNorthern America                     -0.45    
+                                                                                   (0.76)   
+International: ctrl_obs_2catTalents:region2useNorthern Europe                      -0.65    
+                                                                                   (0.74)   
+International: ctrl_obs_2catTalents:region2useSouth-eastern Asia                   -1.69 *  
+                                                                                   (0.83)   
+International: ctrl_obs_2catTalents:region2useSouthern Asia                        -1.06    
+                                                                                   (0.76)   
+International: ctrl_obs_2catTalents:region2useSouthern Europe                      -0.42    
+                                                                                   (0.75)   
+International: ctrl_obs_2catTalents:region2useUSA                                  -0.81    
+                                                                                   (0.74)   
+International: ctrl_obs_2catTalents:region2useWestern Asia                         -0.65    
+                                                                                   (0.77)   
+International: ctrl_obs_2catTalents:region2useWestern Europe                       -0.27    
+                                                                                   (0.74)   
+International: ctrl_obs_2catTalents:region2useZAF                                   0.11    
+                                                                                   (0.94)   
+--------------------------------------------------------------------------------------------
+AIC                                                                             67957.91    
+BIC                                                                             68898.91    
+Log Likelihood                                                                 -33864.96    
+Deviance                                                                        67729.91    
+Num. obs.                                                                       28406       
+K                                                                                   4       
+============================================================================================
+*** p < 0.001; ** p < 0.01; * p < 0.05
+Warning message:
+In sqrt(diag(vc)) : NaNs produced

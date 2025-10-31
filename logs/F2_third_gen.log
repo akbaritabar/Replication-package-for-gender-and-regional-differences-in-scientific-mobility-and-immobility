@@ -1,0 +1,15 @@
+2025-10-31 15:50:05,784 - root - INFO - These items are in the environment: ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'gg', 'label_number', 'lg', 'pd', 'six_colors_colorblind']
+2025-10-31 15:50:05,790 - root - INFO - Arguments received from command line: 
+ Namespace(input=['G:/ali/talents/results/md_prd1_third_gender.csv'], output=['G:/ali/talents/results/figures/Figure_2_third_gender.png'])
+2025-10-31 15:50:05,798 - root - INFO - Data read from 'G:/ali/talents/results/md_prd1_third_gender.csv'
+2025-10-31 15:50:05,806 - root - INFO - A few rows: '          x  ...    group
+19  Talents  ...     Male
+20  Talents  ...  Unknown
+21  Talents  ...  Unknown
+22  Talents  ...  Unknown
+23  Talents  ...  Unknown
+
+[5 rows x 4 columns]'
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:615: PlotnineWarning: Saving 5 x 5 in image.
+C:\Users\akbaritabar\.conda\envs\Ali\Lib\site-packages\plotnine\ggplot.py:616: PlotnineWarning: Filename: G:/ali/talents/results/figures/Figure_2_third_gender.png
+2025-10-31 15:50:07,465 - root - INFO - Figure exported in: 'G:/ali/talents/results/figures/Figure_2_third_gender.png'

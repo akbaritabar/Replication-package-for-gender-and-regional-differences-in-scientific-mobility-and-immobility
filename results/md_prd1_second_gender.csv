@@ -1,0 +1,25 @@
+x,predicted,response.level,group
+Others,0.4742097588010199,Non mobile,Female
+Others,0.0872054792837559,Both,Female
+Others,0.24537158646095267,Internal,Female
+Others,0.19321317545427144,International,Female
+Others,0.4558119434725731,Non mobile,Male
+Others,0.08847155507862528,Both,Male
+Others,0.24988092088106573,Internal,Male
+Others,0.20583558056773593,International,Male
+Others,0.4660884760138724,Non mobile,Unknown
+Others,0.07202913674297719,Both,Unknown
+Others,0.23305158198457793,Internal,Unknown
+Others,0.2288308052585724,International,Unknown
+Talents,0.47502213427787876,Non mobile,Female
+Talents,0.08749254252103819,Both,Female
+Talents,0.24518504660228246,Internal,Female
+Talents,0.19230027659880047,International,Female
+Talents,0.4049259909999477,Non mobile,Male
+Talents,0.11114014775801552,Both,Male
+Talents,0.26073342507291314,Internal,Male
+Talents,0.22320043616912366,International,Male
+Talents,0.45681580312451187,Non mobile,Unknown
+Talents,0.08636006589847252,Both,Unknown
+Talents,0.22337935361457342,Internal,Unknown
+Talents,0.23344477736244215,International,Unknown

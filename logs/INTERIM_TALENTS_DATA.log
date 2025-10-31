@@ -1,0 +1,4 @@
+2025-03-02 18:13:10,705 - root - INFO - These items are in the environment: ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'duckdb', 'lg']
+2025-03-02 18:13:10,717 - root - INFO - Arguments received from command line: 
+ Namespace(input=['G:/ali/talents/resources/licensed_dt/20230108_talents_joined_with_SCP2020_mobility_for_stat_models.csv', 'G:/ali/talents/resources/licensed_dt/author_gender.csv', 'G:/ali/talents/resources/licensed_dt/20250115_scp_rp_2020_authors_table_w_attributes_gender.parquet', 'G:/ali/talents/resources/licensed_dt/20220906_scp_rp_2020_authors_with_calculated_measures.csv'], output=['G:/ali/talents/resources/licensed_dt/interim_talents_data_w_all_attributes.parquet'])
+2025-03-02 18:13:15,557 - root - INFO - DuckDB ran the query and successfully finished!
