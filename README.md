@@ -1,6 +1,6 @@
 # Scripts, data, and replication materials for "A study of gender and regional differences in scientific mobility and immobility among researchers identified as potentially talented"
 
-This repository includes replication materials including data, Python and R scripts to replicate the analysis and figures of the article with following metadata. They also include additional results that were not included in the manuscript and supplementary information due to space limitations but are provided here, e.g., using alternative gender assignments, or more granular classification for geographical regions.
+This repository includes replication materials including data, Python and R scripts to replicate the analysis and figures of the article with following metadata. The repository includes additional results that were not included in the manuscript and its Appendix due to space limitations but are provided here, e.g., using alternative gender assignments or more granular classification for geographical regions.
 
 **Script authors/maintainers**: [Aliakbar Akbaritabar](https://github.com/akbaritabar)
 
@@ -24,21 +24,21 @@ Identifying talented academics worldwide using publication data has been proven 
 
 ## How to replicate the analysis
 
-I have provided the scripts, data, and the reproducible pipeline that creates final data for our manuscript, and runs the analysis and visualizations using R and Python. This includes the preparation of data, statistical analysis, visualizations (see figures under `results` folder). These reproducible pipeline uses scripts that are developed in Python and the reproducible workflow (described below) uses SnakeMake workflow management to ensure full replicability. 
+The scripts, data, and the reproducible pipeline that creates final data for our manuscript, and runs the analysis and visualizations using R and Python are provided. This includes the preparation of data, statistical analysis, visualizations (see figures under `results` folder). The pipeline uses scripts that are developed in Python. The reproducible workflow (described below) uses SnakeMake workflow management to ensure full replicability. 
 
-There are also R scripts for statistical analysis of the manuscript (see them in `workflow\scripts` folder) and figures in the manuscript and SI (see them under `results` folder).
+There are also R scripts for results in the manuscript (see them in `workflow\scripts` folder) and figures in the manuscript and Appendix (see them under `results` folder).
 
-Below, we describe the requirements to install before you can replicate the analysis.
+Below, we describe the requirements to install before analysis can be replicated.
 
 ## Python requirements
 
-For the reproducible pipeline to recreate the paper's replication data and analysis, you need to have [SnakeMake](https://snakemake.readthedocs.io/en/stable/index.html) version 8 or above installed. Creating a conda environment with Python 3 (3.11.9 was used here) and the following libraries (for instance by running `conda env create -f requirements.yml` and after copying the following yml code into a file: "requirements.yml") enables reproducing the pipeline by opening CLI, activating the conda environment i.e., `conda activate talents`, and running a dry-run with `snakemake -np all` or a full reproduction with `snakemake --cores 4 all`.
+For the reproducible pipeline to recreate the paper's replication data and analysis, [SnakeMake](https://snakemake.readthedocs.io/en/stable/index.html) version 8 or above should to be installed. Creating a conda environment with Python 3 (3.11.9 was used here) and the following libraries (for instance by running `conda env create -f requirements.yml` and after copying the following yml code into a file: "requirements.yml") enables reproducing the pipeline by opening CLI, activating the conda environment i.e., `conda activate talents`, and running a dry-run with `snakemake -np all` or a full reproduction with `snakemake --cores 4 all`.
 
-**An HTML report shows the a directed acyclic graph (DAG)** of the dependency of the steps in the pipeline (rules in SnakeMake lingua) which is accessible in [https://akbaritabar.github.io/Replication-package-for-gender-and-regional-differences-in-scientific-mobility-and-immobility](https://akbaritabar.github.io/Replication-package-for-gender-and-regional-differences-in-scientific-mobility-and-immobility) which looks like the photo below. 
+**An HTML report shows the a directed acyclic graph (DAG)** of the steps' dependency in the pipeline (rules in SnakeMake lingua) which is accessible in [https://akbaritabar.github.io/Replication-package-for-gender-and-regional-differences-in-scientific-mobility-and-immobility](https://akbaritabar.github.io/Replication-package-for-gender-and-regional-differences-in-scientific-mobility-and-immobility). It looks like the photo below. 
 
 ![](./_publication_figures/DAG_steps_of_analysis.png)
 
-Please note that some of these rules require Scopus data at the individual level which is licensed and we cannot share them publicly. Hence, these output files are commented out from the main Snakefile and rule all. However, the aggregated data to prepare the analysis presented in teh manuscript and statistical models to recreate all our figures are included in this repository which completely complies with the license terms of the data provider. 
+Some of these rules require Scopus data at the individual level. Since the data are licensed, they cannot be shared publicly. Hence, these output files are commented out from the main Snakefile and rule all. However, the aggregated data to prepare the analysis presented in the manuscript and statistical models to recreate all figures are included in this repository. The repository completely complies with the license terms of the data provider. 
 
 ```yml
 name: talents
@@ -75,7 +75,7 @@ install.packages(c("tidyverse", "RColorBrewer", "argparser", "nnet", "broom", "c
 
 # Publication figures
 
-Here are figures 1-5 in the main manuscript. All figures, including these and the Supplementary Information (SI) figures, are available in the `results` folder.
+Here are copies of figures 1-5, which in the main manuscript. All figures, including these figures and the Appendix figures, are available in the `results` folder.
 
 ## Figure 1: Percentage of unique authors (y axis) in talents and others group (x axis) divided by mobility status (line color/type) and authors’ gender (three facets). A line is drawn between the circles for talents/others group to facilitate a comparison. Two alternative versions of this figure using other gender assignment methods can be found in the appendix.
 
